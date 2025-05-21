@@ -377,10 +377,15 @@ function register_rest_fields() {
 		'author_meta',
 		array(
 			'get_callback' => function( $post ) {
+				$author_meta = get_post_meta( $post['id'], 'author_meta', true );
+				if ( $author_meta === false ) {
+					return false;
+				}
+
 				return array(
-					'name'   => esc_html( get_the_author_meta( 'display_name', $post['author'] ) ),
-					'url'    => esc_url( home_url( '/author/' . get_the_author_meta( 'user_nicename', $post['author'] ) ) ),
-					'avatar' => get_avatar_url( $post['author'], array( 'size' => 64 ) ),
+					'name'   => esc_html( $author_meta['name'] ?? '' ),
+					'url'    => esc_url( $author_meta['url'] ?? '' ),
+					'avatar' => esc_url( $author_meta['avatar'] ?? '' ),
 				);
 			},
 
