@@ -9,6 +9,7 @@
 if ( ! class_exists( 'GP_Locale' ) ) :
 
 class GP_Locale {
+	public $root_slug;
 	public $english_name;
 	public $native_name;
 	public $text_direction = 'ltr';
