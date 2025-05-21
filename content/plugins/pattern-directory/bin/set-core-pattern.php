@@ -26,7 +26,7 @@ if ( 'cli' !== php_sapi_name() ) {
 $opts = getopt( '', array( 'post:', 'url:', 'abspath:', 'block_types:' ) );
 
 if ( empty( $opts['url'] ) ) {
-	$opts['url'] = 'https://wordpress.org/patterns/';
+	$opts['url'] = defined( 'BLOCK_PATTERNS_URL' ) ? BLOCK_PATTERNS_URL : 'https://wordpress.org/patterns/';
 }
 
 if ( empty( $opts['abspath'] ) && false !== strpos( __DIR__, 'wp-content' ) ) {
