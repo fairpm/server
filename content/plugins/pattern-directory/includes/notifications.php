@@ -213,6 +213,8 @@ function notify_pattern_unlisted( $post ) {
 
 	$subject = esc_html__( 'Pattern unlisted', 'wporg-patterns' );
 
+	$block_patterns_url = defined( 'BLOCK_PATTERNS_URL' ) ? BLOCK_PATTERNS_URL : 'https://wordpress.org/patterns/';
+
 	$message = sprintf(
 		// translators: Plaintext email message. Note the line breaks. 1. Pattern title; 2. Pattern URL;
 		esc_html__( 'Hello,
@@ -226,7 +228,7 @@ If you would like to resubmit your pattern, please make sure it follows the guid
 %3$s', 'wporg-patterns' ),
 		esc_html( $pattern_title ),
 		esc_html( $reason ),
-		'https://wordpress.org/patterns/about/'
+		$block_patterns_url . 'about/'
 	);
 
 	if ( $locale ) {
