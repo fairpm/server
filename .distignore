@@ -1,0 +1,12 @@
+.git/
+.github/
+bin/
+content/uploads/
+gp-data/
+node_modules/
+vendor/
+
+.distignore
+.env.production
+.gitignore
+.secrets

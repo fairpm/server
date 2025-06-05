@@ -1,0 +1,4 @@
+#!/bin/bash -e
+
+# Install composer dependencies
+composer install --no-dev --prefer-dist --optimize-autoloader --apcu-autoloader

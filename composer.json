@@ -1,0 +1,33 @@
+{
+	"name": "openwebff/server",
+	"type": "project",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/GlotPress/GlotPress"
+		}
+	],
+	"require": {
+		"composer/installers": "~2",
+		"humanmade/php-basic-auth": "^1.1",
+		"glotpress/glotpress-wp": "^4.0.1",
+		"johnbillion/query-monitor": "^3.17",
+		"johnpbloch/wordpress": "^6.8",
+		"pantheon-systems/wp-redis": "^1.4",
+		"humanmade/wp-redis-predis-client": "^0.1.2",
+		"afragen/git-updater": "dev-fair@dev"
+	},
+	"extra": {
+		"installer-paths": {
+			"content/plugins/{$name}/": ["type:wordpress-plugin"],
+			"content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+			"content/themes/{$name}/": ["type:wordpress-theme"]
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"johnpbloch/wordpress-core-installer": true
+		}
+	}
+}

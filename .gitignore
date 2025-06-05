@@ -1,0 +1,10 @@
+.env.production
+gp-data/
+
+# Installed via Composer
+content/mu-plugins/php-basic-auth/
+content/plugins/query-monitor/
+content/plugins/wp-redis/
+vendor/
+wordpress/
+
