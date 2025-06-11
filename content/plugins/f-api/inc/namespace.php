@@ -27,6 +27,7 @@ function bootstrap() : void {
 
 	// Register our own rewrites.
 	add_action( 'init', __NAMESPACE__ . '\\register_rewrites' );
+	add_action( 'parse_request', __NAMESPACE__ . '\\redirect_old_namespace', 0 );
 
 	Events\bootstrap();
 }
@@ -43,4 +44,15 @@ function register_rewrites() : void {
 	// a specific '$' rule.
 	add_rewrite_rule( '$', 'index.php?rest_route=/', 'bottom' );
 	add_rewrite_rule( '^(.*)?', 'index.php?rest_route=/$matches[1]', 'bottom' );
+}
+
+/**
+ * Redirect the wp-json default prefix.
+ */
+function redirect_old_namespace() : void {
+	if ( strpos( $_SERVER['REQUEST_URI'], '/wp-json/' ) !== false ) {
+		$new_url = substr( $_SERVER['REQUEST_URI'], 8 );
+		wp_safe_redirect( rest_url( $new_url ), 301 );
+		exit;
+	}
 }
