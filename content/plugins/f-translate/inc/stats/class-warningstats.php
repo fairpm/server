@@ -106,7 +106,7 @@ class WarningStats {
 				`translation_id` bigint(20) unsigned NOT NULL DEFAULT '0',
 				`warning` varchar(20) NOT NULL DEFAULT '',
 				`timestamp` datetime NOT NULL default '0000-00-00 00:00:00',
-				`message` longtext
+				`message` longtext,
 				PRIMARY KEY (`id`)
 			) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 		END;
