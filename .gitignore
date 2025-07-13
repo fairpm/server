@@ -3,8 +3,10 @@ gp-data/
 
 # Installed via Composer
 content/mu-plugins/php-basic-auth/
-content/plugins/query-monitor/
-content/plugins/wp-redis/
+content/plugins/
+!content/plugins/airplane-mode
+!content/plugins/f-api
+!content/plugins/f-gd-cron
+!content/plugins/f-translate
 vendor/
 wordpress/
-
