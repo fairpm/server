@@ -5,17 +5,7 @@ This is the overarching repo for the code deployed to our hosted server, running
 
 ## Local Development
 
-This repository is pre-configured with wp-env configuration. (Better Docker Compose setup coming soon!)
-
-You can set up a local environment using:
-
-```sh
-# First, install Composer dependencies.
-composer install
-
-# Then, start an environment.
-npx @wordpress/env start
-```
+see [docs/local_development.md](docs/local_development.md)
 
 
 ## Deployment

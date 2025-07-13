@@ -3,6 +3,9 @@
  * Connect environment variables to WP constants.
  */
 
+defined( 'WP_HOME' ) or define( 'WP_HOME', getenv( 'WP_HOME' ) );
+defined( 'WP_SITEURL' ) or define( 'WP_SITEURL', getenv( 'WP_SITEURL' ) );
+
 defined( 'DB_HOST' ) or define( 'DB_HOST', getenv( 'DB_HOST' ) );
 defined( 'DB_USER' ) or define( 'DB_USER', getenv( 'DB_USER' ) );
 defined( 'DB_PASSWORD' ) or define( 'DB_PASSWORD', getenv( 'DB_PASSWORD' ) );

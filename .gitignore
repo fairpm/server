@@ -10,3 +10,4 @@ content/plugins/
 !content/plugins/f-translate
 vendor/
 wordpress/
+content/debug.log

@@ -1,4 +1,6 @@
 <?php
+// wp-config-ddev.php not needed
+
 /**
  * Main config file.
  *
@@ -6,6 +8,9 @@
  *
  * phpcs:disable PSR1.Files.SideEffects
  */
+
+ if ( defined( 'WP_CLI' ) && WP_CLI && ! isset( $_SERVER['HTTP_HOST']   ) ) $_SERVER['HTTP_HOST'] = '';
+if ( defined( 'WP_CLI' ) && WP_CLI && ! isset( $_SERVER['SERVER_PORT'] ) ) $_SERVER['SERVER_PORT'] = '';
 
 // Load an escape hatch early load file, if it exists.
 if ( is_readable( __DIR__ . '/.config/load-early.php' ) ) {
@@ -37,8 +42,9 @@ if ( ! defined( 'WP_CONTENT_DIR' ) ) {
 }
 
 if ( ! defined( 'WP_CONTENT_URL' ) ) {
-	$protocol = ! empty( $_SERVER['HTTPS'] ) ? 'https' : 'http';
-	define( 'WP_CONTENT_URL', $protocol . '://' . $_SERVER['HTTP_HOST'] . '/content' );
+	//$protocol = ! empty( $_SERVER['HTTPS'] ) ? 'https' : 'http';
+	//define( 'WP_CONTENT_URL', $protocol . '://' . $_SERVER['HTTP_HOST'] . '/content' );
+	define( 'WP_CONTENT_URL', WP_HOME . '/content' );
 }
 
 if ( ! defined( 'WP_INITIAL_INSTALL' ) || ! WP_INITIAL_INSTALL ) {
