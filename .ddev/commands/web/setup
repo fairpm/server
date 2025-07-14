@@ -1,0 +1,19 @@
+#!/bin/bash
+
+## Description: Setup WordPress for first usage
+## Usage: setup
+## Example: "ddev setup"
+
+if ! wp core is-installed 2>/dev/null; then
+    # WP is not installed. Let's try installing it.
+    wp core multisite-install --url=server.ddev.site --title=Server --admin_user=admin --admin_password=admin --admin_email=admin@fair.site.ddev
+fi
+
+# check for the admin urser
+if ! wp user get admin 2>/dev/null; then
+    wp user create admin admin@fair.site.ddev --user_pass=admin
+fi
+
+# set options
+wp option update home "https://server.ddev.site"
+wp option update siteurl "https://server.ddev.site/wordpress"
