@@ -42,8 +42,6 @@ if ( ! defined( 'WP_CONTENT_DIR' ) ) {
 }
 
 if ( ! defined( 'WP_CONTENT_URL' ) ) {
-	//$protocol = ! empty( $_SERVER['HTTPS'] ) ? 'https' : 'http';
-	//define( 'WP_CONTENT_URL', $protocol . '://' . $_SERVER['HTTP_HOST'] . '/content' );
 	define( 'WP_CONTENT_URL', WP_HOME . '/content' );
 }
 
