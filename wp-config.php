@@ -9,7 +9,7 @@
  * phpcs:disable PSR1.Files.SideEffects
  */
 
- if ( defined( 'WP_CLI' ) && WP_CLI && ! isset( $_SERVER['HTTP_HOST']   ) ) $_SERVER['HTTP_HOST'] = '';
+if ( defined( 'WP_CLI' ) && WP_CLI && ! isset( $_SERVER['HTTP_HOST']   ) ) $_SERVER['HTTP_HOST'] = '';
 if ( defined( 'WP_CLI' ) && WP_CLI && ! isset( $_SERVER['SERVER_PORT'] ) ) $_SERVER['SERVER_PORT'] = '';
 
 // Load an escape hatch early load file, if it exists.
