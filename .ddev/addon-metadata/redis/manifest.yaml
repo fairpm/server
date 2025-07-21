@@ -1,0 +1,26 @@
+name: redis
+repository: ddev/ddev-redis
+version: v2.1.1
+install_date: "2025-07-13T11:56:03+02:00"
+project_files:
+    - docker-compose.redis.yaml
+    - redis/scripts/settings.ddev.redis.php
+    - redis/scripts/setup-drupal-settings.sh
+    - redis/scripts/setup-redis-optimized-config.sh
+    - redis/redis.conf
+    - redis/advanced.conf
+    - redis/append.conf
+    - redis/general.conf
+    - redis/io.conf
+    - redis/memory.conf
+    - redis/network.conf
+    - redis/security.conf
+    - redis/snapshots.conf
+    - commands/host/redis-backend
+    - commands/redis/redis-cli
+    - commands/redis/redis-flush
+global_files: []
+removal_actions:
+    - |
+      #ddev-description:Remove redis settings for Drupal 9+ if applicable
+      rm -f "${DDEV_APPROOT}/${DDEV_DOCROOT}/sites/default/settings.ddev.redis.php"
