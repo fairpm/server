@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e75f9347be4ba8ada58a7950ad4fb199",
+    "content-hash": "9108492ca60e6b9960f74bbd4f82b419",
     "packages": [
         {
             "name": "afragen/git-updater",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/git-updater.git",
-                "reference": "fae366b4a6f1b6a7a300b2fdfd5d40100c8863be"
+                "reference": "e403b869d4fc6deecffea39c2713a159622c0fc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/git-updater/zipball/fae366b4a6f1b6a7a300b2fdfd5d40100c8863be",
-                "reference": "fae366b4a6f1b6a7a300b2fdfd5d40100c8863be",
+                "url": "https://api.github.com/repos/afragen/git-updater/zipball/e403b869d4fc6deecffea39c2713a159622c0fc4",
+                "reference": "e403b869d4fc6deecffea39c2713a159622c0fc4",
                 "shasum": ""
             },
             "require": {
@@ -64,7 +64,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-06-03T15:27:28+00:00"
+            "time": "2025-07-14T18:06:53+00:00"
         },
         {
             "name": "afragen/singleton",
@@ -397,6 +397,46 @@
             "time": "2019-12-30T22:54:17+00:00"
         },
         {
+            "name": "fairpm/fair-parent-theme",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fairpm/fair-parent-theme.git",
+                "reference": "a985d33328399851042530760eb8c65585154690"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fairpm/fair-parent-theme/zipball/a985d33328399851042530760eb8c65585154690",
+                "reference": "a985d33328399851042530760eb8c65585154690",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "type": "wordpress-theme",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/fairpm/fair-parent-theme/graphs/contributors"
+                }
+            ],
+            "description": "FAIR Package Manager network theme.",
+            "homepage": "https://github.com/fairpm/fair-parent-theme/",
+            "keywords": [
+                "fairpm",
+                "theme"
+            ],
+            "support": {
+                "issues": "https://github.com/fairpm/fair-parent-theme/issues",
+                "source": "https://github.com/fairpm/fair-parent-theme/tree/1.0.0"
+            },
+            "time": "2025-07-24T18:34:16+00:00"
+        },
+        {
             "name": "glotpress/glotpress-wp",
             "version": "4.0.1",
             "source": {
@@ -526,16 +566,16 @@
         },
         {
             "name": "johnbillion/query-monitor",
-            "version": "3.17.2",
+            "version": "3.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnbillion/query-monitor.git",
-                "reference": "e35dbc8ac937178d214c04552a0a802dacf6c79b"
+                "reference": "dabf626190fa20d8b9f95a8f8131c27a81c9d177"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/e35dbc8ac937178d214c04552a0a802dacf6c79b",
-                "reference": "e35dbc8ac937178d214c04552a0a802dacf6c79b",
+                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/dabf626190fa20d8b9f95a8f8131c27a81c9d177",
+                "reference": "dabf626190fa20d8b9f95a8f8131c27a81c9d177",
                 "shasum": ""
             },
             "require": {
@@ -543,11 +583,13 @@
                 "php": ">=7.4.0"
             },
             "require-dev": {
+                "behat/gherkin": "< 4.13.0",
                 "codeception/module-asserts": "^1.0",
                 "codeception/module-db": "^1.0",
                 "codeception/module-webdriver": "^1.0",
                 "codeception/util-universalframework": "^1.0",
                 "dealerdirect/phpcodesniffer-composer-installer": "0.7.2",
+                "guzzlehttp/guzzle": "^7.0",
                 "johnbillion/plugin-infrastructure": "dev-trunk",
                 "johnbillion/wp-compat": "0.3.1",
                 "lucatume/wp-browser": "3.2.3",
@@ -596,24 +638,24 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-04T22:13:08+00:00"
+            "time": "2025-07-23T17:19:30+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "6.8.1",
+            "version": "6.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "1932f5ab26a420151c689a9c00505c70c4f91ab3"
+                "reference": "f224d9b28c88048312f3fe635cb65ba66a936950"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/1932f5ab26a420151c689a9c00505c70c4f91ab3",
-                "reference": "1932f5ab26a420151c689a9c00505c70c4f91ab3",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/f224d9b28c88048312f3fe635cb65ba66a936950",
+                "reference": "f224d9b28c88048312f3fe635cb65ba66a936950",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "6.8.1",
+                "johnpbloch/wordpress-core": "6.8.2",
                 "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
                 "php": ">=7.0.0"
             },
@@ -642,20 +684,20 @@
                 "issues": "https://core.trac.wordpress.org/",
                 "source": "https://core.trac.wordpress.org/browser"
             },
-            "time": "2025-04-30T16:52:55+00:00"
+            "time": "2025-07-15T15:33:05+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "6.8.1",
+            "version": "6.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "702c3bda87abb47ae43f90c7b8868cf0b7dff1e2"
+                "reference": "316a8fe38b6dde4e4f399946809f040462038403"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/702c3bda87abb47ae43f90c7b8868cf0b7dff1e2",
-                "reference": "702c3bda87abb47ae43f90c7b8868cf0b7dff1e2",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/316a8fe38b6dde4e4f399946809f040462038403",
+                "reference": "316a8fe38b6dde4e4f399946809f040462038403",
                 "shasum": ""
             },
             "require": {
@@ -663,7 +705,7 @@
                 "php": ">=7.2.24"
             },
             "provide": {
-                "wordpress/core-implementation": "6.8.1"
+                "wordpress/core-implementation": "6.8.2"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -690,7 +732,7 @@
                 "source": "https://core.trac.wordpress.org/browser",
                 "wiki": "https://codex.wordpress.org/"
             },
-            "time": "2025-04-30T16:52:49+00:00"
+            "time": "2025-07-15T15:32:59+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -748,16 +790,16 @@
         },
         {
             "name": "pantheon-systems/wp-redis",
-            "version": "1.4.5",
+            "version": "1.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pantheon-systems/wp-redis.git",
-                "reference": "034f87e96fb778c0cea6c0407ecdd41a44661dc9"
+                "reference": "bf76694482b2ef45f92bf4df136bf649ec3a5715"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pantheon-systems/wp-redis/zipball/034f87e96fb778c0cea6c0407ecdd41a44661dc9",
-                "reference": "034f87e96fb778c0cea6c0407ecdd41a44661dc9",
+                "url": "https://api.github.com/repos/pantheon-systems/wp-redis/zipball/bf76694482b2ef45f92bf4df136bf649ec3a5715",
+                "reference": "bf76694482b2ef45f92bf4df136bf649ec3a5715",
                 "shasum": ""
             },
             "require-dev": {
@@ -768,7 +810,7 @@
                 "pantheon-systems/pantheon-wp-coding-standards": "^2.0",
                 "pantheon-systems/wpunit-helpers": "^2.0",
                 "phpunit/phpunit": "^9",
-                "yoast/phpunit-polyfills": "^3.0"
+                "yoast/phpunit-polyfills": "^4.0"
             },
             "type": "wordpress-plugin",
             "autoload": {
@@ -788,9 +830,9 @@
             ],
             "support": {
                 "issues": "https://github.com/pantheon-systems/wp-redis/issues",
-                "source": "https://github.com/pantheon-systems/wp-redis/tree/1.4.5"
+                "source": "https://github.com/pantheon-systems/wp-redis/tree/1.4.6"
             },
-            "time": "2025-01-21T18:55:01+00:00"
+            "time": "2025-06-17T23:17:31+00:00"
         },
         {
             "name": "predis/predis",
