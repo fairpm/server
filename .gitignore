@@ -3,6 +3,8 @@ gp-data/
 
 # Installed via Composer
 content/mu-plugins/php-basic-auth/
+content/plugins/aws-ses-wp-mail/
+content/plugins/git-updater/
 content/plugins/query-monitor/
 content/plugins/wp-redis/
 vendor/
