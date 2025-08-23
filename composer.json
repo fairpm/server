@@ -16,7 +16,7 @@
 		"pantheon-systems/wp-redis": "^1.4",
 		"humanmade/wp-redis-predis-client": "^0.1.2",
 		"afragen/git-updater": "dev-fair@dev",
-		"fairpm/fair-parent-theme": "1.0.0",
+		"fairpm/fair-parent-theme": "1.0.1",
 		"humanmade/aws-ses-wp-mail": "dev-master"
 	},
 	"extra": {
