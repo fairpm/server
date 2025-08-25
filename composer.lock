@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8894681af417906843d9f51ea45711a3",
+    "content-hash": "c2bcca21fbba9f5d4586da172e900cae",
     "packages": [
         {
             "name": "afragen/git-updater",
@@ -549,20 +549,20 @@
         },
         {
             "name": "fairpm/fair-parent-theme",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fairpm/fair-parent-theme.git",
-                "reference": "64838e0aa5b6280c43b8d9f3623c3348f834fcb1"
+                "reference": "de98e8b035d071f44f0b9c584e16a5616ab56c40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fairpm/fair-parent-theme/zipball/64838e0aa5b6280c43b8d9f3623c3348f834fcb1",
-                "reference": "64838e0aa5b6280c43b8d9f3623c3348f834fcb1",
+                "url": "https://api.github.com/repos/fairpm/fair-parent-theme/zipball/de98e8b035d071f44f0b9c584e16a5616ab56c40",
+                "reference": "de98e8b035d071f44f0b9c584e16a5616ab56c40",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=7.4"
             },
             "type": "wordpress-theme",
             "notification-url": "https://packagist.org/downloads/",
@@ -583,9 +583,9 @@
             ],
             "support": {
                 "issues": "https://github.com/fairpm/fair-parent-theme/issues",
-                "source": "https://github.com/fairpm/fair-parent-theme/tree/1.0.1"
+                "source": "https://github.com/fairpm/fair-parent-theme/tree/1.0.2"
             },
-            "time": "2025-08-24T23:37:52+00:00"
+            "time": "2025-08-25T18:34:09+00:00"
         },
         {
             "name": "glotpress/glotpress-wp",
