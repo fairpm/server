@@ -1,10 +1,14 @@
 {
-	"name": "openwebff/server",
+	"name": "fairpm/server",
 	"type": "project",
 	"repositories": [
 		{
 			"type": "vcs",
 			"url": "https://github.com/GlotPress/GlotPress"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/fairpm/mini-fair-repo"
 		}
 	],
 	"require": {
