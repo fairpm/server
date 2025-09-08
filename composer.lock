@@ -256,16 +256,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.8",
+            "version": "3.356.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "3efa8c62c11fedb17b90f60b2d3a9f815b406e63"
+                "reference": "7bdc3c73897ae576f7d137dad70bddcd03bd4bd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3efa8c62c11fedb17b90f60b2d3a9f815b406e63",
-                "reference": "3efa8c62c11fedb17b90f60b2d3a9f815b406e63",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7bdc3c73897ae576f7d137dad70bddcd03bd4bd6",
+                "reference": "7bdc3c73897ae576f7d137dad70bddcd03bd4bd6",
                 "shasum": ""
             },
             "require": {
@@ -347,9 +347,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.8"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.4"
             },
-            "time": "2025-08-29T18:06:18+00:00"
+            "time": "2025-08-25T18:21:17+00:00"
         },
         {
             "name": "composer/installers",
@@ -549,16 +549,16 @@
         },
         {
             "name": "fairpm/fair-parent-theme",
-            "version": "1.0.3",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fairpm/fair-parent-theme.git",
-                "reference": "b8e69134804e46923a77b5fca2538f98883f26f8"
+                "reference": "de98e8b035d071f44f0b9c584e16a5616ab56c40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fairpm/fair-parent-theme/zipball/b8e69134804e46923a77b5fca2538f98883f26f8",
-                "reference": "b8e69134804e46923a77b5fca2538f98883f26f8",
+                "url": "https://api.github.com/repos/fairpm/fair-parent-theme/zipball/de98e8b035d071f44f0b9c584e16a5616ab56c40",
+                "reference": "de98e8b035d071f44f0b9c584e16a5616ab56c40",
                 "shasum": ""
             },
             "require": {
@@ -583,9 +583,9 @@
             ],
             "support": {
                 "issues": "https://github.com/fairpm/fair-parent-theme/issues",
-                "source": "https://github.com/fairpm/fair-parent-theme/tree/1.0.3"
+                "source": "https://github.com/fairpm/fair-parent-theme/tree/1.0.2"
             },
-            "time": "2025-08-28T23:23:20+00:00"
+            "time": "2025-08-25T18:34:09+00:00"
         },
         {
             "name": "glotpress/glotpress-wp",
