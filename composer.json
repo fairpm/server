@@ -35,7 +35,8 @@
 	"config": {
 		"allow-plugins": {
 			"composer/installers": true,
-			"johnpbloch/wordpress-core-installer": true
+			"johnpbloch/wordpress-core-installer": true,
+			"mcaskill/composer-exclude-files": true
 		}
 	}
 }
