@@ -4,26 +4,27 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c2bcca21fbba9f5d4586da172e900cae",
+    "content-hash": "b634fa9a68fc53a6aae2711a0a81cb88",
     "packages": [
         {
             "name": "afragen/git-updater",
-            "version": "dev-fair",
+            "version": "12.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/git-updater.git",
-                "reference": "49c666006499231311a2c147e455fb44e0bff7f7"
+                "reference": "4fad507562869a80a6486883b87bae83922a6d41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/git-updater/zipball/49c666006499231311a2c147e455fb44e0bff7f7",
-                "reference": "49c666006499231311a2c147e455fb44e0bff7f7",
+                "url": "https://api.github.com/repos/afragen/git-updater/zipball/4fad507562869a80a6486883b87bae83922a6d41",
+                "reference": "4fad507562869a80a6486883b87bae83922a6d41",
                 "shasum": ""
             },
             "require": {
                 "afragen/singleton": "^1.0",
                 "afragen/wordpress-plugin-readme-parser": "^1",
                 "afragen/wp-dismiss-notice": "*",
+                "freemius/wordpress-sdk": "^2.12",
                 "php": ">=8.0"
             },
             "require-dev": {
@@ -64,7 +65,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-06T23:27:35+00:00"
+            "time": "2025-08-06T23:27:09+00:00"
         },
         {
             "name": "afragen/singleton",
@@ -256,16 +257,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.4",
+            "version": "3.356.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "7bdc3c73897ae576f7d137dad70bddcd03bd4bd6"
+                "reference": "ec28d17cc940a4f996638050ab95dcc2a07f1a6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7bdc3c73897ae576f7d137dad70bddcd03bd4bd6",
-                "reference": "7bdc3c73897ae576f7d137dad70bddcd03bd4bd6",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ec28d17cc940a4f996638050ab95dcc2a07f1a6b",
+                "reference": "ec28d17cc940a4f996638050ab95dcc2a07f1a6b",
                 "shasum": ""
             },
             "require": {
@@ -347,9 +348,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.4"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.13"
             },
-            "time": "2025-08-25T18:21:17+00:00"
+            "time": "2025-09-08T18:37:19+00:00"
         },
         {
             "name": "composer/installers",
@@ -549,16 +550,16 @@
         },
         {
             "name": "fairpm/fair-parent-theme",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fairpm/fair-parent-theme.git",
-                "reference": "de98e8b035d071f44f0b9c584e16a5616ab56c40"
+                "reference": "b8e69134804e46923a77b5fca2538f98883f26f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fairpm/fair-parent-theme/zipball/de98e8b035d071f44f0b9c584e16a5616ab56c40",
-                "reference": "de98e8b035d071f44f0b9c584e16a5616ab56c40",
+                "url": "https://api.github.com/repos/fairpm/fair-parent-theme/zipball/b8e69134804e46923a77b5fca2538f98883f26f8",
+                "reference": "b8e69134804e46923a77b5fca2538f98883f26f8",
                 "shasum": ""
             },
             "require": {
@@ -583,9 +584,62 @@
             ],
             "support": {
                 "issues": "https://github.com/fairpm/fair-parent-theme/issues",
-                "source": "https://github.com/fairpm/fair-parent-theme/tree/1.0.2"
+                "source": "https://github.com/fairpm/fair-parent-theme/tree/1.0.3"
             },
-            "time": "2025-08-25T18:34:09+00:00"
+            "time": "2025-08-28T23:23:20+00:00"
+        },
+        {
+            "name": "freemius/wordpress-sdk",
+            "version": "2.12.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Freemius/wordpress-sdk.git",
+                "reference": "fedeba08eb3e62af5f84bd6d602f98636467cffc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Freemius/wordpress-sdk/zipball/fedeba08eb3e62af5f84bd6d602f98636467cffc",
+                "reference": "fedeba08eb3e62af5f84bd6d602f98636467cffc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpcompatibility/phpcompatibility-wp": "^2.1",
+                "phpstan/extension-installer": "^1.3",
+                "squizlabs/php_codesniffer": "^3.7",
+                "szepeviktor/phpstan-wordpress": "^1.3",
+                "wp-coding-standards/wpcs": "^2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "start.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-only"
+            ],
+            "description": "Freemius WordPress SDK",
+            "homepage": "https://freemius.com",
+            "keywords": [
+                "freemius",
+                "plugin",
+                "sdk",
+                "theme",
+                "wordpress",
+                "wordpress-plugin",
+                "wordpress-theme"
+            ],
+            "support": {
+                "issues": "https://github.com/Freemius/wordpress-sdk/issues",
+                "source": "https://github.com/Freemius/wordpress-sdk/tree/2.12.1"
+            },
+            "time": "2025-07-06T13:27:13+00:00"
         },
         {
             "name": "glotpress/glotpress-wp",
@@ -976,18 +1030,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/humanmade/aws-ses-wp-mail.git",
-                "reference": "48e66bc6e8ec35d86e3750e93838aa655f5ea492"
+                "reference": "6a2f7db2af543631e375fa390a6a205278706b6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/humanmade/aws-ses-wp-mail/zipball/48e66bc6e8ec35d86e3750e93838aa655f5ea492",
-                "reference": "48e66bc6e8ec35d86e3750e93838aa655f5ea492",
+                "url": "https://api.github.com/repos/humanmade/aws-ses-wp-mail/zipball/6a2f7db2af543631e375fa390a6a205278706b6b",
+                "reference": "6a2f7db2af543631e375fa390a6a205278706b6b",
                 "shasum": ""
             },
             "require": {
                 "aws/aws-sdk-php": "^3.18.0",
                 "composer/installers": "^1.0 || ^2.0",
-                "php": ">=5.3"
+                "php": ">=7.2"
             },
             "default-branch": true,
             "type": "wordpress-plugin",
@@ -1011,7 +1065,7 @@
                 "issues": "https://github.com/humanmade/aws-ses-wp-mail/issues",
                 "source": "https://github.com/humanmade/aws-ses-wp-mail"
             },
-            "time": "2025-08-18T16:50:58+00:00"
+            "time": "2025-09-02T15:18:20+00:00"
         },
         {
             "name": "humanmade/php-basic-auth",
@@ -1085,16 +1139,16 @@
         },
         {
             "name": "johnbillion/query-monitor",
-            "version": "3.19.0",
+            "version": "3.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnbillion/query-monitor.git",
-                "reference": "dabf626190fa20d8b9f95a8f8131c27a81c9d177"
+                "reference": "ec24102fa79ca7f02b3e5d2643284c5a71588c62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/dabf626190fa20d8b9f95a8f8131c27a81c9d177",
-                "reference": "dabf626190fa20d8b9f95a8f8131c27a81c9d177",
+                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/ec24102fa79ca7f02b3e5d2643284c5a71588c62",
+                "reference": "ec24102fa79ca7f02b3e5d2643284c5a71588c62",
                 "shasum": ""
             },
             "require": {
@@ -1109,7 +1163,7 @@
                 "codeception/util-universalframework": "^1.0",
                 "dealerdirect/phpcodesniffer-composer-installer": "0.7.2",
                 "guzzlehttp/guzzle": "^7.0",
-                "johnbillion/plugin-infrastructure": "dev-trunk",
+                "johnbillion/plugin-infrastructure": "1.2.1",
                 "johnbillion/wp-compat": "0.3.1",
                 "lucatume/wp-browser": "3.2.3",
                 "phpcompatibility/phpcompatibility-wp": "2.1.5",
@@ -1157,7 +1211,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-07-23T17:19:30+00:00"
+            "time": "2025-09-07T22:02:10+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -1842,11 +1896,63 @@
             "time": "2024-12-23T08:48:59+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "mcaskill/composer-exclude-files",
+            "version": "v4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mcaskill/composer-plugin-exclude-files.git",
+                "reference": "ed68fc7d6da2146ed2c32c92904587c9e03c985a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mcaskill/composer-plugin-exclude-files/zipball/ed68fc7d6da2146ed2c32c92904587c9e03c985a",
+                "reference": "ed68fc7d6da2146ed2c32c92904587c9e03c985a",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.3",
+                "php": "^7.2.5 || ^8.0"
+            },
+            "require-dev": {
+                "composer/composer": "^2.3",
+                "phpstan/phpstan": "^1.11",
+                "symfony/phpunit-bridge": "^7.1"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "McAskill\\Composer\\ExcludeFilePlugin",
+                "branch-alias": {
+                    "dev-main": "4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "McAskill\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chauncey McAskill",
+                    "email": "chauncey@mcaskill.ca"
+                }
+            ],
+            "description": "Exclude files from autoload_files.php",
+            "support": {
+                "issues": "https://github.com/mcaskill/composer-plugin-exclude-files/issues",
+                "source": "https://github.com/mcaskill/composer-plugin-exclude-files/tree/v4.0.1"
+            },
+            "time": "2024-12-03T21:08:26+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "afragen/git-updater": 20,
         "humanmade/aws-ses-wp-mail": 20
     },
     "prefer-stable": false,
