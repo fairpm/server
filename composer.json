@@ -17,9 +17,7 @@
 		"humanmade/wp-redis-predis-client": "^0.1.2",
 		"afragen/git-updater": "^12.18",
 		"fairpm/fair-parent-theme": "~1.0.1",
-		"humanmade/aws-ses-wp-mail": "dev-master"
-	},
-	"require-dev": {
+		"humanmade/aws-ses-wp-mail": "dev-master",
 		"mcaskill/composer-exclude-files": "^4.0"
 	},
 	"extra": {

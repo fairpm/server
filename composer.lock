@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b634fa9a68fc53a6aae2711a0a81cb88",
+    "content-hash": "c998ee3bf4433b6b4b70f9976de95853",
     "packages": [
         {
             "name": "afragen/git-updater",
@@ -257,16 +257,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.13",
+            "version": "3.356.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "ec28d17cc940a4f996638050ab95dcc2a07f1a6b"
+                "reference": "af1bf3dee5e66cf9b3d5d2507b08d9465636df29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ec28d17cc940a4f996638050ab95dcc2a07f1a6b",
-                "reference": "ec28d17cc940a4f996638050ab95dcc2a07f1a6b",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/af1bf3dee5e66cf9b3d5d2507b08d9465636df29",
+                "reference": "af1bf3dee5e66cf9b3d5d2507b08d9465636df29",
                 "shasum": ""
             },
             "require": {
@@ -279,7 +279,7 @@
                 "guzzlehttp/psr7": "^2.4.5",
                 "mtdowling/jmespath.php": "^2.8.0",
                 "php": ">=8.1",
-                "psr/http-message": "^2.0"
+                "psr/http-message": "^1.0 || ^2.0"
             },
             "require-dev": {
                 "andrewsville/php-token-reflection": "^1.4",
@@ -348,9 +348,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.13"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.18"
             },
-            "time": "2025-09-08T18:37:19+00:00"
+            "time": "2025-09-15T18:21:28+00:00"
         },
         {
             "name": "composer/installers",
@@ -590,16 +590,16 @@
         },
         {
             "name": "freemius/wordpress-sdk",
-            "version": "2.12.1",
+            "version": "2.12.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Freemius/wordpress-sdk.git",
-                "reference": "fedeba08eb3e62af5f84bd6d602f98636467cffc"
+                "reference": "241fbfc91151f85d8ebeb75343caf29bda1d3208"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Freemius/wordpress-sdk/zipball/fedeba08eb3e62af5f84bd6d602f98636467cffc",
-                "reference": "fedeba08eb3e62af5f84bd6d602f98636467cffc",
+                "url": "https://api.github.com/repos/Freemius/wordpress-sdk/zipball/241fbfc91151f85d8ebeb75343caf29bda1d3208",
+                "reference": "241fbfc91151f85d8ebeb75343caf29bda1d3208",
                 "shasum": ""
             },
             "require": {
@@ -637,9 +637,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Freemius/wordpress-sdk/issues",
-                "source": "https://github.com/Freemius/wordpress-sdk/tree/2.12.1"
+                "source": "https://github.com/Freemius/wordpress-sdk/tree/2.12.2"
             },
-            "time": "2025-07-06T13:27:13+00:00"
+            "time": "2025-09-15T14:36:55+00:00"
         },
         {
             "name": "glotpress/glotpress-wp",
@@ -1030,12 +1030,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/humanmade/aws-ses-wp-mail.git",
-                "reference": "6a2f7db2af543631e375fa390a6a205278706b6b"
+                "reference": "4021bab5c881011fcdf626c91b2295cb422fbaed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/humanmade/aws-ses-wp-mail/zipball/6a2f7db2af543631e375fa390a6a205278706b6b",
-                "reference": "6a2f7db2af543631e375fa390a6a205278706b6b",
+                "url": "https://api.github.com/repos/humanmade/aws-ses-wp-mail/zipball/4021bab5c881011fcdf626c91b2295cb422fbaed",
+                "reference": "4021bab5c881011fcdf626c91b2295cb422fbaed",
                 "shasum": ""
             },
             "require": {
@@ -1065,7 +1065,7 @@
                 "issues": "https://github.com/humanmade/aws-ses-wp-mail/issues",
                 "source": "https://github.com/humanmade/aws-ses-wp-mail"
             },
-            "time": "2025-09-02T15:18:20+00:00"
+            "time": "2025-09-10T10:48:58+00:00"
         },
         {
             "name": "humanmade/php-basic-auth",
@@ -1360,6 +1360,58 @@
                 "source": "https://github.com/johnpbloch/wordpress-core-installer/tree/master"
             },
             "time": "2020-04-16T21:44:57+00:00"
+        },
+        {
+            "name": "mcaskill/composer-exclude-files",
+            "version": "v4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mcaskill/composer-plugin-exclude-files.git",
+                "reference": "ed68fc7d6da2146ed2c32c92904587c9e03c985a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mcaskill/composer-plugin-exclude-files/zipball/ed68fc7d6da2146ed2c32c92904587c9e03c985a",
+                "reference": "ed68fc7d6da2146ed2c32c92904587c9e03c985a",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.3",
+                "php": "^7.2.5 || ^8.0"
+            },
+            "require-dev": {
+                "composer/composer": "^2.3",
+                "phpstan/phpstan": "^1.11",
+                "symfony/phpunit-bridge": "^7.1"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "McAskill\\Composer\\ExcludeFilePlugin",
+                "branch-alias": {
+                    "dev-main": "4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "McAskill\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chauncey McAskill",
+                    "email": "chauncey@mcaskill.ca"
+                }
+            ],
+            "description": "Exclude files from autoload_files.php",
+            "support": {
+                "issues": "https://github.com/mcaskill/composer-plugin-exclude-files/issues",
+                "source": "https://github.com/mcaskill/composer-plugin-exclude-files/tree/v4.0.1"
+            },
+            "time": "2024-12-03T21:08:26+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -1896,60 +1948,7 @@
             "time": "2024-12-23T08:48:59+00:00"
         }
     ],
-    "packages-dev": [
-        {
-            "name": "mcaskill/composer-exclude-files",
-            "version": "v4.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mcaskill/composer-plugin-exclude-files.git",
-                "reference": "ed68fc7d6da2146ed2c32c92904587c9e03c985a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mcaskill/composer-plugin-exclude-files/zipball/ed68fc7d6da2146ed2c32c92904587c9e03c985a",
-                "reference": "ed68fc7d6da2146ed2c32c92904587c9e03c985a",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^2.3",
-                "php": "^7.2.5 || ^8.0"
-            },
-            "require-dev": {
-                "composer/composer": "^2.3",
-                "phpstan/phpstan": "^1.11",
-                "symfony/phpunit-bridge": "^7.1"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "McAskill\\Composer\\ExcludeFilePlugin",
-                "branch-alias": {
-                    "dev-main": "4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "McAskill\\Composer\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Chauncey McAskill",
-                    "email": "chauncey@mcaskill.ca"
-                }
-            ],
-            "description": "Exclude files from autoload_files.php",
-            "support": {
-                "issues": "https://github.com/mcaskill/composer-plugin-exclude-files/issues",
-                "source": "https://github.com/mcaskill/composer-plugin-exclude-files/tree/v4.0.1"
-            },
-            "time": "2024-12-03T21:08:26+00:00"
-        }
-    ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
