@@ -1,0 +1,250 @@
+/*!
+Theme Name: Fair Parent
+Theme URI: https://github.com/openwebff/fair-parent-theme/
+Author: FAIR
+Author URI: https://github.com/openwebff/
+Description: Used for web-pub site.
+Version: 1.0.3
+Tested up to: 6.8.0
+Requires PHP: 7.4
+License: MIT License
+Text Domain: fair-parent-theme
+Tags: one-column, accessibility-ready, translation-ready
+This theme is licensed under MIT.
+Use it to make something cool, have fun, and share what you've learned.
+Fair Parent is based on Air-light, https://wordpress.org/themes/air-light C) 2016-2022 Digitoimisto Dude Oy
+Air-light is based on Underscores https://underscores.me/ https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+:root {
+	--color-green: #25b372;
+	--color-orange: #ffaa00;
+	--color-red: #970101;
+	--color-blue: #0073aa;
+	--color-dark-blue: #003d5c;
+	--color-light-blue: #66b3d6;
+	--color-black: #000;
+	--color-white: #fff;
+	--color-light-gray: #f6f6f7;
+	--color-dark-gray: #565757;
+	--color-transparent-gray: #e6e6e7dd;
+}
+
+.has-green-color {
+	color: var(--color-green);
+}
+.has-orange-color {
+	color: var(--color-orange);
+}
+.has-red-color {
+	color: var(--color-red);
+}
+.has-blue-color {
+	color: var(--color-blue);
+}
+.has-dark-blue-color {
+	color: var(--color-dark-blue);
+}
+.has-light-blue-color {
+	color: var(--color-light-blue);
+}
+.has-gray-color {
+	color: var(--color-gray);
+}
+.has-dark-gray-color {
+	color: var(--color-dark-gray);
+}
+.has-light-gray-color {
+	color: var(--color-light-gray);
+}
+.has-transparent-gray-color {
+	color: white;
+}
+
+.has-green-background-color, .has-green-background-color * {
+	background-color: var(--color-green);
+	color: #000 !important;
+}
+.has-orange-background-color, .has-orange-background-color * {
+	background-color: var(--color-orange);
+	color: #000 !important;
+}
+.has-red-background-color, .has-red-background-color * {
+	background-color: var(--color-red);
+	color: #fff !important;
+}
+.has-blue-background-color, .has-blue-background-color * {
+	background-color: var(--color-blue);
+	color: #fff !important;
+}
+.has-dark-blue-background-color, .has-dark-blue-background-color * {
+	background-color: var(--color-dark-blue);
+	color: #fff !important;
+}
+.has-light-blue-background-color, .has-light-blue-background-color * {
+	background-color: var(--color-light-blue);
+	color: #000 !important;
+}
+.has-gray-background-color, .has-gray-background-color * {
+	background-color: var(--color-gray);
+	color: #111 !important;
+}
+.has-dark-gray-background-color, .has-dark-gray-background-color * {
+	background-color: var(--color-dark-gray);
+	color: #fff !important;
+}
+.has-light-gray-background-color, .has-light-gray-background-color * {
+	background-color: var(--color-light-gray);
+	color: #333 !important;
+}
+.has-transparent-gray-background-color {
+	background-color: var(--color-transparent-gray);
+}
+
+.wp-block-button__link:hover,
+.has-red-background-color a:hover,
+.has-dark-blue-background-color a:hover,
+.has-dark-gray-background-color a:hover,
+.has-blue-background-color a:hover {
+	color: #fff;
+	outline: 2px solid #000;
+	outline-offset: 4px;
+}
+
+main:not(.home main) {
+	padding: 2rem 0;
+}
+
+.home .wp-block-column .wp-block-button__link {
+	font-size: 1rem;
+	border-radius: 4px;
+	min-width: 280px;
+}
+
+.home .wp-block-column .wp-block-button__link strong {
+	font-size: 1.125rem;
+}
+
+.wp-block-group__inner-container > p,
+.article-content > *,
+.entry-content > .entry-title > *,
+.entry-content > .entry-body > * {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto 1.5rem;
+}
+
+@media screen and ( width < 1200px ) {
+	main > *,
+	.entry-content > *:not(.alignfull) {
+		padding: 0 1rem;
+	}
+}
+
+.entry-content > .entry-title > .alignwide,
+.entry-content > .entry-body > .alignwide {
+	max-width: 1440px;
+}
+
+.entry-content > .entry-title > .alignfull,
+.entry-content > .entry-body > .alignfull {
+	max-width: 100%;
+}
+
+#page .site-header {
+	background: #0073aa;
+	align-items: center;
+}
+
+.site-header .site-branding svg {
+	fill: #fff;
+}
+
+.site-header .site-branding {
+	display: flex;
+	align-items: last baseline;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.site-header .site-branding p {
+	margin: 0;
+	color: #fff;
+}
+
+@media screen and ( width < 720px ) {
+	.site-header {
+		display: grid !important;
+		gap: 24px;
+	}
+}
+
+#nav .menu-item-clickable, #nav .menu-item > a:not(.sub-menu a),
+#nav .menu-item.current-menu-item > a:not(.sub-menu a), #nav .menu-item.current-menu-parent > a:not(.sub-menu a) {
+	color: var(--color-white);
+}
+
+#nav .menu-item-clickable:hover, #nav .menu-item > a:hover,
+#nav .menu-item.current-menu-item > a:hover, #nav .menu-item.current-menu-parent > a:hover {
+	text-decoration: underline;
+}
+
+#nav .menu-item-clickable:focus, #nav .menu-item > a:focus,
+#nav .menu-item.current-menu-item > a:focus, #nav .menu-item.current-menu-parent > a:focus {
+	outline: 2px solid;
+	outline-offset: 6px;
+}
+
+#nav .dropdown-toggle {
+	color: #fff;
+}
+
+#nav .menu-item.current-menu-item > a, #nav .menu-item.current-menu-parent > a {
+	text-decoration: underline;
+	text-decoration-color: #dfdfdf66;
+}
+
+#nav .sub-menu {
+	border: none;
+	box-shadow: 0 2px 3px #666;
+}
+
+#lf-header {
+	background: #232323;
+	width: 100%;
+	line-height: 1.5;
+}
+
+.admin-bar #lf-header {
+	top: 32px;
+}
+
+#lf-header .container {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	padding: 8px var(--spacing-container-padding-inline) 6px;
+}
+
+#lf-header img {
+	height: 20px;
+	width: auto;
+	display: block;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.has-background {
+	padding: 1rem;
+}
+
+.wp-block-button__link {
+	font-size: 1.125rem;
+}
+
+code {
+	color: #059332;
+}
