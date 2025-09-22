@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c998ee3bf4433b6b4b70f9976de95853",
+    "content-hash": "38ece82d909eddcd30f19a32ff62d51d",
     "packages": [
         {
             "name": "afragen/git-updater",
@@ -202,6 +202,54 @@
             "time": "2023-05-30T21:45:15+00:00"
         },
         {
+            "name": "aspirepress/aspireexplorer",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aspirepress/AspireExplorer.git",
+                "reference": "9f7a377420155c44b5a165d01c29420a0efeb4bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aspirepress/AspireExplorer/zipball/9f7a377420155c44b5a165d01c29420a0efeb4bd",
+                "reference": "9f7a377420155c44b5a165d01c29420a0efeb4bd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "3.10.3",
+                "wp-coding-standards/wpcs": "~3.1.0"
+            },
+            "type": "wordpress-plugin",
+            "scripts": {
+                "format": [
+                    "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf --report=summary,source"
+                ],
+                "lint": [
+                    "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs --report=summary,source"
+                ],
+                "scss-watch": [
+                    "sass --watch assets/css/aspire-explorer.scss:assets/css/aspire-explorer.css"
+                ]
+            },
+            "license": [
+                "GPLv2"
+            ],
+            "authors": [
+                {
+                    "name": "AspirePress"
+                }
+            ],
+            "description": "AspirePress Repository browser.",
+            "support": {
+                "source": "https://github.com/aspirepress/AspireExplorer/tree/0.1",
+                "issues": "https://github.com/aspirepress/AspireExplorer/issues"
+            },
+            "time": "2025-09-14T17:45:18+00:00"
+        },
+        {
             "name": "aws/aws-crt-php",
             "version": "v1.2.7",
             "source": {
@@ -257,16 +305,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.18",
+            "version": "3.356.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "af1bf3dee5e66cf9b3d5d2507b08d9465636df29"
+                "reference": "e9253cf6073f06080a7458af54e18fc474f0c864"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/af1bf3dee5e66cf9b3d5d2507b08d9465636df29",
-                "reference": "af1bf3dee5e66cf9b3d5d2507b08d9465636df29",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e9253cf6073f06080a7458af54e18fc474f0c864",
+                "reference": "e9253cf6073f06080a7458af54e18fc474f0c864",
                 "shasum": ""
             },
             "require": {
@@ -348,9 +396,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.18"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.23"
             },
-            "time": "2025-09-15T18:21:28+00:00"
+            "time": "2025-09-22T18:10:31+00:00"
         },
         {
             "name": "composer/installers",
