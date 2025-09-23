@@ -9,6 +9,10 @@
 		{
 			"type": "vcs",
 			"url": "https://github.com/aspirepress/AspireExplorer"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/fairpm/fair-plugin"
 		}
 	],
 	"require": {
@@ -24,7 +28,8 @@
 		"humanmade/aws-ses-wp-mail": "dev-master",
 		"mcaskill/composer-exclude-files": "^4.0",
 		"yoast/wordpress-seo": "*",
-		"aspirepress/aspireexplorer": "^0.1"
+		"aspirepress/aspireexplorer": "^0.1",
+		"fair/fair-plugin": "dev-main"
 	},
 	"extra": {
 		"installer-paths": {

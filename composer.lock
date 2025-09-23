@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "38ece82d909eddcd30f19a32ff62d51d",
+    "content-hash": "5b2867c475c53cb4e5cc843fb612f274",
     "packages": [
         {
             "name": "afragen/git-updater",
@@ -595,6 +595,90 @@
                 "source": "https://github.com/erusev/parsedown/tree/1.7.x"
             },
             "time": "2019-12-30T22:54:17+00:00"
+        },
+        {
+            "name": "fair/fair-plugin",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fairpm/fair-plugin.git",
+                "reference": "2246a7b6e9c10a2c0c1739509a6f42a409d7ec9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fairpm/fair-plugin/zipball/2246a7b6e9c10a2c0c1739509a6f42a409d7ec9b",
+                "reference": "2246a7b6e9c10a2c0c1739509a6f42a409d7ec9b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "humanmade/coding-standards": "^1.2",
+                "nimut/phpunit-merger": "*",
+                "yoast/phpunit-polyfills": "*"
+            },
+            "default-branch": true,
+            "type": "wordpress-plugin",
+            "scripts": {
+                "lint": [
+                    "@php ./vendor/bin/phpcs ."
+                ],
+                "format": [
+                    "@php ./vendor/bin/phpcbf ."
+                ],
+                "test": [
+                    "Composer\\Config::disableProcessTimeout",
+                    "@php ./vendor/phpunit/phpunit/phpunit"
+                ],
+                "test:multisite": [
+                    "Composer\\Config::disableProcessTimeout",
+                    "@php ./vendor/phpunit/phpunit/phpunit -c tests/phpunit/multisite.xml"
+                ],
+                "coverage:merge": [
+                    "Composer\\Config::disableProcessTimeout",
+                    "@putenv XDEBUG_MODE=coverage",
+                    "@php ./vendor/bin/phpunit-merger coverage tests/phpunit/coverage/php --html tests/phpunit/coverage/html/full tests/phpunit/cache/full-cache.xml"
+                ],
+                "coverage:single": [
+                    "Composer\\Config::disableProcessTimeout",
+                    "@putenv XDEBUG_MODE=off",
+                    "@putenv WP_TESTS_SKIP_INSTALL=0",
+                    "@test --filter prime_test_suite",
+                    "@putenv XDEBUG_MODE=coverage",
+                    "@putenv WP_TESTS_SKIP_INSTALL=1",
+                    "@test"
+                ],
+                "coverage:multisite": [
+                    "Composer\\Config::disableProcessTimeout",
+                    "@putenv XDEBUG_MODE=off",
+                    "@putenv WP_TESTS_SKIP_INSTALL=0",
+                    "@test:multisite --filter prime_test_suite",
+                    "@putenv XDEBUG_MODE=coverage",
+                    "@putenv WP_TESTS_SKIP_INSTALL=1",
+                    "@test:multisite"
+                ],
+                "coverage:full": [
+                    "Composer\\Config::disableProcessTimeout",
+                    "@coverage:single",
+                    "@coverage:multisite",
+                    "@coverage:merge"
+                ]
+            },
+            "license": [
+                "gpl-2.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "FAIR Contributors"
+                }
+            ],
+            "description": "Make your site more FAIR.",
+            "support": {
+                "source": "https://github.com/fairpm/fair-plugin/tree/main",
+                "issues": "https://github.com/fairpm/fair-plugin/issues"
+            },
+            "time": "2025-09-23T02:45:27+00:00"
         },
         {
             "name": "fairpm/fair-parent-theme",
@@ -2000,6 +2084,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "fair/fair-plugin": 20,
         "humanmade/aws-ses-wp-mail": 20
     },
     "prefer-stable": false,
