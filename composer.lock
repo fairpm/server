@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b2867c475c53cb4e5cc843fb612f274",
+    "content-hash": "39e78dd814b701f6e87d52c399e8d0d8",
     "packages": [
         {
             "name": "afragen/git-updater",
@@ -203,16 +203,16 @@
         },
         {
             "name": "aspirepress/aspireexplorer",
-            "version": "0.1",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aspirepress/AspireExplorer.git",
-                "reference": "9f7a377420155c44b5a165d01c29420a0efeb4bd"
+                "reference": "67f4be4d6643ce4e21598494fae4ca17e06ef760"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aspirepress/AspireExplorer/zipball/9f7a377420155c44b5a165d01c29420a0efeb4bd",
-                "reference": "9f7a377420155c44b5a165d01c29420a0efeb4bd",
+                "url": "https://api.github.com/repos/aspirepress/AspireExplorer/zipball/67f4be4d6643ce4e21598494fae4ca17e06ef760",
+                "reference": "67f4be4d6643ce4e21598494fae4ca17e06ef760",
                 "shasum": ""
             },
             "require": {
@@ -244,10 +244,10 @@
             ],
             "description": "AspirePress Repository browser.",
             "support": {
-                "source": "https://github.com/aspirepress/AspireExplorer/tree/0.1",
+                "source": "https://github.com/aspirepress/AspireExplorer/tree/0.1.1",
                 "issues": "https://github.com/aspirepress/AspireExplorer/issues"
             },
-            "time": "2025-09-14T17:45:18+00:00"
+            "time": "2025-09-23T17:39:50+00:00"
         },
         {
             "name": "aws/aws-crt-php",
@@ -1612,6 +1612,48 @@
             "time": "2024-09-04T18:46:31+00:00"
         },
         {
+            "name": "ocean90/public-post-preview",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ocean90/public-post-preview.git",
+                "reference": "0330bcf750d9c2635b15a10b25c73c4ea7125c4e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ocean90/public-post-preview/zipball/0330bcf750d9c2635b15a10b25c73c4ea7125c4e",
+                "reference": "0330bcf750d9c2635b15a10b25c73c4ea7125c4e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Dominik Schilling",
+                    "homepage": "https://dominikschilling.de/"
+                }
+            ],
+            "description": "WordPress plugin to allow anonymous users to preview a post before it is published.",
+            "homepage": "https://wordpress.org/plugins/public-post-preview/",
+            "support": {
+                "issues": "https://github.com/ocean90/public-post-preview/issues",
+                "forum": "https://wordpress.org/support/plugin/public-post-preview",
+                "source": "https://github.com/ocean90/public-post-preview"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/ocean90"
+                }
+            ],
+            "time": "2024-12-23T09:49:09+00:00"
+        },
+        {
             "name": "pantheon-systems/wp-redis",
             "version": "1.4.6",
             "source": {
@@ -2078,6 +2120,86 @@
                 }
             ],
             "time": "2024-12-23T08:48:59+00:00"
+        },
+        {
+            "name": "yoast/wordpress-seo",
+            "version": "26.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Yoast-dist/wordpress-seo.git",
+                "reference": "d0f74cc5f7010e65b14d3807dbab9ac9eab59a7d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/d0f74cc5f7010e65b14d3807dbab9ac9eab59a7d",
+                "reference": "d0f74cc5f7010e65b14d3807dbab9ac9eab59a7d",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.12 || ^2.0",
+                "ext-filter": "*",
+                "php": "^7.4| ^8.0"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "7.8.1",
+                "humbug/php-scoper": "^0.13.4",
+                "league/oauth2-client": "2.7.0",
+                "psr/container": "1.0.0",
+                "psr/log": "^1.0",
+                "symfony/config": "^3.4",
+                "symfony/dependency-injection": "^3.4",
+                "wpackagist-plugin/google-site-kit": "dev-trunk",
+                "yoast/wp-test-utils": "^1.2",
+                "yoast/yoastcs": "^3.2.0"
+            },
+            "suggest": {
+                "ext-bcmath": "For more accurate calculations",
+                "ext-dom": "Improves image sitemap",
+                "ext-libxml": "Improves image sitemap",
+                "ext-mbstring": "For cyrillic support"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-paths": {
+                    "vendor/{$name}": [
+                        "wpackagist-plugin/google-site-kit"
+                    ]
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "admin/",
+                    "inc/",
+                    "vendor_prefixed/",
+                    "src/",
+                    "lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Team Yoast",
+                    "email": "support@yoast.com",
+                    "homepage": "https://yoa.st/1--"
+                }
+            ],
+            "description": "Improve your WordPress SEO: Write better content and have a fully optimized WordPress site using the Yoast SEO plugin.",
+            "homepage": "https://yoa.st/1ui",
+            "keywords": [
+                "seo",
+                "wordpress"
+            ],
+            "support": {
+                "forum": "https://wordpress.org/support/plugin/wordpress-seo",
+                "issues": "https://github.com/Yoast/wordpress-seo/issues",
+                "security": "https://yoast.com/security-program/",
+                "source": "https://github.com/Yoast/wordpress-seo",
+                "wiki": "https://github.com/Yoast/wordpress-seo/wiki"
+            },
+            "time": "2025-09-23T08:31:37+00:00"
         }
     ],
     "packages-dev": [],

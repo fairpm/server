@@ -9,6 +9,8 @@ content/plugins/git-updater/
 content/plugins/query-monitor/
 content/plugins/wp-redis/
 content/plugins/aspireexplorer/
+content/plugins/public-post-preview/
+content/plugins/wordpress-seo/
 content/themes/fair-parent-theme/
 vendor/
 wordpress/
