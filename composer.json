@@ -13,6 +13,10 @@
 		{
 			"type": "vcs",
 			"url": "https://github.com/fairpm/fair-plugin"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/ocean90/public-post-preview"
 		}
 	],
 	"require": {
@@ -29,7 +33,8 @@
 		"mcaskill/composer-exclude-files": "^4.0",
 		"yoast/wordpress-seo": "*",
 		"aspirepress/aspireexplorer": "^0.1",
-		"fair/fair-plugin": "dev-main"
+		"fair/fair-plugin": "dev-main",
+		"ocean90/public-post-preview": "^3.0"
 	},
 	"extra": {
 		"installer-paths": {
