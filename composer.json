@@ -18,7 +18,8 @@
 		"afragen/git-updater": "^12.18",
 		"fairpm/fair-parent-theme": "~1.0.1",
 		"humanmade/aws-ses-wp-mail": "dev-master",
-		"mcaskill/composer-exclude-files": "^4.0"
+		"mcaskill/composer-exclude-files": "^4.0",
+		"yoast/wordpress-seo": "*"
 	},
 	"extra": {
 		"installer-paths": {
