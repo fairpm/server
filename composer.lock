@@ -203,16 +203,16 @@
         },
         {
             "name": "aspirepress/aspireexplorer",
-            "version": "0.1.1",
+            "version": "0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aspirepress/AspireExplorer.git",
-                "reference": "67f4be4d6643ce4e21598494fae4ca17e06ef760"
+                "reference": "ab14f4c44fd216b92210aaf4a2f53a3dfda48944"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aspirepress/AspireExplorer/zipball/67f4be4d6643ce4e21598494fae4ca17e06ef760",
-                "reference": "67f4be4d6643ce4e21598494fae4ca17e06ef760",
+                "url": "https://api.github.com/repos/aspirepress/AspireExplorer/zipball/ab14f4c44fd216b92210aaf4a2f53a3dfda48944",
+                "reference": "ab14f4c44fd216b92210aaf4a2f53a3dfda48944",
                 "shasum": ""
             },
             "require": {
@@ -244,10 +244,10 @@
             ],
             "description": "AspirePress Repository browser.",
             "support": {
-                "source": "https://github.com/aspirepress/AspireExplorer/tree/0.1.1",
+                "source": "https://github.com/aspirepress/AspireExplorer/tree/0.1.2",
                 "issues": "https://github.com/aspirepress/AspireExplorer/issues"
             },
-            "time": "2025-09-23T17:39:50+00:00"
+            "time": "2025-09-23T17:50:12+00:00"
         },
         {
             "name": "aws/aws-crt-php",
@@ -682,16 +682,16 @@
         },
         {
             "name": "fairpm/fair-parent-theme",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fairpm/fair-parent-theme.git",
-                "reference": "b8e69134804e46923a77b5fca2538f98883f26f8"
+                "reference": "3f309475dda73a586e5ea57fe4c6fc0f316874d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fairpm/fair-parent-theme/zipball/b8e69134804e46923a77b5fca2538f98883f26f8",
-                "reference": "b8e69134804e46923a77b5fca2538f98883f26f8",
+                "url": "https://api.github.com/repos/fairpm/fair-parent-theme/zipball/3f309475dda73a586e5ea57fe4c6fc0f316874d6",
+                "reference": "3f309475dda73a586e5ea57fe4c6fc0f316874d6",
                 "shasum": ""
             },
             "require": {
@@ -716,9 +716,9 @@
             ],
             "support": {
                 "issues": "https://github.com/fairpm/fair-parent-theme/issues",
-                "source": "https://github.com/fairpm/fair-parent-theme/tree/1.0.3"
+                "source": "https://github.com/fairpm/fair-parent-theme/tree/1.0.4"
             },
-            "time": "2025-08-28T23:23:20+00:00"
+            "time": "2025-09-23T17:37:35+00:00"
         },
         {
             "name": "freemius/wordpress-sdk",
