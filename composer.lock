@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c998ee3bf4433b6b4b70f9976de95853",
+    "content-hash": "39e78dd814b701f6e87d52c399e8d0d8",
     "packages": [
         {
             "name": "afragen/git-updater",
@@ -202,6 +202,54 @@
             "time": "2023-05-30T21:45:15+00:00"
         },
         {
+            "name": "aspirepress/aspireexplorer",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aspirepress/AspireExplorer.git",
+                "reference": "ab14f4c44fd216b92210aaf4a2f53a3dfda48944"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aspirepress/AspireExplorer/zipball/ab14f4c44fd216b92210aaf4a2f53a3dfda48944",
+                "reference": "ab14f4c44fd216b92210aaf4a2f53a3dfda48944",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "3.10.3",
+                "wp-coding-standards/wpcs": "~3.1.0"
+            },
+            "type": "wordpress-plugin",
+            "scripts": {
+                "format": [
+                    "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf --report=summary,source"
+                ],
+                "lint": [
+                    "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs --report=summary,source"
+                ],
+                "scss-watch": [
+                    "sass --watch assets/css/aspire-explorer.scss:assets/css/aspire-explorer.css"
+                ]
+            },
+            "license": [
+                "GPLv2"
+            ],
+            "authors": [
+                {
+                    "name": "AspirePress"
+                }
+            ],
+            "description": "AspirePress Repository browser.",
+            "support": {
+                "source": "https://github.com/aspirepress/AspireExplorer/tree/0.1.2",
+                "issues": "https://github.com/aspirepress/AspireExplorer/issues"
+            },
+            "time": "2025-09-23T17:50:12+00:00"
+        },
+        {
             "name": "aws/aws-crt-php",
             "version": "v1.2.7",
             "source": {
@@ -257,16 +305,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.18",
+            "version": "3.356.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "af1bf3dee5e66cf9b3d5d2507b08d9465636df29"
+                "reference": "e9253cf6073f06080a7458af54e18fc474f0c864"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/af1bf3dee5e66cf9b3d5d2507b08d9465636df29",
-                "reference": "af1bf3dee5e66cf9b3d5d2507b08d9465636df29",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e9253cf6073f06080a7458af54e18fc474f0c864",
+                "reference": "e9253cf6073f06080a7458af54e18fc474f0c864",
                 "shasum": ""
             },
             "require": {
@@ -348,9 +396,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.18"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.23"
             },
-            "time": "2025-09-15T18:21:28+00:00"
+            "time": "2025-09-22T18:10:31+00:00"
         },
         {
             "name": "composer/installers",
@@ -549,17 +597,101 @@
             "time": "2019-12-30T22:54:17+00:00"
         },
         {
-            "name": "fairpm/fair-parent-theme",
-            "version": "1.0.3",
+            "name": "fair/fair-plugin",
+            "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fairpm/fair-parent-theme.git",
-                "reference": "b8e69134804e46923a77b5fca2538f98883f26f8"
+                "url": "https://github.com/fairpm/fair-plugin.git",
+                "reference": "2246a7b6e9c10a2c0c1739509a6f42a409d7ec9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fairpm/fair-parent-theme/zipball/b8e69134804e46923a77b5fca2538f98883f26f8",
-                "reference": "b8e69134804e46923a77b5fca2538f98883f26f8",
+                "url": "https://api.github.com/repos/fairpm/fair-plugin/zipball/2246a7b6e9c10a2c0c1739509a6f42a409d7ec9b",
+                "reference": "2246a7b6e9c10a2c0c1739509a6f42a409d7ec9b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "humanmade/coding-standards": "^1.2",
+                "nimut/phpunit-merger": "*",
+                "yoast/phpunit-polyfills": "*"
+            },
+            "default-branch": true,
+            "type": "wordpress-plugin",
+            "scripts": {
+                "lint": [
+                    "@php ./vendor/bin/phpcs ."
+                ],
+                "format": [
+                    "@php ./vendor/bin/phpcbf ."
+                ],
+                "test": [
+                    "Composer\\Config::disableProcessTimeout",
+                    "@php ./vendor/phpunit/phpunit/phpunit"
+                ],
+                "test:multisite": [
+                    "Composer\\Config::disableProcessTimeout",
+                    "@php ./vendor/phpunit/phpunit/phpunit -c tests/phpunit/multisite.xml"
+                ],
+                "coverage:merge": [
+                    "Composer\\Config::disableProcessTimeout",
+                    "@putenv XDEBUG_MODE=coverage",
+                    "@php ./vendor/bin/phpunit-merger coverage tests/phpunit/coverage/php --html tests/phpunit/coverage/html/full tests/phpunit/cache/full-cache.xml"
+                ],
+                "coverage:single": [
+                    "Composer\\Config::disableProcessTimeout",
+                    "@putenv XDEBUG_MODE=off",
+                    "@putenv WP_TESTS_SKIP_INSTALL=0",
+                    "@test --filter prime_test_suite",
+                    "@putenv XDEBUG_MODE=coverage",
+                    "@putenv WP_TESTS_SKIP_INSTALL=1",
+                    "@test"
+                ],
+                "coverage:multisite": [
+                    "Composer\\Config::disableProcessTimeout",
+                    "@putenv XDEBUG_MODE=off",
+                    "@putenv WP_TESTS_SKIP_INSTALL=0",
+                    "@test:multisite --filter prime_test_suite",
+                    "@putenv XDEBUG_MODE=coverage",
+                    "@putenv WP_TESTS_SKIP_INSTALL=1",
+                    "@test:multisite"
+                ],
+                "coverage:full": [
+                    "Composer\\Config::disableProcessTimeout",
+                    "@coverage:single",
+                    "@coverage:multisite",
+                    "@coverage:merge"
+                ]
+            },
+            "license": [
+                "gpl-2.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "FAIR Contributors"
+                }
+            ],
+            "description": "Make your site more FAIR.",
+            "support": {
+                "source": "https://github.com/fairpm/fair-plugin/tree/main",
+                "issues": "https://github.com/fairpm/fair-plugin/issues"
+            },
+            "time": "2025-09-23T02:45:27+00:00"
+        },
+        {
+            "name": "fairpm/fair-parent-theme",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fairpm/fair-parent-theme.git",
+                "reference": "3f309475dda73a586e5ea57fe4c6fc0f316874d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fairpm/fair-parent-theme/zipball/3f309475dda73a586e5ea57fe4c6fc0f316874d6",
+                "reference": "3f309475dda73a586e5ea57fe4c6fc0f316874d6",
                 "shasum": ""
             },
             "require": {
@@ -584,9 +716,9 @@
             ],
             "support": {
                 "issues": "https://github.com/fairpm/fair-parent-theme/issues",
-                "source": "https://github.com/fairpm/fair-parent-theme/tree/1.0.3"
+                "source": "https://github.com/fairpm/fair-parent-theme/tree/1.0.4"
             },
-            "time": "2025-08-28T23:23:20+00:00"
+            "time": "2025-09-23T17:37:35+00:00"
         },
         {
             "name": "freemius/wordpress-sdk",
@@ -1480,6 +1612,48 @@
             "time": "2024-09-04T18:46:31+00:00"
         },
         {
+            "name": "ocean90/public-post-preview",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ocean90/public-post-preview.git",
+                "reference": "0330bcf750d9c2635b15a10b25c73c4ea7125c4e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ocean90/public-post-preview/zipball/0330bcf750d9c2635b15a10b25c73c4ea7125c4e",
+                "reference": "0330bcf750d9c2635b15a10b25c73c4ea7125c4e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Dominik Schilling",
+                    "homepage": "https://dominikschilling.de/"
+                }
+            ],
+            "description": "WordPress plugin to allow anonymous users to preview a post before it is published.",
+            "homepage": "https://wordpress.org/plugins/public-post-preview/",
+            "support": {
+                "issues": "https://github.com/ocean90/public-post-preview/issues",
+                "forum": "https://wordpress.org/support/plugin/public-post-preview",
+                "source": "https://github.com/ocean90/public-post-preview"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/ocean90"
+                }
+            ],
+            "time": "2024-12-23T09:49:09+00:00"
+        },
+        {
             "name": "pantheon-systems/wp-redis",
             "version": "1.4.6",
             "source": {
@@ -1946,12 +2120,93 @@
                 }
             ],
             "time": "2024-12-23T08:48:59+00:00"
+        },
+        {
+            "name": "yoast/wordpress-seo",
+            "version": "26.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Yoast-dist/wordpress-seo.git",
+                "reference": "d0f74cc5f7010e65b14d3807dbab9ac9eab59a7d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/d0f74cc5f7010e65b14d3807dbab9ac9eab59a7d",
+                "reference": "d0f74cc5f7010e65b14d3807dbab9ac9eab59a7d",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.12 || ^2.0",
+                "ext-filter": "*",
+                "php": "^7.4| ^8.0"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "7.8.1",
+                "humbug/php-scoper": "^0.13.4",
+                "league/oauth2-client": "2.7.0",
+                "psr/container": "1.0.0",
+                "psr/log": "^1.0",
+                "symfony/config": "^3.4",
+                "symfony/dependency-injection": "^3.4",
+                "wpackagist-plugin/google-site-kit": "dev-trunk",
+                "yoast/wp-test-utils": "^1.2",
+                "yoast/yoastcs": "^3.2.0"
+            },
+            "suggest": {
+                "ext-bcmath": "For more accurate calculations",
+                "ext-dom": "Improves image sitemap",
+                "ext-libxml": "Improves image sitemap",
+                "ext-mbstring": "For cyrillic support"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-paths": {
+                    "vendor/{$name}": [
+                        "wpackagist-plugin/google-site-kit"
+                    ]
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "admin/",
+                    "inc/",
+                    "vendor_prefixed/",
+                    "src/",
+                    "lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Team Yoast",
+                    "email": "support@yoast.com",
+                    "homepage": "https://yoa.st/1--"
+                }
+            ],
+            "description": "Improve your WordPress SEO: Write better content and have a fully optimized WordPress site using the Yoast SEO plugin.",
+            "homepage": "https://yoa.st/1ui",
+            "keywords": [
+                "seo",
+                "wordpress"
+            ],
+            "support": {
+                "forum": "https://wordpress.org/support/plugin/wordpress-seo",
+                "issues": "https://github.com/Yoast/wordpress-seo/issues",
+                "security": "https://yoast.com/security-program/",
+                "source": "https://github.com/Yoast/wordpress-seo",
+                "wiki": "https://github.com/Yoast/wordpress-seo/wiki"
+            },
+            "time": "2025-09-23T08:31:37+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "fair/fair-plugin": 20,
         "humanmade/aws-ses-wp-mail": 20
     },
     "prefer-stable": false,
