@@ -9,9 +9,9 @@
 		{
 			"type": "vcs",
 			"url": "https://github.com/fairpm/mini-fair-repo"
-    },
-    {
-      "type": "vcs",
+	    },
+	    {
+			"type": "vcs",
 			"url": "https://github.com/aspirepress/AspireExplorer"
 		},
 		{
