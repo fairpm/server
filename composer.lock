@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "39e78dd814b701f6e87d52c399e8d0d8",
+    "content-hash": "b097ed3067818baf849a42615dcbeb59",
     "packages": [
         {
             "name": "afragen/git-updater",
@@ -203,16 +203,16 @@
         },
         {
             "name": "aspirepress/aspireexplorer",
-            "version": "0.1.2",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aspirepress/AspireExplorer.git",
-                "reference": "ab14f4c44fd216b92210aaf4a2f53a3dfda48944"
+                "reference": "a0879d7ceb3bbb7bdccea5e26d15853de6c10240"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aspirepress/AspireExplorer/zipball/ab14f4c44fd216b92210aaf4a2f53a3dfda48944",
-                "reference": "ab14f4c44fd216b92210aaf4a2f53a3dfda48944",
+                "url": "https://api.github.com/repos/aspirepress/AspireExplorer/zipball/a0879d7ceb3bbb7bdccea5e26d15853de6c10240",
+                "reference": "a0879d7ceb3bbb7bdccea5e26d15853de6c10240",
                 "shasum": ""
             },
             "require": {
@@ -244,10 +244,10 @@
             ],
             "description": "AspirePress Repository browser.",
             "support": {
-                "source": "https://github.com/aspirepress/AspireExplorer/tree/0.1.2",
+                "source": "https://github.com/aspirepress/AspireExplorer/tree/0.2.0",
                 "issues": "https://github.com/aspirepress/AspireExplorer/issues"
             },
-            "time": "2025-09-23T17:50:12+00:00"
+            "time": "2025-10-10T09:01:17+00:00"
         },
         {
             "name": "aws/aws-crt-php",
