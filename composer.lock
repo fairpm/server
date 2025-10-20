@@ -775,16 +775,16 @@
         },
         {
             "name": "glotpress/glotpress-wp",
-            "version": "4.0.1",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GlotPress/GlotPress.git",
-                "reference": "84cfcee8fec4de400469c901185fe1d65f7af797"
+                "reference": "b080352aad54b6680024bb0ef9a96ff351c17e6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GlotPress/GlotPress/zipball/84cfcee8fec4de400469c901185fe1d65f7af797",
-                "reference": "84cfcee8fec4de400469c901185fe1d65f7af797",
+                "url": "https://api.github.com/repos/GlotPress/GlotPress/zipball/b080352aad54b6680024bb0ef9a96ff351c17e6e",
+                "reference": "b080352aad54b6680024bb0ef9a96ff351c17e6e",
                 "shasum": ""
             },
             "require": {
@@ -796,7 +796,7 @@
                 "phpcompatibility/phpcompatibility-wp": "^2.1",
                 "phpunit/phpunit": "^9.6.15",
                 "wp-coding-standards/wpcs": "^2.2",
-                "yoast/phpunit-polyfills": "^2.0"
+                "yoast/phpunit-polyfills": "^4.0"
             },
             "type": "wordpress-plugin",
             "scripts": {
@@ -829,7 +829,7 @@
                 "source": "https://github.com/GlotPress/GlotPress",
                 "docs": "https://glotpress.blog/the-manual/"
             },
-            "time": "2024-04-03T14:29:59+00:00"
+            "time": "2025-10-17T15:39:16+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
