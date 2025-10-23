@@ -32,7 +32,7 @@
 		"humanmade/aws-ses-wp-mail": "dev-master",
 		"mcaskill/composer-exclude-files": "^4.0",
 		"yoast/wordpress-seo": "*",
-		"aspirepress/aspireexplorer": "^0.1",
+		"aspirepress/aspireexplorer": "^0.2",
 		"fair/fair-plugin": "dev-main",
 		"ocean90/public-post-preview": "^3.0"
 	},
