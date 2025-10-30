@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "afragen/git-updater",
-            "version": "12.18.1",
+            "version": "12.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/git-updater.git",
-                "reference": "4fad507562869a80a6486883b87bae83922a6d41"
+                "reference": "03be66324342174b11238876956e859435c66a9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/git-updater/zipball/4fad507562869a80a6486883b87bae83922a6d41",
-                "reference": "4fad507562869a80a6486883b87bae83922a6d41",
+                "url": "https://api.github.com/repos/afragen/git-updater/zipball/03be66324342174b11238876956e859435c66a9d",
+                "reference": "03be66324342174b11238876956e859435c66a9d",
                 "shasum": ""
             },
             "require": {
@@ -28,9 +28,15 @@
                 "php": ">=8.0"
             },
             "require-dev": {
+                "mcaskill/composer-exclude-files": "^4.0",
                 "wp-coding-standards/wpcs": "^3.0.0"
             },
             "type": "wordpress-plugin",
+            "extra": {
+                "exclude-from-files": [
+                    "freemius/wordpress-sdk/start.php"
+                ]
+            },
             "autoload": {
                 "psr-4": {
                     "Fragen\\Git_Updater\\": "src/Git_Updater/"
@@ -65,7 +71,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-06T23:27:09+00:00"
+            "time": "2025-09-29T16:34:18+00:00"
         },
         {
             "name": "afragen/singleton",
