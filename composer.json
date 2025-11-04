@@ -1,24 +1,28 @@
 {
 	"name": "openwebff/server",
 	"type": "project",
-	"repositories": [
-		{
+	"repositories": {
+		"my-yoast": {
+			"type": "composer",
+			"url": "https://my.yoast.com/packages/"
+		},
+		"0": {
 			"type": "vcs",
 			"url": "https://github.com/GlotPress/GlotPress"
 		},
-		{
+		"1": {
 			"type": "vcs",
 			"url": "https://github.com/aspirepress/AspireExplorer"
 		},
-		{
+		"2": {
 			"type": "vcs",
 			"url": "https://github.com/fairpm/fair-plugin"
 		},
-		{
+		"3": {
 			"type": "vcs",
 			"url": "https://github.com/ocean90/public-post-preview"
 		}
-	],
+	},
 	"require": {
 		"composer/installers": "~2",
 		"humanmade/php-basic-auth": "^1.1",
@@ -34,13 +38,20 @@
 		"yoast/wordpress-seo": "*",
 		"aspirepress/aspireexplorer": "^0.2",
 		"fair/fair-plugin": "dev-main",
-		"ocean90/public-post-preview": "^3.0"
+		"ocean90/public-post-preview": "^3.0",
+		"yoast/wordpress-seo-premium": "^26.0"
 	},
 	"extra": {
 		"installer-paths": {
-			"content/plugins/{$name}/": ["type:wordpress-plugin"],
-			"content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-			"content/themes/{$name}/": ["type:wordpress-theme"]
+			"content/plugins/{$name}/": [
+				"type:wordpress-plugin"
+			],
+			"content/mu-plugins/{$name}/": [
+				"type:wordpress-muplugin"
+			],
+			"content/themes/{$name}/": [
+				"type:wordpress-theme"
+			]
 		},
 		"exclude-from-files": [
 			"freemius/wordpress-sdk/start.php"
