@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b097ed3067818baf849a42615dcbeb59",
+    "content-hash": "2d594a69208261c0558253b19cb445ad",
     "packages": [
         {
             "name": "afragen/git-updater",
@@ -1235,6 +1235,57 @@
                 "source": "https://github.com/humanmade/PHPBasicAuth/tree/1.1.1"
             },
             "time": "2020-01-10T21:55:59+00:00"
+        },
+        {
+            "name": "humanmade/s3-uploads",
+            "version": "3.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/humanmade/S3-Uploads.git",
+                "reference": "237aef88fa15c3c7ac43b48d8cdf6e0d500326d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/humanmade/S3-Uploads/zipball/237aef88fa15c3c7ac43b48d8cdf6e0d500326d4",
+                "reference": "237aef88fa15c3c7ac43b48d8cdf6e0d500326d4",
+                "shasum": ""
+            },
+            "require": {
+                "aws/aws-sdk-php": "~3.18",
+                "composer/installers": "~1.0 || ^2.0"
+            },
+            "require-dev": {
+                "humanmade/psalm-plugin-wordpress": "^1.0",
+                "pcov/clobber": "^2.0",
+                "phpunit/phpunit": "7.5",
+                "yoast/phpunit-polyfills": "^4.0"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "classmap": [
+                    "./inc"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Human Made",
+                    "homepage": "https://humanmade.com/"
+                }
+            ],
+            "description": "WordPress plugin to store uploads on S3",
+            "homepage": "https://github.com/humanmade/S3-Uploads",
+            "keywords": [
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/humanmade/s3-uploads/issues",
+                "source": "https://github.com/humanmade/s3-uploads"
+            },
+            "time": "2025-10-22T14:49:30+00:00"
         },
         {
             "name": "humanmade/wp-redis-predis-client",
