@@ -26,7 +26,7 @@
 		"johnbillion/query-monitor": "^3.17",
 		"johnpbloch/wordpress": "^6.8",
 		"pantheon-systems/wp-redis": "^1.4",
-		"humanmade/wp-redis-predis-client": "^0.1.2",
+		"humanmade/wp-redis-predis-client": "^0.2.0",
 		"afragen/git-updater": "^12.18",
 		"fairpm/fair-parent-theme": "~1.0.1",
 		"humanmade/aws-ses-wp-mail": "dev-master",
