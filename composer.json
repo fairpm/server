@@ -39,7 +39,8 @@
 		"aspirepress/aspireexplorer": "^0.2",
 		"fair/fair-plugin": "dev-main",
 		"ocean90/public-post-preview": "^3.0",
-		"yoast/wordpress-seo-premium": "^26.0"
+		"yoast/wordpress-seo-premium": "^26.0",
+		"humanmade/s3-uploads": "^3.0"
 	},
 	"extra": {
 		"installer-paths": {
