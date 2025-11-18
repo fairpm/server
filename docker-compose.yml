@@ -1,0 +1,77 @@
+#
+# Development environment for fair.pm website
+#
+
+services:
+    fairpm-wordpress:
+        build:
+            dockerfile: docker/fairpm-wordpress/Dockerfile
+            context: .
+            target: dev
+        restart: unless-stopped
+        environment:
+            DB_HOST: fairpm-db
+            DB_USER: wp
+            DB_PASSWORD: password
+            DB_NAME: wp
+            # bedrock wants these i think?
+            WORDPRESS_DB_HOST: fairpm-db
+            WORDPRESS_DB_USER: wp
+            WORDPRESS_DB_PASSWORD: password
+            WORDPRESS_DB_NAME: wp
+        volumes:
+            - .:/app
+        networks:
+            app-net: ~
+
+    fairpm-db:
+        image: mariadb@sha256:607835cd628b78e2876f6a586d0ec37b296c47683b31ef750002d3d17d3d8f7a # 12.0.2
+        restart: unless-stopped
+        environment:
+            MYSQL_DATABASE: wp
+            MYSQL_USER: wp
+            MYSQL_PASSWORD: password
+            MYSQL_ROOT_PASSWORD: password
+        volumes:
+            - fairpm-db-vol:/var/lib/mysql
+        networks:
+            app-net: ~
+
+#    redis:
+#        image: redis:latest
+#        networks:
+#            - app-net
+#
+#    mailpit:
+#        image: axllent/mailpit:v1.21.4
+#        restart: unless-stopped
+#        networks:
+#            app-net: ~
+#        environment:
+#            MP_MAX_MESSAGES: 500
+#            MP_SMTP_AUTH_ACCEPT_ANY: 1
+#            MP_SMTP_AUTH_ALLOW_INSECURE: 1
+
+#    prometheus:
+#        image: prom/prometheus:latest
+#        volumes:
+#            - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+#        networks:
+#            - app-net
+#
+#    grafana:
+#        image: grafana/grafana:latest
+#        networks:
+#            - app-net
+#        volumes:
+#            - ./docker/grafana:/etc/grafana/provisioning
+
+volumes:
+    fairpm-db-vol:
+
+networks:
+    app-net: ~
+    aspire-net:
+        external: true
+    traefik:
+        external: true

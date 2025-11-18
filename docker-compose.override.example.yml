@@ -1,0 +1,17 @@
+services:
+    fairpm-wordpress:
+        networks:
+            traefik: ~
+            app-net: ~
+
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.fairpm.rule=Host(`fairpm.aspiredev.org`)"
+            - "traefik.http.routers.fairpm-https.rule=Host(`fairpm.aspiredev.org`)"
+            - "traefik.http.routers.fairpm-https.tls=true"
+
+#        volumes:
+#            - ./docker/fairpm-wordpress/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
+
+#        ports:
+#            - "${LOCAL_DB_PORT:-8080}:80"
