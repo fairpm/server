@@ -2,10 +2,6 @@
 	"name": "openwebff/server",
 	"type": "project",
 	"repositories": {
-		"my-yoast": {
-			"type": "composer",
-			"url": "https://my.yoast.com/packages/"
-		},
 		"0": {
 			"type": "vcs",
 			"url": "https://github.com/GlotPress/GlotPress"
@@ -21,8 +17,12 @@
 		"3": {
 			"type": "vcs",
 			"url": "https://github.com/ocean90/public-post-preview"
-		}
-	},
+		},
+        "my-yoast": {
+            "type": "composer",
+            "url": "https://my.yoast.com/packages/"
+        }
+    },
 	"require": {
 		"composer/installers": "~2",
 		"humanmade/php-basic-auth": "^1.1",
@@ -39,9 +39,11 @@
 		"aspirepress/aspireexplorer": "^0.2",
 		"fair/fair-plugin": "dev-main",
 		"ocean90/public-post-preview": "^3.0",
-		"yoast/wordpress-seo-premium": "^26.0",
 		"humanmade/s3-uploads": "^3.0"
 	},
+    "suggest": {
+        "yoast/wordpress-seo-premium": "^26.0"
+    },
 	"extra": {
 		"installer-paths": {
 			"content/plugins/{$name}/": [
