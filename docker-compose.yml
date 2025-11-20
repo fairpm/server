@@ -9,20 +9,15 @@ services:
             context: .
             target: dev
         restart: unless-stopped
-        environment:
-            DB_HOST: fairpm-db
-            DB_USER: wp
-            DB_PASSWORD: password
-            DB_NAME: wp
-            # bedrock wants these i think?
-            WORDPRESS_DB_HOST: fairpm-db
-            WORDPRESS_DB_USER: wp
-            WORDPRESS_DB_PASSWORD: password
-            WORDPRESS_DB_NAME: wp
         volumes:
             - .:/app
         networks:
             app-net: ~
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.fairpm.rule=Host(`fairpm.aspiredev.org`)"
+            - "traefik.http.routers.fairpm-https.rule=Host(`fairpm.aspiredev.org`)"
+            - "traefik.http.routers.fairpm-https.tls=true"
 
     fairpm-db:
         image: mariadb@sha256:607835cd628b78e2876f6a586d0ec37b296c47683b31ef750002d3d17d3d8f7a # 12.0.2

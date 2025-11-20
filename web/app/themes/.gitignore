@@ -1,0 +1,5 @@
+*
+!.gitignore
+!/bedrock-disallow-indexing/
+!bedrock-autoloader.php
+

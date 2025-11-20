@@ -4,19 +4,23 @@
 !.distignore
 !.dockerignore
 !.editorconfig
+!.env.example
 !.gitattributes
 !.gitignore
 
 #### ignore these patterns
-.env.*
+*.bak
+*.log
+*.tmp
+*.local
+*.local.*
 *.secret
 *.secret.*
 
 #### ignore these specific directories
-gp-data/
-vendor/
-wordpress/
+/gp-data/
+/vendor/
 
 #### ignore these specific files
+auth.json
 docker-compose.override.yml
-
