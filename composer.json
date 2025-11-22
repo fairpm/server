@@ -64,7 +64,6 @@
         "ocean90/public-post-preview": "^3.0",
         "pantheon-systems/wp-redis": "^1.4",
         "roots/bedrock-autoloader": "^1.0",
-        "roots/bedrock-disallow-indexing": "^2.0",
         "roots/wordpress": "^6.8",
         "roots/wp-config": "^1.0",
         "vlucas/phpdotenv": "^5.6",
