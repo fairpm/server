@@ -49,6 +49,8 @@
     ],
     "require": {
         "php": ">=8.4",
+        "ext-apcu": "*",
+        "ext-sqlite3": "*",
         "afragen/git-updater": "^12.18",
         "aspirepress/aspireexplorer": "^0.2",
         "composer/installers": "~2",

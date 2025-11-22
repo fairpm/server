@@ -6,7 +6,7 @@ FROM dunglas/frankenphp:${FRANKENPHP_TAG} AS base
 
 COPY --from=composer_img /usr/bin/composer /usr/bin/composer
 
-RUN install-php-extensions gd intl mysqli opcache
+RUN install-php-extensions apcu gd intl mysqli opcache sqlite3
 
 RUN groupadd --gid 100000 app \
     && useradd --uid 100000 --gid 100000 --create-home --shell /bin/bash app \
