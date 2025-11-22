@@ -143,6 +143,14 @@ Config::define('SCRIPT_DEBUG', false);
 ini_set('display_errors', '0');
 
 /**
+ * Settings specific to fairpm/server
+ */
+// all sites are multisite by default.  note that MULTISITE must not be true during install.
+if (!defined('WP_INITIAL_INSTALL') || !WP_INITIAL_INSTALL) {
+    Config::define('MULTISITE', true);
+}
+
+/**
  * Allow WordPress to detect HTTPS when used behind a reverse proxy or a load balancer
  * See https://codex.wordpress.org/Function_Reference/is_ssl#Notes
  */
