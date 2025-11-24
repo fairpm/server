@@ -13,16 +13,16 @@
 		"1": {
 			"type": "vcs",
 			"url": "https://github.com/fairpm/mini-fair-repo"
-	    },
-	    {
-			"type": "vcs",
-			"url": "https://github.com/aspirepress/AspireExplorer"
 		},
 		"2": {
 			"type": "vcs",
-			"url": "https://github.com/fairpm/fair-plugin"
+			"url": "https://github.com/aspirepress/AspireExplorer"
 		},
 		"3": {
+			"type": "vcs",
+			"url": "https://github.com/fairpm/fair-plugin"
+		},
+		"4": {
 			"type": "vcs",
 			"url": "https://github.com/ocean90/public-post-preview"
 		}
@@ -37,6 +37,7 @@
 		"humanmade/wp-redis-predis-client": "^0.1.2",
 		"afragen/git-updater": "^12.18",
 		"fairpm/fair-parent-theme": "~1.0.1",
+		"fairpm/mini-fair-repo": "dev-main",
 		"humanmade/aws-ses-wp-mail": "dev-master",
 		"mcaskill/composer-exclude-files": "^4.0",
 		"yoast/wordpress-seo": "*",
