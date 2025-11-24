@@ -12,7 +12,7 @@
 		},
 		"1": {
 			"type": "vcs",
-			"url": "https://github.com/fairpm/mini-fair-repo"
+			"url": "https://github.com/fairpm/fair-beacon"
 		},
 		"2": {
 			"type": "vcs",
@@ -37,7 +37,7 @@
 		"humanmade/wp-redis-predis-client": "^0.1.2",
 		"afragen/git-updater": "^12.18",
 		"fairpm/fair-parent-theme": "~1.0.1",
-		"fairpm/mini-fair-repo": "dev-main",
+		"fairpm/fair-beacon": "dev-main",
 		"humanmade/aws-ses-wp-mail": "dev-master",
 		"mcaskill/composer-exclude-files": "^4.0",
 		"yoast/wordpress-seo": "*",
