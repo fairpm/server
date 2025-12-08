@@ -30,6 +30,12 @@ $root_dir = dirname(__DIR__);
  */
 $webroot_dir = $root_dir . '/web';
 
+// fair-site override: copy .env.example to .env if necessary
+// will not happen in production, since .env files are not copied into the image
+if (!file_exists($root_dir . '/.env') && file_exists($root_dir . '/.env.example')) {
+    copy($root_dir . '/.env.example', $root_dir . '/.env');
+}
+
 /**
  * Use Dotenv to set required environment variables and load .env file in root
  * .env.local will override .env if it exists
