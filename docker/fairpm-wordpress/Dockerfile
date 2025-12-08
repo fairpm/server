@@ -1,12 +1,15 @@
 ARG FRANKENPHP_TAG="1.5.0-php8.4.7-bookworm@sha256:661bbd11ce8b9bbf51ba6e13d1cb7ea533466984142d936411df325922c4cdb1"
 ARG COMPOSER_TAG="2.9.1@sha256:7384cf9fa70b710af02c9f40bec6e44472e07138efa5ab3428a058087c0d2724"
+ARG WP_CLI_TAG="cli-2.12.0-php8.4@sha256:a5c7dabbf09133101c69cc43f4b972783f96f04b2f9e71c5a516c569e22e28fc"
 
 FROM composer:${COMPOSER_TAG} AS composer_img
+FROM wordpress:${WP_CLI_TAG} AS wpcli_img
 FROM dunglas/frankenphp:${FRANKENPHP_TAG} AS base
 
 COPY --from=composer_img /usr/bin/composer /usr/bin/composer
+COPY --from=wpcli_img /usr/local/bin/wp /usr/local/bin/wp
 
-RUN install-php-extensions apcu gd intl mysqli opcache sqlite3
+RUN install-php-extensions apcu gd gmp intl mysqli opcache sqlite3
 
 RUN groupadd --gid 100000 app \
     && useradd --uid 100000 --gid 100000 --create-home --shell /bin/bash app \
