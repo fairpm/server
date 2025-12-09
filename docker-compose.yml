@@ -15,8 +15,8 @@ services:
             app-net: ~
         labels:
             - "traefik.enable=true"
-            - "traefik.http.routers.fairpm.rule=Host(`fairpm.aspiredev.org`)"
-            - "traefik.http.routers.fairpm-https.rule=Host(`fairpm.aspiredev.org`)"
+            - "traefik.http.routers.fairpm.rule=Host(`fairpm.local.dev.fair.pm`)"
+            - "traefik.http.routers.fairpm-https.rule=Host(`fairpm.local.dev.fair.pm`)"
             - "traefik.http.routers.fairpm-https.tls=true"
 
     fairpm-db:
