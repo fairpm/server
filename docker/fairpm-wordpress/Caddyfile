@@ -16,6 +16,12 @@
     # Handle WordPress pretty permalinks
     try_files {path} {path}/ /index.php?{query}
 
+    # Roots Bedrock uses a /wp/ prefix that many things do not respect, so rewrite /wp-admin and /wp-includes
+    rewrite /wp-admin/* /wp{uri}
+    rewrite /wp-includes/* /wp{uri}
+    rewrite /wp-*.php /wp{uri}
+    rewrite /xmlrpc.php /wp{uri}
+
     # Serve static files directly
     file_server
 
