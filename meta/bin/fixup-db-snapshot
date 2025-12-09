@@ -1,0 +1,63 @@
+#!/bin/bash
+
+here=$(dirname "$0")
+source "$here"/prelude.bash
+
+wp db check
+
+#### URLs
+
+# Global replacements
+wp db query "update wp_site set domain = concat('site.local.dev.', domain) where domain like '%fair.pm' and domain not like 'site.local.%'"
+wp db query "update wp_blogs set domain = concat('site.local.dev.', domain) where domain like '%fair.pm' and domain not like 'site.local.%'"
+
+wp search-replace '//fair.pm' '//site.local.dev.fair.pm'
+wp search-replace '//api.fair.pm' '//api.site.local.dev.fair.pm'
+wp search-replace '//translate.fair.pm' '//translate.site.local.dev.fair.pm'
+wp search-replace '//chat.fair.pm' '//chat.site.local.dev.fair.pm'
+wp search-replace '//beacon.fair.pm' '//beacon.site.local.dev.fair.pm'
+
+# Fix Site URLS
+wp db query "update wp_options set option_value = 'https://site.local.dev.fair.pm' where option_name = 'home'"
+wp db query "update wp_options set option_value = 'https://site.local.dev.fair.pm/wp' where option_name = 'siteurl'"
+
+wp db query "update wp_2_options set option_value = 'https://api.site.local.dev.fair.pm' where option_name = 'home'"
+wp db query "update wp_2_options set option_value = 'https://api.site.local.dev.fair.pm/wp' where option_name = 'siteurl'"
+
+wp db query "update wp_3_options set option_value = 'https://translate.site.local.dev.fair.pm' where option_name = 'home'"
+wp db query "update wp_3_options set option_value = 'https://translate.site.local.dev.fair.pm/wp' where option_name = 'siteurl'"
+
+wp db query "update wp_4_options set option_value = 'https://chat.site.local.dev.fair.pm' where option_name = 'home'"
+wp db query "update wp_4_options set option_value = 'https://chat.site.local.dev.fair.pm/wp' where option_name = 'siteurl'"
+
+wp db query "update wp_5_options set option_value = 'https://beacon.site.local.dev.fair.pm' where option_name = 'home'"
+wp db query "update wp_5_options set option_value = 'https://beacon.site.local.dev.fair.pm/wp' where option_name = 'siteurl'"
+
+#### Users
+
+# Set all user passwords to 'password'
+wp user update 1 --user_pass=password --skip-email
+wp db query "update wp_users set user_pass = (select user_pass from wp_users where id = 1)"
+
+# Redact user data
+wp db query "update wp_users set user_login = md5(user_login), user_nicename = md5(user_login), user_email = concat(md5(user_login), '@redacted.example.com'), display_name = md5(user_login), user_url = '', user_activation_key = ''"
+wp db query "update wp_usermeta set meta_value = md5(meta_value) where meta_key in ('nickname', 'first_name', 'last_name')"
+wp db query "update wp_usermeta set meta_value = 'site.local.dev.fair.pm' where meta_key = 'source_domain'"
+wp db query "update wp_signups set user_login = md5(user_login), user_email = concat(md5(user_login), '@redacted.example.com')"
+
+# Rename user 1 to admin
+wp db query "update wp_users set user_login = 'admin', user_nicename = 'admin', display_name = 'admin', user_email = 'admin@example.com' where id = 1"
+wp db query "update wp_usermeta set meta_value = 'admin' where meta_key = 'nickname' and user_id = 1"
+wp db query "update wp_usermeta set meta_value = 'admin' where meta_key = 'first_name' and user_id = 1"
+wp db query "update wp_usermeta set meta_value = 'user' where meta_key = 'last_name' and user_id = 1"
+
+# Misc
+wp db query "update wp_sitemeta set meta_value = 'admin@example.com' where meta_key = 'admin_email'"
+wp db query "update wp_options set option_value = 'admin@example.com' where option_name = 'admin_email'"
+wp db query "update wp_2_options set option_value = 'admin@example.com' where option_name = 'admin_email'"
+wp db query "update wp_3_options set option_value = 'admin@example.com' where option_name = 'admin_email'"
+wp db query "update wp_4_options set option_value = 'admin@example.com' where option_name = 'admin_email'"
+wp db query "update wp_5_options set option_value = 'admin@example.com' where option_name = 'admin_email'"
+wp db query "truncate wp_registration_log"
+
+# and that's it.  any personal information in posts or comments will remain in place
