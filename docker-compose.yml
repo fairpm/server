@@ -15,8 +15,8 @@ services:
             app-net: ~
         labels:
             - "traefik.enable=true"
-            - "traefik.http.routers.fairpm.rule=Host(`fairpm.local.dev.fair.pm`)"
-            - "traefik.http.routers.fairpm-https.rule=Host(`fairpm.local.dev.fair.pm`)"
+            - "traefik.http.routers.fairpm.rule=Host(`site.local.dev.fair.pm`)"
+            - "traefik.http.routers.fairpm-https.rule=Host(`site.local.dev.fair.pm`)"
             - "traefik.http.routers.fairpm-https.tls=true"
 
     fairpm-db:
