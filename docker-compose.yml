@@ -11,6 +11,8 @@ services:
         restart: unless-stopped
         volumes:
             - .:/app
+            - ./docker/fairpm-wordpress/php.local.ini:/usr/local/etc/php/conf.d/php.local.ini
+            - ./docker/fairpm-wordpress/Caddyfile:/etc/caddy/Caddyfile
         networks:
             app-net: ~
         labels:
@@ -18,6 +20,17 @@ services:
             - "traefik.http.routers.fairpm.rule=Host(`site.local.dev.fair.pm`)"
             - "traefik.http.routers.fairpm-https.rule=Host(`site.local.dev.fair.pm`)"
             - "traefik.http.routers.fairpm-https.tls=true"
+        healthcheck:
+            # healthchecks on the app container are generally useless for dev environments:
+            # the last thing we want is for traefik to drop the backend because of 500 errors -- we want to see those!
+            disable: true
+            # not using curl -f for dev, since a 500 error keeps the container from appearing in traefik
+            test: ["CMD", "curl", "http://localhost/"]
+            timeout: 2s
+            retries: 10
+            start_period: 10s
+            start_interval: 1s
+
 
     fairpm-db:
         image: mariadb@sha256:607835cd628b78e2876f6a586d0ec37b296c47683b31ef750002d3d17d3d8f7a # 12.0.2
@@ -31,6 +44,13 @@ services:
             - fairpm-db-vol:/var/lib/mysql
         networks:
             app-net: ~
+        healthcheck:
+            test: [ "CMD", "mariadb-admin", "ping", "-h", "localhost", "-u", "root", "-ppassword" ]
+            timeout: 2s
+            retries: 10
+            start_period: 10s
+            start_interval: 1s
+
 
 #    redis:
 #        image: redis:latest
