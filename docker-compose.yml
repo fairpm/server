@@ -23,7 +23,7 @@ services:
         image: mariadb@sha256:607835cd628b78e2876f6a586d0ec37b296c47683b31ef750002d3d17d3d8f7a # 12.0.2
         restart: unless-stopped
         environment:
-            MYSQL_DATABASE: wp
+            MYSQL_DATABASE: wordpress
             MYSQL_USER: wp
             MYSQL_PASSWORD: password
             MYSQL_ROOT_PASSWORD: password
