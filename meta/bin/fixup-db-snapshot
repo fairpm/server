@@ -53,6 +53,7 @@ wp db query "update wp_usermeta set meta_value = 'user' where meta_key = 'last_n
 
 # Misc
 wp db query "update wp_sitemeta set meta_value = 'admin@example.com' where meta_key = 'admin_email'"
+wp db query "update wp_sitemeta set meta_value = 'a:1:{i:0;s:5:\"admin\";}' where meta_key = 'site_admins'"
 wp db query "update wp_options set option_value = 'admin@example.com' where option_name = 'admin_email'"
 wp db query "update wp_2_options set option_value = 'admin@example.com' where option_name = 'admin_email'"
 wp db query "update wp_3_options set option_value = 'admin@example.com' where option_name = 'admin_email'"
