@@ -17,8 +17,8 @@ services:
             app-net: ~
         labels:
             - "traefik.enable=true"
-            - "traefik.http.routers.fairpm.rule=Host(`site.local.dev.fair.pm`)"
-            - "traefik.http.routers.fairpm-https.rule=Host(`site.local.dev.fair.pm`)"
+            - "traefik.http.routers.fairpm.rule=Host(`site.local.fair.pm`)"
+            - "traefik.http.routers.fairpm-https.rule=Host(`site.local.fair.pm`)"
             - "traefik.http.routers.fairpm-https.tls=true"
         healthcheck:
             # healthchecks on the app container are generally useless for dev environments:

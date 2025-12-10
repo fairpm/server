@@ -13,7 +13,7 @@ bin/up
 
 The fair.pm server is built on the [Roots Bedrock](https://roots.io/bedrock/) distribution of WordPress, so all plugins and themes are managed via Composer.
 
-Local development is primarily based on Docker containers, using a FrankenPHP web server container for WordPress, with other support containers defined in `docker-compose.yml`.  The default configuration is to expose the server through Traefik at https://site.local.dev.fair.pm (which always resolves to localhost), but local ports can be used instead by renaming the `docker-compose.override.example.yml` file to `docker-compose.override.yml` and editing it to your needs.
+Local development is primarily based on Docker containers, using a FrankenPHP web server container for WordPress, with other support containers defined in `docker-compose.yml`.  The default configuration is to expose the server through Traefik at https://site.local.fair.pm (which always resolves to localhost), but local ports can be used instead by renaming the `docker-compose.override.example.yml` file to `docker-compose.override.yml` and editing it to your needs.
 
 ## Deployment
 

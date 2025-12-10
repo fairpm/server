@@ -11,27 +11,27 @@ wp db check
 wp db query "update wp_site set domain = concat('site.local.dev.', domain) where domain like '%fair.pm' and domain not like 'site.local.%'"
 wp db query "update wp_blogs set domain = concat('site.local.dev.', domain) where domain like '%fair.pm' and domain not like 'site.local.%'"
 
-wp search-replace '//fair.pm' '//site.local.dev.fair.pm'
-wp search-replace '//api.fair.pm' '//api.site.local.dev.fair.pm'
-wp search-replace '//translate.fair.pm' '//translate.site.local.dev.fair.pm'
-wp search-replace '//chat.fair.pm' '//chat.site.local.dev.fair.pm'
-wp search-replace '//beacon.fair.pm' '//beacon.site.local.dev.fair.pm'
+wp search-replace '//fair.pm' '//site.local.fair.pm'
+wp search-replace '//api.fair.pm' '//api.site.local.fair.pm'
+wp search-replace '//translate.fair.pm' '//translate.site.local.fair.pm'
+wp search-replace '//chat.fair.pm' '//chat.site.local.fair.pm'
+wp search-replace '//beacon.fair.pm' '//beacon.site.local.fair.pm'
 
 # Fix Site URLS
-wp db query "update wp_options set option_value = 'https://site.local.dev.fair.pm' where option_name = 'home'"
-wp db query "update wp_options set option_value = 'https://site.local.dev.fair.pm/wp' where option_name = 'siteurl'"
+wp db query "update wp_options set option_value = 'https://site.local.fair.pm' where option_name = 'home'"
+wp db query "update wp_options set option_value = 'https://site.local.fair.pm/wp' where option_name = 'siteurl'"
 
-wp db query "update wp_2_options set option_value = 'https://api.site.local.dev.fair.pm' where option_name = 'home'"
-wp db query "update wp_2_options set option_value = 'https://api.site.local.dev.fair.pm/wp' where option_name = 'siteurl'"
+wp db query "update wp_2_options set option_value = 'https://api.site.local.fair.pm' where option_name = 'home'"
+wp db query "update wp_2_options set option_value = 'https://api.site.local.fair.pm/wp' where option_name = 'siteurl'"
 
-wp db query "update wp_3_options set option_value = 'https://translate.site.local.dev.fair.pm' where option_name = 'home'"
-wp db query "update wp_3_options set option_value = 'https://translate.site.local.dev.fair.pm/wp' where option_name = 'siteurl'"
+wp db query "update wp_3_options set option_value = 'https://translate.site.local.fair.pm' where option_name = 'home'"
+wp db query "update wp_3_options set option_value = 'https://translate.site.local.fair.pm/wp' where option_name = 'siteurl'"
 
-wp db query "update wp_4_options set option_value = 'https://chat.site.local.dev.fair.pm' where option_name = 'home'"
-wp db query "update wp_4_options set option_value = 'https://chat.site.local.dev.fair.pm/wp' where option_name = 'siteurl'"
+wp db query "update wp_4_options set option_value = 'https://chat.site.local.fair.pm' where option_name = 'home'"
+wp db query "update wp_4_options set option_value = 'https://chat.site.local.fair.pm/wp' where option_name = 'siteurl'"
 
-wp db query "update wp_5_options set option_value = 'https://beacon.site.local.dev.fair.pm' where option_name = 'home'"
-wp db query "update wp_5_options set option_value = 'https://beacon.site.local.dev.fair.pm/wp' where option_name = 'siteurl'"
+wp db query "update wp_5_options set option_value = 'https://beacon.site.local.fair.pm' where option_name = 'home'"
+wp db query "update wp_5_options set option_value = 'https://beacon.site.local.fair.pm/wp' where option_name = 'siteurl'"
 
 #### Users
 
@@ -42,7 +42,7 @@ wp db query "update wp_users set user_pass = (select user_pass from wp_users whe
 # Redact user data
 wp db query "update wp_users set user_login = md5(user_login), user_nicename = md5(user_login), user_email = concat(md5(user_login), '@redacted.example.com'), display_name = md5(user_login), user_url = '', user_activation_key = ''"
 wp db query "update wp_usermeta set meta_value = md5(meta_value) where meta_key in ('nickname', 'first_name', 'last_name')"
-wp db query "update wp_usermeta set meta_value = 'site.local.dev.fair.pm' where meta_key = 'source_domain'"
+wp db query "update wp_usermeta set meta_value = 'site.local.fair.pm' where meta_key = 'source_domain'"
 wp db query "update wp_signups set user_login = md5(user_login), user_email = concat(md5(user_login), '@redacted.example.com')"
 
 # Rename user 1 to admin

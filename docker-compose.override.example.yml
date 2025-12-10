@@ -6,8 +6,8 @@ services:
 
         labels:
             - "traefik.enable=true"
-            - "traefik.http.routers.fairpm.rule=Host(`site.local.dev.fair.pm`)"
-            - "traefik.http.routers.fairpm-https.rule=Host(`site.local.dev.fair.pm`)"
+            - "traefik.http.routers.fairpm.rule=Host(`site.local.fair.pm`)"
+            - "traefik.http.routers.fairpm-https.rule=Host(`site.local.fair.pm`)"
             - "traefik.http.routers.fairpm-https.tls=true"
 
 #        volumes:
