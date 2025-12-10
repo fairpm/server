@@ -34,9 +34,9 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/fairpm/mini-fair-repo",
+            "url": "https://github.com/fairpm/fair-beacon",
             "only": [
-                "fairpm/mini-fair-repo"
+                "fairpm/fair-beacon"
             ]
         },
         {
@@ -58,27 +58,27 @@
         "php": ">=8.4",
         "ext-apcu": "*",
         "ext-sqlite3": "*",
-        "afragen/git-updater": "^12.19",
+        "afragen/git-updater": "^12.20.2",
         "aspirepress/aspireexplorer": "^0.2",
         "composer/installers": "~2",
         "fairpm/fair-parent-theme": "~1.0.5",
         "fairpm/fair-plugin": "dev-main",
-        "fairpm/mini-fair-repo": "dev-main",
+        "fairpm/fair-beacon": "dev-main",
         "glotpress/glotpress-wp": "^4.0.3",
         "humanmade/aws-ses-wp-mail": "dev-master",
         "humanmade/php-basic-auth": "^1.1.1",
         "humanmade/s3-uploads": "^3.0.11",
         "humanmade/wp-redis-predis-client": "^0.1.2",
-        "johnbillion/query-monitor": "^3.20",
+        "johnbillion/query-monitor": "^3.20.1",
         "mcaskill/composer-exclude-files": "^4.0.1",
         "ocean90/public-post-preview": "^3.0.1",
-        "oscarotero/env": "^2.1",
+        "oscarotero/env": "^2.1.1",
         "pantheon-systems/wp-redis": "^1.4.6",
         "roots/bedrock-autoloader": "^1.0.4",
-        "roots/wordpress": "^6.8.3",
+        "roots/wordpress": "^6.9.0",
         "roots/wp-config": "^1.0",
         "vlucas/phpdotenv": "^5.6.2",
-        "wpackagist-theme/twentytwentyfive": "^1.3",
+        "wpackagist-theme/twentytwentyfive": "^1.4",
         "yoast/wordpress-seo": ">=26.4"
     },
     "require-dev": {
