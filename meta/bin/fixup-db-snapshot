@@ -8,14 +8,14 @@ wp db check
 #### URLs
 
 # Global replacements
-wp db query "update wp_site set domain = concat('site.local.dev.', domain) where domain like '%fair.pm' and domain not like 'site.local.%'"
-wp db query "update wp_blogs set domain = concat('site.local.dev.', domain) where domain like '%fair.pm' and domain not like 'site.local.%'"
-
 wp search-replace '//fair.pm' '//local.fair.pm'
 wp search-replace '//api.fair.pm' '//api.local.fair.pm'
 wp search-replace '//translate.fair.pm' '//translate.local.fair.pm'
 wp search-replace '//chat.fair.pm' '//chat.local.fair.pm'
 wp search-replace '//beacon.fair.pm' '//beacon.local.fair.pm'
+
+wp db query "update wp_site set domain = 'local.fair.pm'"
+wp db query "update wp_blogs set domain = 'local.fair.pm'"
 
 # Fix Site URLS
 wp db query "update wp_options set option_value = 'https://local.fair.pm' where option_name = 'home'"
