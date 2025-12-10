@@ -1,48 +1,48 @@
 {
-    # Global options
-    auto_https off
-    admin off
-    frankenphp
+	# Global options
+	auto_https off
+	admin off
+	frankenphp
 }
 
 :80 {
-    root * /app/web
+	root * /app/web
 
-    # Enable PHP processing
-    php_server {
-        resolve_root_symlink
-    }
+	# Enable PHP processing
+	php_server {
+		resolve_root_symlink
+	}
 
-    # Handle WordPress pretty permalinks
-    try_files {path} {path}/ /index.php?{query}
+	# Handle WordPress pretty permalinks
+	try_files {path} {path}/ /index.php?{query}
 
-    # Roots Bedrock uses a /wp/ prefix that many things do not respect, so rewrite /wp-admin and /wp-includes
-    rewrite /wp-admin/* /wp{uri}
-    rewrite /wp-includes/* /wp{uri}
-    rewrite /wp-*.php /wp{uri}
-    rewrite /xmlrpc.php /wp{uri}
+	# Roots Bedrock uses a /wp/ prefix that many things do not respect, so rewrite /wp-admin and /wp-includes
+	rewrite /wp-admin/* /wp{uri}
+	rewrite /wp-includes/* /wp{uri}
+	rewrite /wp-*.php /wp{uri}
+	rewrite /xmlrpc.php /wp{uri}
 
-    # Serve static files directly
-    file_server
+	# Serve static files directly
+	file_server
 
-    # Enable compression
-    encode zstd br gzip
+	# Enable compression
+	encode zstd br gzip
 
-    # Enable logging
-    log {
-        output stderr
-        format json
-    }
+	# Enable logging
+	log {
+		output stderr
+		format json
+	}
 
-    # Add cache headers for static assets
-    @static {
-        path *.css *.js *.ico *.gif *.jpg *.jpeg *.png *.svg *.woff *.woff2
-    }
-    header @static Cache-Control "public, max-age=31536000"
+	# Add cache headers for static assets
+	@static {
+		path *.css *.js *.ico *.gif *.jpg *.jpeg *.png *.svg *.woff *.woff2
+	}
+	header @static Cache-Control "public, max-age=31536000"
 
-    # Disable WordPress admin-ajax.php caching
-    @adminAjax {
-        path /wp-admin/admin-ajax.php
-    }
-    header @adminAjax Cache-Control "no-cache, no-store, must-revalidate"
+	# Disable WordPress admin-ajax.php caching
+	@adminAjax {
+		path /wp-admin/admin-ajax.php
+	}
+	header @adminAjax Cache-Control "no-cache, no-store, must-revalidate"
 }
