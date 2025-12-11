@@ -61,9 +61,9 @@
         "afragen/git-updater": "^12.20.2",
         "aspirepress/aspireexplorer": "^0.2",
         "composer/installers": "~2",
+        "fairpm/fair-beacon": "dev-main",
         "fairpm/fair-parent-theme": "~1.0.5",
         "fairpm/fair-plugin": "dev-main",
-        "fairpm/fair-beacon": "dev-main",
         "glotpress/glotpress-wp": "^4.0.3",
         "humanmade/aws-ses-wp-mail": "dev-master",
         "humanmade/php-basic-auth": "^1.1.1",
@@ -78,6 +78,7 @@
         "roots/wordpress": "^6.9.0",
         "roots/wp-config": "^1.0",
         "vlucas/phpdotenv": "^5.6.2",
+        "wpackagist-plugin/fastly": "^1.2",
         "wpackagist-theme/twentytwentyfive": "^1.4",
         "yoast/wordpress-seo": ">=26.4"
     },

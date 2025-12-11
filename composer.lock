@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d27bb23747af57a414f961dee2551cb0",
+    "content-hash": "1c53d505039a1c031cd7abfcd71e120e",
     "packages": [
         {
             "name": "afragen/git-updater",
@@ -3180,6 +3180,24 @@
                 }
             ],
             "time": "2025-04-30T23:37:27+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/fastly",
+            "version": "1.2.29",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/fastly/",
+                "reference": "tags/1.2.29"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/fastly.1.2.29.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/fastly/"
         },
         {
             "name": "wpackagist-theme/twentytwentyfive",
