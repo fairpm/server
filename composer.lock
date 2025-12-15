@@ -1820,16 +1820,16 @@
         },
         {
             "name": "pantheon-systems/wp-redis",
-            "version": "1.4.6",
+            "version": "1.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pantheon-systems/wp-redis.git",
-                "reference": "bf76694482b2ef45f92bf4df136bf649ec3a5715"
+                "reference": "cb76681a17de4ca67f801b8ad1e2de5be8a0c1cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pantheon-systems/wp-redis/zipball/bf76694482b2ef45f92bf4df136bf649ec3a5715",
-                "reference": "bf76694482b2ef45f92bf4df136bf649ec3a5715",
+                "url": "https://api.github.com/repos/pantheon-systems/wp-redis/zipball/cb76681a17de4ca67f801b8ad1e2de5be8a0c1cd",
+                "reference": "cb76681a17de4ca67f801b8ad1e2de5be8a0c1cd",
                 "shasum": ""
             },
             "require-dev": {
@@ -1837,7 +1837,7 @@
                 "behat/mink-extension": "^2.2",
                 "behat/mink-goutte-driver": "^1.2",
                 "pantheon-systems/pantheon-wordpress-upstream-tests": "dev-master",
-                "pantheon-systems/pantheon-wp-coding-standards": "^2.0",
+                "pantheon-systems/pantheon-wp-coding-standards": "^3.0",
                 "pantheon-systems/wpunit-helpers": "^2.0",
                 "phpunit/phpunit": "^9",
                 "yoast/phpunit-polyfills": "^4.0"
@@ -1860,9 +1860,9 @@
             ],
             "support": {
                 "issues": "https://github.com/pantheon-systems/wp-redis/issues",
-                "source": "https://github.com/pantheon-systems/wp-redis/tree/1.4.6"
+                "source": "https://github.com/pantheon-systems/wp-redis/tree/1.4.7"
             },
-            "time": "2025-06-17T23:17:31+00:00"
+            "time": "2025-12-11T19:32:53+00:00"
         },
         {
             "name": "predis/predis",
