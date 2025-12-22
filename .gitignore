@@ -14,5 +14,8 @@ content/plugins/public-post-preview/
 content/plugins/wordpress-seo/
 content/plugins/wordpress-seo-premium/
 content/themes/fair-parent-theme/
+content/plugins/fair-beacon/
+content/plugins/glotpress-wp/
+content/plugins/s3-uploads/
 vendor/
 wordpress/

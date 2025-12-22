@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c8198bdc9f2e254ac3e3deb7b48832ae",
+    "content-hash": "fdad7cc11a33a653b3ae71feaa117dc9",
     "packages": [
         {
             "name": "afragen/git-updater",
-            "version": "12.18.1",
+            "version": "12.20.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/git-updater.git",
-                "reference": "4fad507562869a80a6486883b87bae83922a6d41"
+                "reference": "cd3e9e9972b37f813f9479726b6732bad0ea8423"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/git-updater/zipball/4fad507562869a80a6486883b87bae83922a6d41",
-                "reference": "4fad507562869a80a6486883b87bae83922a6d41",
+                "url": "https://api.github.com/repos/afragen/git-updater/zipball/cd3e9e9972b37f813f9479726b6732bad0ea8423",
+                "reference": "cd3e9e9972b37f813f9479726b6732bad0ea8423",
                 "shasum": ""
             },
             "require": {
@@ -28,9 +28,15 @@
                 "php": ">=8.0"
             },
             "require-dev": {
+                "mcaskill/composer-exclude-files": "^4.0",
                 "wp-coding-standards/wpcs": "^3.0.0"
             },
             "type": "wordpress-plugin",
+            "extra": {
+                "exclude-from-files": [
+                    "freemius/wordpress-sdk/start.php"
+                ]
+            },
             "autoload": {
                 "psr-4": {
                     "Fragen\\Git_Updater\\": "src/Git_Updater/"
@@ -65,7 +71,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-06T23:27:09+00:00"
+            "time": "2025-11-26T16:16:19+00:00"
         },
         {
             "name": "afragen/singleton",
@@ -305,16 +311,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.23",
+            "version": "3.369.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "e9253cf6073f06080a7458af54e18fc474f0c864"
+                "reference": "b2d04cf1184a96839a8ab62ec6e3cf2d62a278e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e9253cf6073f06080a7458af54e18fc474f0c864",
-                "reference": "e9253cf6073f06080a7458af54e18fc474f0c864",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b2d04cf1184a96839a8ab62ec6e3cf2d62a278e3",
+                "reference": "b2d04cf1184a96839a8ab62ec6e3cf2d62a278e3",
                 "shasum": ""
             },
             "require": {
@@ -327,7 +333,8 @@
                 "guzzlehttp/psr7": "^2.4.5",
                 "mtdowling/jmespath.php": "^2.8.0",
                 "php": ">=8.1",
-                "psr/http-message": "^1.0 || ^2.0"
+                "psr/http-message": "^1.0 || ^2.0",
+                "symfony/filesystem": "^v6.4.3 || ^v7.1.0 || ^v8.0.0"
             },
             "require-dev": {
                 "andrewsville/php-token-reflection": "^1.4",
@@ -338,13 +345,11 @@
                 "doctrine/cache": "~1.4",
                 "ext-dom": "*",
                 "ext-openssl": "*",
-                "ext-pcntl": "*",
                 "ext-sockets": "*",
-                "phpunit/phpunit": "^5.6.3 || ^8.5 || ^9.5",
+                "phpunit/phpunit": "^9.6",
                 "psr/cache": "^2.0 || ^3.0",
                 "psr/simple-cache": "^2.0 || ^3.0",
                 "sebastian/comparator": "^1.2.3 || ^4.0 || ^5.0",
-                "symfony/filesystem": "^v6.4.0 || ^v7.1.0",
                 "yoast/phpunit-polyfills": "^2.0"
             },
             "suggest": {
@@ -352,6 +357,7 @@
                 "doctrine/cache": "To use the DoctrineCacheAdapter",
                 "ext-curl": "To send requests using cURL",
                 "ext-openssl": "Allows working with CloudFront private distributions and verifying received SNS messages",
+                "ext-pcntl": "To use client-side monitoring",
                 "ext-sockets": "To use client-side monitoring"
             },
             "type": "library",
@@ -396,9 +402,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.23"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.369.1"
             },
-            "time": "2025-09-22T18:10:31+00:00"
+            "time": "2025-12-22T19:13:21+00:00"
         },
         {
             "name": "brick/math",
@@ -657,17 +663,111 @@
             "time": "2019-12-30T22:54:17+00:00"
         },
         {
-            "name": "fair/fair-plugin",
+            "name": "fairpm/fair-beacon",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fairpm/fair-beacon.git",
+                "reference": "038af366a42a7b92a7504a70774164ee2d32a875"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fairpm/fair-beacon/zipball/038af366a42a7b92a7504a70774164ee2d32a875",
+                "reference": "038af366a42a7b92a7504a70774164ee2d32a875",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3",
+                "simplito/elliptic-php": "^1.0",
+                "spomky-labs/cbor-php": "^3.1",
+                "yocto/yoclib-multibase": "^1.2"
+            },
+            "require-dev": {
+                "humanmade/coding-standards": "^1.2"
+            },
+            "default-branch": true,
+            "type": "wordpress-plugin",
+            "autoload": {
+                "classmap": [
+                    "inc/"
+                ]
+            },
+            "scripts": {
+                "lint": [
+                    "@php ./vendor/bin/phpcs ."
+                ],
+                "format": [
+                    "@php ./vendor/bin/phpcbf ."
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "FAIR Contributors"
+                }
+            ],
+            "description": "Transform your WP site into a FAIR Package Management Repository",
+            "homepage": "https://github.com/fairpm/fair-beacon",
+            "support": {
+                "issues": "https://github.com/fairpm/fair-beacon/issues",
+                "source": "https://github.com/fairpm/fair-beacon"
+            },
+            "time": "2025-12-13T15:20:17+00:00"
+        },
+        {
+            "name": "fairpm/fair-parent-theme",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fairpm/fair-parent-theme.git",
+                "reference": "ea4d1b82583e68c9a4f498056fe2a750b375bd48"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fairpm/fair-parent-theme/zipball/ea4d1b82583e68c9a4f498056fe2a750b375bd48",
+                "reference": "ea4d1b82583e68c9a4f498056fe2a750b375bd48",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "type": "wordpress-theme",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/fairpm/fair-parent-theme/graphs/contributors"
+                }
+            ],
+            "description": "FAIR Package Manager network theme.",
+            "homepage": "https://github.com/fairpm/fair-parent-theme/",
+            "keywords": [
+                "fairpm",
+                "theme"
+            ],
+            "support": {
+                "issues": "https://github.com/fairpm/fair-parent-theme/issues",
+                "source": "https://github.com/fairpm/fair-parent-theme/tree/1.0.5"
+            },
+            "time": "2025-10-21T18:55:12+00:00"
+        },
+        {
+            "name": "fairpm/fair-plugin",
             "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fairpm/fair-plugin.git",
-                "reference": "2246a7b6e9c10a2c0c1739509a6f42a409d7ec9b"
+                "reference": "ba4bf9d5870542aa9f289c2227352d6033148383"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fairpm/fair-plugin/zipball/2246a7b6e9c10a2c0c1739509a6f42a409d7ec9b",
-                "reference": "2246a7b6e9c10a2c0c1739509a6f42a409d7ec9b",
+                "url": "https://api.github.com/repos/fairpm/fair-plugin/zipball/ba4bf9d5870542aa9f289c2227352d6033148383",
+                "reference": "ba4bf9d5870542aa9f289c2227352d6033148383",
                 "shasum": ""
             },
             "require": {
@@ -730,122 +830,31 @@
             ],
             "authors": [
                 {
-                    "name": "FAIR Contributors"
+                    "name": "FAIR Contributors",
+                    "email": "operations@fair.pm",
+                    "homepage": "https://fair.pm"
                 }
             ],
             "description": "Make your site more FAIR.",
             "support": {
-                "source": "https://github.com/fairpm/fair-plugin/tree/main",
-                "issues": "https://github.com/fairpm/fair-plugin/issues"
+                "issues": "https://github.com/fairpm/fair-plugin/issues",
+                "source": "https://github.com/fairpm/fair-plugin",
+                "docs": "https://github.com/fairpm/fair-plugin/blob/main/README.md"
             },
-            "time": "2025-09-23T02:45:27+00:00"
-        },
-        {
-            "name": "fairpm/fair-beacon",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fairpm/fair-beacon.git",
-                "reference": "10554d734cca6da5fe4c066d60ae50c64785ba76"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fairpm/fair-beacon/zipball/10554d734cca6da5fe4c066d60ae50c64785ba76",
-                "reference": "10554d734cca6da5fe4c066d60ae50c64785ba76",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.3",
-                "simplito/elliptic-php": "^1.0",
-                "spomky-labs/cbor-php": "^3.1",
-                "yocto/yoclib-multibase": "^1.2"
-            },
-            "require-dev": {
-                "humanmade/coding-standards": "^1.2"
-            },
-            "default-branch": true,
-            "type": "wordpress-plugin",
-            "autoload": {
-                "classmap": [
-                    "inc/"
-                ]
-            },
-            "scripts": {
-                "lint": [
-                    "@php ./vendor/bin/phpcs ."
-                ],
-                "format": [
-                    "@php ./vendor/bin/phpcbf ."
-                ]
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "FAIR Contributors"
-                }
-            ],
-            "description": "Transform your WP site into a FAIR Package Management Repository",
-            "homepage": "https://github.com/fairpm/fair-beacon",
-            "support": {
-                "issues": "https://github.com/fairpm/fair-beacon/issues",
-                "source": "https://github.com/fairpm/fair-beacon"
-            },
-            "time": "2025-12-11T04:21:19+00:00"
-        },
-        {
-            "name": "fairpm/fair-parent-theme",
-            "version": "1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fairpm/fair-parent-theme.git",
-                "reference": "ea4d1b82583e68c9a4f498056fe2a750b375bd48"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fairpm/fair-parent-theme/zipball/ea4d1b82583e68c9a4f498056fe2a750b375bd48",
-                "reference": "ea4d1b82583e68c9a4f498056fe2a750b375bd48",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.4"
-            },
-            "type": "wordpress-theme",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Contributors",
-                    "homepage": "https://github.com/fairpm/fair-parent-theme/graphs/contributors"
-                }
-            ],
-            "description": "FAIR Package Manager network theme.",
-            "homepage": "https://github.com/fairpm/fair-parent-theme/",
-            "keywords": [
-                "fairpm",
-                "theme"
-            ],
-            "support": {
-                "issues": "https://github.com/fairpm/fair-parent-theme/issues",
-                "source": "https://github.com/fairpm/fair-parent-theme/tree/1.0.5"
-            },
-            "time": "2025-10-21T18:55:12+00:00"
+            "time": "2025-12-22T18:58:13+00:00"
         },
         {
             "name": "freemius/wordpress-sdk",
-            "version": "2.12.2",
+            "version": "2.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Freemius/wordpress-sdk.git",
-                "reference": "241fbfc91151f85d8ebeb75343caf29bda1d3208"
+                "reference": "3cbe98b5bd0b0fb5ca4df97b8088592737ea4375"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Freemius/wordpress-sdk/zipball/241fbfc91151f85d8ebeb75343caf29bda1d3208",
-                "reference": "241fbfc91151f85d8ebeb75343caf29bda1d3208",
+                "url": "https://api.github.com/repos/Freemius/wordpress-sdk/zipball/3cbe98b5bd0b0fb5ca4df97b8088592737ea4375",
+                "reference": "3cbe98b5bd0b0fb5ca4df97b8088592737ea4375",
                 "shasum": ""
             },
             "require": {
@@ -883,22 +892,22 @@
             ],
             "support": {
                 "issues": "https://github.com/Freemius/wordpress-sdk/issues",
-                "source": "https://github.com/Freemius/wordpress-sdk/tree/2.12.2"
+                "source": "https://github.com/Freemius/wordpress-sdk/tree/2.13.0"
             },
-            "time": "2025-09-15T14:36:55+00:00"
+            "time": "2025-11-11T07:52:08+00:00"
         },
         {
             "name": "glotpress/glotpress-wp",
-            "version": "4.0.1",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GlotPress/GlotPress.git",
-                "reference": "84cfcee8fec4de400469c901185fe1d65f7af797"
+                "reference": "b080352aad54b6680024bb0ef9a96ff351c17e6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GlotPress/GlotPress/zipball/84cfcee8fec4de400469c901185fe1d65f7af797",
-                "reference": "84cfcee8fec4de400469c901185fe1d65f7af797",
+                "url": "https://api.github.com/repos/GlotPress/GlotPress/zipball/b080352aad54b6680024bb0ef9a96ff351c17e6e",
+                "reference": "b080352aad54b6680024bb0ef9a96ff351c17e6e",
                 "shasum": ""
             },
             "require": {
@@ -910,7 +919,7 @@
                 "phpcompatibility/phpcompatibility-wp": "^2.1",
                 "phpunit/phpunit": "^9.6.15",
                 "wp-coding-standards/wpcs": "^2.2",
-                "yoast/phpunit-polyfills": "^2.0"
+                "yoast/phpunit-polyfills": "^4.0"
             },
             "type": "wordpress-plugin",
             "scripts": {
@@ -943,7 +952,7 @@
                 "source": "https://github.com/GlotPress/GlotPress",
                 "docs": "https://glotpress.blog/the-manual/"
             },
-            "time": "2024-04-03T14:29:59+00:00"
+            "time": "2025-10-17T15:39:16+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1276,12 +1285,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/humanmade/aws-ses-wp-mail.git",
-                "reference": "4021bab5c881011fcdf626c91b2295cb422fbaed"
+                "reference": "91320c3bd270dcc8247cbe4cc607e0a2b64142ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/humanmade/aws-ses-wp-mail/zipball/4021bab5c881011fcdf626c91b2295cb422fbaed",
-                "reference": "4021bab5c881011fcdf626c91b2295cb422fbaed",
+                "url": "https://api.github.com/repos/humanmade/aws-ses-wp-mail/zipball/91320c3bd270dcc8247cbe4cc607e0a2b64142ba",
+                "reference": "91320c3bd270dcc8247cbe4cc607e0a2b64142ba",
                 "shasum": ""
             },
             "require": {
@@ -1311,7 +1320,7 @@
                 "issues": "https://github.com/humanmade/aws-ses-wp-mail/issues",
                 "source": "https://github.com/humanmade/aws-ses-wp-mail"
             },
-            "time": "2025-09-10T10:48:58+00:00"
+            "time": "2025-10-08T09:48:26+00:00"
         },
         {
             "name": "humanmade/php-basic-auth",
@@ -1436,16 +1445,16 @@
         },
         {
             "name": "johnbillion/query-monitor",
-            "version": "3.20.0",
+            "version": "3.20.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnbillion/query-monitor.git",
-                "reference": "ec24102fa79ca7f02b3e5d2643284c5a71588c62"
+                "reference": "40b9ba0d72a4d938a24aa6367b7715e8ae02e8d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/ec24102fa79ca7f02b3e5d2643284c5a71588c62",
-                "reference": "ec24102fa79ca7f02b3e5d2643284c5a71588c62",
+                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/40b9ba0d72a4d938a24aa6367b7715e8ae02e8d4",
+                "reference": "40b9ba0d72a4d938a24aa6367b7715e8ae02e8d4",
                 "shasum": ""
             },
             "require": {
@@ -1499,7 +1508,7 @@
             "support": {
                 "forum": "https://wordpress.org/support/plugin/query-monitor",
                 "issues": "https://github.com/johnbillion/query-monitor/issues",
-                "security": "https://patchstack.com/database/vdp/query-monitor",
+                "security": "https://querymonitor.com/security/",
                 "source": "https://github.com/johnbillion/query-monitor"
             },
             "funding": [
@@ -1508,24 +1517,24 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-07T22:02:10+00:00"
+            "time": "2025-12-11T22:08:53+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "6.8.2",
+            "version": "6.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "f224d9b28c88048312f3fe635cb65ba66a936950"
+                "reference": "fbc8bf2209d0ab8d579d937b3df89003a3b86b8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/f224d9b28c88048312f3fe635cb65ba66a936950",
-                "reference": "f224d9b28c88048312f3fe635cb65ba66a936950",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/fbc8bf2209d0ab8d579d937b3df89003a3b86b8e",
+                "reference": "fbc8bf2209d0ab8d579d937b3df89003a3b86b8e",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "6.8.2",
+                "johnpbloch/wordpress-core": "6.9.0",
                 "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
                 "php": ">=7.0.0"
             },
@@ -1554,20 +1563,20 @@
                 "issues": "https://core.trac.wordpress.org/",
                 "source": "https://core.trac.wordpress.org/browser"
             },
-            "time": "2025-07-15T15:33:05+00:00"
+            "time": "2025-12-02T19:11:04+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "6.8.2",
+            "version": "6.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "316a8fe38b6dde4e4f399946809f040462038403"
+                "reference": "4626d4e896c36ab77a69ce58627bc76243b5dd07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/316a8fe38b6dde4e4f399946809f040462038403",
-                "reference": "316a8fe38b6dde4e4f399946809f040462038403",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/4626d4e896c36ab77a69ce58627bc76243b5dd07",
+                "reference": "4626d4e896c36ab77a69ce58627bc76243b5dd07",
                 "shasum": ""
             },
             "require": {
@@ -1575,7 +1584,7 @@
                 "php": ">=7.2.24"
             },
             "provide": {
-                "wordpress/core-implementation": "6.8.2"
+                "wordpress/core-implementation": "6.9.0"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -1602,7 +1611,7 @@
                 "source": "https://core.trac.wordpress.org/browser",
                 "wiki": "https://codex.wordpress.org/"
             },
-            "time": "2025-07-15T15:32:59+00:00"
+            "time": "2025-12-02T19:10:58+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -1820,16 +1829,16 @@
         },
         {
             "name": "pantheon-systems/wp-redis",
-            "version": "1.4.6",
+            "version": "1.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pantheon-systems/wp-redis.git",
-                "reference": "bf76694482b2ef45f92bf4df136bf649ec3a5715"
+                "reference": "cb76681a17de4ca67f801b8ad1e2de5be8a0c1cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pantheon-systems/wp-redis/zipball/bf76694482b2ef45f92bf4df136bf649ec3a5715",
-                "reference": "bf76694482b2ef45f92bf4df136bf649ec3a5715",
+                "url": "https://api.github.com/repos/pantheon-systems/wp-redis/zipball/cb76681a17de4ca67f801b8ad1e2de5be8a0c1cd",
+                "reference": "cb76681a17de4ca67f801b8ad1e2de5be8a0c1cd",
                 "shasum": ""
             },
             "require-dev": {
@@ -1837,7 +1846,7 @@
                 "behat/mink-extension": "^2.2",
                 "behat/mink-goutte-driver": "^1.2",
                 "pantheon-systems/pantheon-wordpress-upstream-tests": "dev-master",
-                "pantheon-systems/pantheon-wp-coding-standards": "^2.0",
+                "pantheon-systems/pantheon-wp-coding-standards": "^3.0",
                 "pantheon-systems/wpunit-helpers": "^2.0",
                 "phpunit/phpunit": "^9",
                 "yoast/phpunit-polyfills": "^4.0"
@@ -1860,9 +1869,9 @@
             ],
             "support": {
                 "issues": "https://github.com/pantheon-systems/wp-redis/issues",
-                "source": "https://github.com/pantheon-systems/wp-redis/tree/1.4.6"
+                "source": "https://github.com/pantheon-systems/wp-redis/tree/1.4.7"
             },
-            "time": "2025-06-17T23:17:31+00:00"
+            "time": "2025-12-11T19:32:53+00:00"
         },
         {
             "name": "predis/predis",
@@ -2420,6 +2429,159 @@
             "time": "2024-09-25T14:21:43+00:00"
         },
         {
+            "name": "symfony/filesystem",
+            "version": "v8.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/filesystem.git",
+                "reference": "d937d400b980523dc9ee946bb69972b5e619058d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/d937d400b980523dc9ee946bb69972b5e619058d",
+                "reference": "d937d400b980523dc9ee946bb69972b5e619058d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.4",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-mbstring": "~1.8"
+            },
+            "require-dev": {
+                "symfony/process": "^7.4|^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides basic utilities for the filesystem",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/filesystem/tree/v8.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-12-01T09:13:36+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.33.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "a3cc8b044a6ea513310cbd48ef7333b384945638"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/a3cc8b044a6ea513310cbd48ef7333b384945638",
+                "reference": "a3cc8b044a6ea513310cbd48ef7333b384945638",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "provide": {
+                "ext-ctype": "*"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/polyfill",
+                    "name": "symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.33.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-09-09T11:45:10+00:00"
+        },
+        {
             "name": "symfony/polyfill-mbstring",
             "version": "v1.33.0",
             "source": {
@@ -2506,17 +2668,17 @@
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "26.3",
+            "version": "26.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast-dist/wordpress-seo.git",
-                "reference": "d092a43b30d02c0c44423fff45152ade0a33f516"
+                "reference": "5cfcfa4cbb6deae5c6715eebaf984ca78bde25c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://my.yoast.com/packages/dist/yoast/wordpress-seo/yoast-wordpress-seo-d092a43b30d02c0c44423fff45152ade0a33f516-zip-0b8a8e.zip",
-                "reference": "d092a43b30d02c0c44423fff45152ade0a33f516",
-                "shasum": "8793d7687e6990df0037f7b21a29a8b8ee38cfe7"
+                "url": "https://my.yoast.com/packages/dist/yoast/wordpress-seo/yoast-wordpress-seo-5cfcfa4cbb6deae5c6715eebaf984ca78bde25c3-zip-a3660a.zip",
+                "reference": "5cfcfa4cbb6deae5c6715eebaf984ca78bde25c3",
+                "shasum": "df7ada3eddb512edd5e39e6a545ebc8e3e541358"
             },
             "require": {
                 "composer/installers": "^1.12 || ^2.0",
@@ -2524,13 +2686,13 @@
                 "php": "^7.4| ^8.0"
             },
             "require-dev": {
-                "guzzlehttp/guzzle": "7.8.1",
+                "guzzlehttp/guzzle": "7.10.0",
                 "humbug/php-scoper": "^0.13.4",
-                "league/oauth2-client": "2.7.0",
-                "psr/container": "1.0.0",
+                "league/oauth2-client": "2.8.1",
+                "psr/container": "1.1.1",
                 "psr/log": "^1.0",
-                "symfony/config": "^3.4",
-                "symfony/dependency-injection": "^3.4",
+                "symfony/config": "^5.4.46",
+                "symfony/dependency-injection": "^5.4.48",
                 "wpackagist-plugin/google-site-kit": "dev-trunk",
                 "yoast/wp-test-utils": "^1.2",
                 "yoast/yoastcs": "^3.2.0"
@@ -2583,7 +2745,7 @@
                     "Yoast\\WP\\SEO\\Composer\\Actions::check_coding_standards"
                 ],
                 "check-cs-thresholds": [
-                    "@putenv YOASTCS_THRESHOLD_ERRORS=2381",
+                    "@putenv YOASTCS_THRESHOLD_ERRORS=2379",
                     "@putenv YOASTCS_THRESHOLD_WARNINGS=251",
                     "Yoast\\WP\\SEO\\Composer\\Actions::check_cs_thresholds"
                 ],
@@ -2635,7 +2797,8 @@
                     "@php ./vendor/humbug/php-scoper/bin/php-scoper add-prefix --prefix=YoastSEO_Vendor --output-dir=./vendor_prefixed/psr --config=config/php-scoper/psr.inc.php --force --quiet"
                 ],
                 "prefix-symfony": [
-                    "@php ./vendor/humbug/php-scoper/bin/php-scoper add-prefix --prefix=YoastSEO_Vendor --output-dir=./vendor_prefixed/symfony/dependency-injection --config=config/php-scoper/dependency-injection.inc.php --force --quiet"
+                    "@php ./vendor/humbug/php-scoper/bin/php-scoper add-prefix --prefix=YoastSEO_Vendor --output-dir=./vendor_prefixed/symfony/dependency-injection --config=config/php-scoper/dependency-injection.inc.php --force --quiet",
+                    "@php ./vendor/humbug/php-scoper/bin/php-scoper add-prefix --prefix=YoastSEO_Vendor --output-dir=./vendor_prefixed/symfony/service-contracts --config=config/php-scoper/service-contracts.inc.php --force --quiet"
                 ],
                 "compile-di": [
                     "rm -f ./src/generated/container.php",
@@ -2677,26 +2840,26 @@
                 "source": "https://github.com/Yoast/wordpress-seo",
                 "security": "https://yoast.com/security-program/"
             },
-            "time": "2025-11-04T09:44:16+00:00"
+            "time": "2025-12-15T10:25:20+00:00"
         },
         {
             "name": "yoast/wordpress-seo-premium",
-            "version": "26.0",
+            "version": "26.6.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:Yoast-dist/wordpress-seo-premium.git",
-                "reference": "d186ba103125a0e2a815882c6d4997e28932875c"
+                "reference": "c4b7da4e896f987bd36f4bea6901ad884442fc17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://my.yoast.com/packages/dist/yoast/wordpress-seo-premium/yoast-wordpress-seo-premium-d186ba103125a0e2a815882c6d4997e28932875c-zip-718331.zip",
-                "reference": "d186ba103125a0e2a815882c6d4997e28932875c",
-                "shasum": "501ed73d6f3f58925eeb7a24d60532200d008689"
+                "url": "https://my.yoast.com/packages/dist/yoast/wordpress-seo-premium/yoast-wordpress-seo-premium-c4b7da4e896f987bd36f4bea6901ad884442fc17-zip-2a27e1.zip",
+                "reference": "c4b7da4e896f987bd36f4bea6901ad884442fc17",
+                "shasum": "cf68701e66f84fc8c88a7207f21603c1fa995871"
             },
             "require": {
                 "ext-filter": "*",
                 "php": "^7.4 || ^8.0",
-                "yoast/wordpress-seo": "^26.0"
+                "yoast/wordpress-seo": "^26.6"
             },
             "require-dev": {
                 "wp-cli/i18n-command": "^2.6",
@@ -2749,8 +2912,8 @@
                     "Yoast\\WP\\SEO\\Premium\\Config\\Composer\\Actions::check_coding_standards"
                 ],
                 "check-cs-thresholds": [
-                    "@putenv YOASTCS_THRESHOLD_ERRORS=633",
-                    "@putenv YOASTCS_THRESHOLD_WARNINGS=74",
+                    "@putenv YOASTCS_THRESHOLD_ERRORS=622",
+                    "@putenv YOASTCS_THRESHOLD_WARNINGS=72",
                     "Yoast\\WP\\SEO\\Premium\\Config\\Composer\\Actions::check_cs_thresholds"
                 ],
                 "check-cs": [
@@ -2836,7 +2999,7 @@
                 "source": "https://github.com/Yoast/wordpress-seo-premium",
                 "security": "https://yoast.com/security-program/"
             },
-            "time": "2025-09-23T09:01:22+00:00"
+            "time": "2025-12-18T10:51:47+00:00"
         },
         {
             "name": "yocto/yoclib-multibase",
@@ -2889,13 +3052,13 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fair/fair-plugin": 20,
         "fairpm/fair-beacon": 20,
+        "fairpm/fair-plugin": 20,
         "humanmade/aws-ses-wp-mail": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
