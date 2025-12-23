@@ -2,10 +2,6 @@
 	"name": "fairpm/server",
 	"type": "project",
 	"repositories": {
-		"my-yoast": {
-			"type": "composer",
-			"url": "https://my.yoast.com/packages/"
-		},
 		"0": {
 			"type": "vcs",
 			"url": "https://github.com/GlotPress/GlotPress"
@@ -40,11 +36,10 @@
 		"fairpm/fair-beacon": "dev-main",
 		"humanmade/aws-ses-wp-mail": "dev-master",
 		"mcaskill/composer-exclude-files": "^4.0",
-		"yoast/wordpress-seo": "*",
+		"yoast/wordpress-seo": "^26.6",
 		"aspirepress/aspireexplorer": "^0.2",
 		"fairpm/fair-plugin": "dev-main",
 		"ocean90/public-post-preview": "^3.0",
-		"yoast/wordpress-seo-premium": "^26.0",
 		"humanmade/s3-uploads": "^3.0"
 	},
 	"extra": {
