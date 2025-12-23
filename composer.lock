@@ -4,26 +4,27 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0d8a8258622925a0ea86df9ea30efb18",
+    "content-hash": "c87837125bf773f0f50a2fe300506644",
     "packages": [
         {
             "name": "afragen/git-updater",
-            "version": "12.20.1",
+            "version": "12.20.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/git-updater.git",
-                "reference": "cd3e9e9972b37f813f9479726b6732bad0ea8423"
+                "reference": "4aaecdb24acb9bd2aab22a116991db1b6612b0a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/git-updater/zipball/cd3e9e9972b37f813f9479726b6732bad0ea8423",
-                "reference": "cd3e9e9972b37f813f9479726b6732bad0ea8423",
+                "url": "https://api.github.com/repos/afragen/git-updater/zipball/4aaecdb24acb9bd2aab22a116991db1b6612b0a6",
+                "reference": "4aaecdb24acb9bd2aab22a116991db1b6612b0a6",
                 "shasum": ""
             },
             "require": {
                 "afragen/singleton": "^1.0",
                 "afragen/wordpress-plugin-readme-parser": "^1",
                 "afragen/wp-dismiss-notice": "*",
+                "erusev/parsedown": "dev-master#0b274ac959624e6c6d647e9c9b6c2d20da242004",
                 "freemius/wordpress-sdk": "^2.12",
                 "php": ">=8.0"
             },
@@ -71,7 +72,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-11-26T16:16:19+00:00"
+            "time": "2025-12-08T17:27:05+00:00"
         },
         {
             "name": "afragen/singleton",
@@ -121,20 +122,20 @@
         },
         {
             "name": "afragen/wordpress-plugin-readme-parser",
-            "version": "1.2024.12.10",
+            "version": "1.2025.12.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/wordpress-plugin-readme-parser.git",
-                "reference": "803ccfc442d956aa04d69f4b234eda5d7f03afc4"
+                "reference": "1fbb311ef5f31f0e1e2d8978f187c81c22b351c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/wordpress-plugin-readme-parser/zipball/803ccfc442d956aa04d69f4b234eda5d7f03afc4",
-                "reference": "803ccfc442d956aa04d69f4b234eda5d7f03afc4",
+                "url": "https://api.github.com/repos/afragen/wordpress-plugin-readme-parser/zipball/1fbb311ef5f31f0e1e2d8978f187c81c22b351c5",
+                "reference": "1fbb311ef5f31f0e1e2d8978f187c81c22b351c5",
                 "shasum": ""
             },
             "require": {
-                "erusev/parsedown": "^1.7",
+                "erusev/parsedown": "dev-master#0b274ac959624e6c6d647e9c9b6c2d20da242004",
                 "php": ">=5.4"
             },
             "type": "library",
@@ -161,9 +162,9 @@
             ],
             "support": {
                 "issues": "https://github.com/afragen/wordpress-plugin-readme-parser/issues",
-                "source": "https://github.com/afragen/wordpress-plugin-readme-parser/tree/1.2024.12.10"
+                "source": "https://github.com/afragen/wordpress-plugin-readme-parser/tree/1.2025.12.6"
             },
-            "time": "2024-12-10T23:43:17+00:00"
+            "time": "2025-12-06T17:41:45+00:00"
         },
         {
             "name": "afragen/wp-dismiss-notice",
@@ -614,25 +615,26 @@
         },
         {
             "name": "erusev/parsedown",
-            "version": "1.7.4",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "cb17b6477dfff935958ba01325f2e8a2bfa6dab3"
+                "reference": "0b274ac959624e6c6d647e9c9b6c2d20da242004"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/cb17b6477dfff935958ba01325f2e8a2bfa6dab3",
-                "reference": "cb17b6477dfff935958ba01325f2e8a2bfa6dab3",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/0b274ac959624e6c6d647e9c9b6c2d20da242004",
+                "reference": "0b274ac959624e6c6d647e9c9b6c2d20da242004",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": ">=5.3.0"
+                "php": ">=7.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35"
+                "phpunit/phpunit": "^7.5|^8.5|^9.6"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-0": {
@@ -658,9 +660,9 @@
             ],
             "support": {
                 "issues": "https://github.com/erusev/parsedown/issues",
-                "source": "https://github.com/erusev/parsedown/tree/1.7.x"
+                "source": "https://github.com/erusev/parsedown/tree/master"
             },
-            "time": "2019-12-30T22:54:17+00:00"
+            "time": "2025-08-31T07:57:44+00:00"
         },
         {
             "name": "fairpm/fair-beacon",
@@ -2795,13 +2797,13 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "fairpm/fair-beacon": 20,
         "fairpm/fair-plugin": 20,
         "humanmade/aws-ses-wp-mail": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},

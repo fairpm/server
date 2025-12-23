@@ -1,4 +1,6 @@
 {
+	"minimum-stability": "dev",
+	"prefer-stable": true,
 	"name": "fairpm/server",
 	"type": "project",
 	"repositories": {
@@ -31,7 +33,7 @@
 		"johnpbloch/wordpress": "^6.8",
 		"pantheon-systems/wp-redis": "^1.4",
 		"humanmade/wp-redis-predis-client": "^0.1.2",
-		"afragen/git-updater": "^12.20",
+		"afragen/git-updater": "^12.20.2",
 		"fairpm/fair-parent-theme": "~1.0.1",
 		"fairpm/fair-beacon": "dev-main",
 		"humanmade/aws-ses-wp-mail": "dev-master",
