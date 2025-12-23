@@ -26,6 +26,8 @@ RUN apk add --no-cache \
   php83-xml \
   php83-xmlreader \
   php83-xmlwriter \
+  php83-gmp \
+  php83-zip \
   supervisor
 
 # RUN ln -s /usr/bin/php83 /usr/bin/php
