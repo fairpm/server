@@ -18,7 +18,7 @@ rsync \
 	--progress \
 	--exclude='.git' \
 	--exclude-from='.distignore' \
-	"$SCRIPT_DIR/.." "$BUILD_DIR"
+	"$SCRIPT_DIR/../" "$BUILD_DIR"
 
 # Run the build script inside a composer container
 echo "Running build script…" >&2
