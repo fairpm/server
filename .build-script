@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 # Install composer dependencies
-composer install --no-dev --prefer-dist --optimize-autoloader --apcu-autoloader
+composer install --no-dev --prefer-dist --optimize-autoloader --apcu-autoloader --ignore-platform-req=ext-gmp
 
 # Verify critical directories exist
 echo "Verifying installation..."
