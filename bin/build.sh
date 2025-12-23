@@ -1,6 +1,6 @@
 #!/bin/bash
 # Build script that runs .build-script in a container and exports files
-set -x
+set -exo pipefail
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 

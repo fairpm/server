@@ -2,9 +2,9 @@
 	"name": "fairpm/server",
 	"type": "project",
 	"repositories": {
-		"my-yoast": {
-			"type": "composer",
-			"url": "https://my.yoast.com/packages/"
+		"yoast-seo": {
+			"type": "vcs",
+			"url": "https://github.com/Yoast-dist/wordpress-seo"
 		},
 		"0": {
 			"type": "vcs",
@@ -44,7 +44,6 @@
 		"aspirepress/aspireexplorer": "^0.2",
 		"fairpm/fair-plugin": "dev-main",
 		"ocean90/public-post-preview": "^3.0",
-		"yoast/wordpress-seo-premium": "^26.0",
 		"humanmade/s3-uploads": "^3.0"
 	},
 	"extra": {
