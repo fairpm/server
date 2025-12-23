@@ -28,7 +28,7 @@ docker run \
 	-v "$BUILD_DIR:/app" \
 	-w /app \
 	composer:latest \
-	bash -c "apt-get update && apt-get install -y libgmp-dev && docker-php-ext-install gmp && ./.build-script"
+	bash -c "./.build-script"
 
 if [ $? -ne 0 ]; then
 	echo "ERROR: Composer install failed!" >&2
