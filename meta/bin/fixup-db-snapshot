@@ -65,4 +65,22 @@ wp db query "update wp_4_options set option_value = 'admin@example.com' where op
 wp db query "update wp_5_options set option_value = 'admin@example.com' where option_name = 'admin_email'"
 wp db query "truncate wp_registration_log"
 
-# and that's it.  any personal information in posts or comments will remain in place
+
+#### Plugins
+
+wp plugin activate  aspireexplorer --url=local.fair.pm
+wp plugin activate fair-beacon --url=beacon.local.fair.pm
+wp plugin activate fair-plugin --network
+wp plugin activate f-api --url=api.local.fair.pm
+wp plugin activate f-translate --url=translate.local.fair.pm
+wp plugin activate fastly --url=local.fair.pm
+wp plugin activate git-updater --network
+# wp plugin activate glotpress-wp --url=translate.fair.pm  # not activated in prod either
+wp plugin activate public-post-preview --url=local.fair.pm
+wp plugin activate query-monitor --network
+# wp plugin activate s3-uploads --url=local.fair.pm
+wp plugin activate wp-redis --url=local.fair.pm
+
+wp plugin deactivate aws-ses-wp-mail --network
+wp plugin deactivate f-gd-cron --url=local.fair.pm
+wp plugin deactivate wordpress-seo --url=local.fair.pm
