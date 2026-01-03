@@ -16,10 +16,10 @@ services:
         networks:
             app-net: ~
         labels:
-            - "traefik.enable=true"
-            - "traefik.http.routers.fairpm.rule=Host(`local.fair.pm`)"
-            - "traefik.http.routers.fairpm-https.rule=Host(`local.fair.pm`)"
-            - "traefik.http.routers.fairpm-https.tls=true"
+            - 'traefik.enable=true'
+            - 'traefik.http.routers.fairpm.rule=HostRegexp(`^(?i)^((api|translate|chat|beacon)\.)?local\.fair\.pm$`)'
+            - 'traefik.http.routers.fairpm-https.rule=HostRegexp(`^(?i)^((api|translate|chat|beacon)\.)?local\.fair\.pm$`)'
+            - 'traefik.http.routers.fairpm-https.tls=true'
         healthcheck:
             # healthchecks on the app container are generally useless for dev environments:
             # the last thing we want is for traefik to drop the backend because of 500 errors -- we want to see those!
