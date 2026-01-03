@@ -21,15 +21,19 @@ wp db query "update wp_blogs set domain = 'local.fair.pm'"
 wp db query "update wp_options set option_value = 'https://local.fair.pm' where option_name = 'home'"
 wp db query "update wp_options set option_value = 'https://local.fair.pm/wp' where option_name = 'siteurl'"
 
+wp db query "update wp_blogs set domain = 'api.local.fair.pm' where blog_id = 2"
 wp db query "update wp_2_options set option_value = 'https://api.local.fair.pm' where option_name = 'home'"
 wp db query "update wp_2_options set option_value = 'https://api.local.fair.pm/wp' where option_name = 'siteurl'"
 
+wp db query "update wp_blogs set domain = 'translate.local.fair.pm' where blog_id = 3"
 wp db query "update wp_3_options set option_value = 'https://translate.local.fair.pm' where option_name = 'home'"
 wp db query "update wp_3_options set option_value = 'https://translate.local.fair.pm/wp' where option_name = 'siteurl'"
 
+wp db query "update wp_blogs set domain = 'chat.local.fair.pm' where blog_id = 4"
 wp db query "update wp_4_options set option_value = 'https://chat.local.fair.pm' where option_name = 'home'"
 wp db query "update wp_4_options set option_value = 'https://chat.local.fair.pm/wp' where option_name = 'siteurl'"
 
+wp db query "update wp_blogs set domain = 'beacon.local.fair.pm' where blog_id = 5"
 wp db query "update wp_5_options set option_value = 'https://beacon.local.fair.pm' where option_name = 'home'"
 wp db query "update wp_5_options set option_value = 'https://beacon.local.fair.pm/wp' where option_name = 'siteurl'"
 
@@ -39,7 +43,7 @@ wp db query "update wp_5_options set option_value = 'https://beacon.local.fair.p
 wp user update 1 --user_pass=password --skip-email
 wp db query "update wp_users set user_pass = (select user_pass from wp_users where id = 1)"
 
-# Redact user data
+# Redact user data.  Any personal information in posts or comments will remain in place
 wp db query "update wp_users set user_login = md5(user_login), user_nicename = md5(user_login), user_email = concat(md5(user_login), '@redacted.example.com'), display_name = md5(user_login), user_url = '', user_activation_key = ''"
 wp db query "update wp_usermeta set meta_value = md5(meta_value) where meta_key in ('nickname', 'first_name', 'last_name')"
 wp db query "update wp_usermeta set meta_value = 'local.fair.pm' where meta_key = 'source_domain'"
