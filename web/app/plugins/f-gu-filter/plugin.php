@@ -31,15 +31,20 @@ function rewrite_gu_response($response)
     }
 
     // This is hairier than it should be because of the screamingly bad idea of caching 404 responses
-    $mirror_url = "https://download.fair.pm/release/fair-connect-$version.zip";
-    $busted = $mirror_url . '?' . time();
 
-    // throttle requests by way of a short cache on the un-busted url
-    $status = get_transient("mirror_url:$mirror_url");
+    $mirror_url = "https://download.fair.pm/release/fair-connect-$version.zip";
+    $busted = null;
+    $key = "mirror_url:$mirror_url";
+
+    $status = get_transient($key);
     if (!$status) {
-        $result = wp_safe_remote_head($busted);
-        $status = wp_remote_retrieve_response_code($result);
-        set_transient("mirror_url:$mirror_url", $status, 300); // cache for 5 minutes
+        $status = wp_remote_retrieve_response_code(wp_safe_remote_head($mirror_url));
+        if ((int)$status === 404) {
+            // 404 responses are cached for a while, so try again with a cachebuster
+            $busted = $mirror_url . '?' . time();
+            $status = wp_remote_retrieve_response_code(wp_safe_remote_head($busted));
+        }
+        set_transient($key, $status, 300); // cache for 5 minutes (which is way less time than 404s are being cached)
     }
 
     if ((int)$status !== 200) {
@@ -47,6 +52,6 @@ function rewrite_gu_response($response)
         return $response;
     }
 
-    $response['download_link'] = $busted; // need cache-busted url because a cached 404 is guaranteed to be broken
+    $response['download_link'] = $busted ?? $mirror_url;
     return $response;
 }
