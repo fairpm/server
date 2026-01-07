@@ -670,12 +670,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fairpm/fair-beacon.git",
-                "reference": "038af366a42a7b92a7504a70774164ee2d32a875"
+                "reference": "76d97b5dda5648055d07ef3b3de4f0cf069a1f07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fairpm/fair-beacon/zipball/038af366a42a7b92a7504a70774164ee2d32a875",
-                "reference": "038af366a42a7b92a7504a70774164ee2d32a875",
+                "url": "https://api.github.com/repos/fairpm/fair-beacon/zipball/76d97b5dda5648055d07ef3b3de4f0cf069a1f07",
+                "reference": "76d97b5dda5648055d07ef3b3de4f0cf069a1f07",
                 "shasum": ""
             },
             "require": {
@@ -716,7 +716,7 @@
                 "issues": "https://github.com/fairpm/fair-beacon/issues",
                 "source": "https://github.com/fairpm/fair-beacon"
             },
-            "time": "2025-12-13T15:20:17+00:00"
+            "time": "2026-01-07T17:45:36+00:00"
         },
         {
             "name": "fairpm/fair-parent-theme",
