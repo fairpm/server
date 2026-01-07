@@ -2,11 +2,7 @@ name: Build and push container
 
 on:
   push:
-    branches: [ main ]
-
-env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
+    tags: [ 'v*' ]
 
 jobs:
   build:
@@ -16,15 +12,18 @@ jobs:
       packages: write
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76 # v2.14.0
+        with:
+          egress-policy: audit
 
-    - name: Log in to Container Registry
-      uses: docker/login-action@v3
-      with:
-        registry: ${{ env.REGISTRY }}
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout repository
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
 
-    - name: Build and push
-      run: bin/build.sh
+      - name: Build and push
+        run: bin/build-and-push
+        env:
+          DOCKERFILE: docker/fairpm-wordpress/Dockerfile
+          IMAGE_NAME: ${{ github.repository }}
+          TAG: ${{ github.event.release.tag_name }}
+          REGISTRY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}

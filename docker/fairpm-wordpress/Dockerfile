@@ -9,13 +9,13 @@ FROM dunglas/frankenphp:${FRANKENPHP_TAG} AS base
 COPY --from=composer_img /usr/bin/composer /usr/bin/composer
 COPY --from=wpcli_img /usr/local/bin/wp /usr/local/bin/wp
 
-RUN install-php-extensions apcu gd gmp intl mysqli opcache redis sqlite3
+RUN install-php-extensions apcu gd gmp intl mysqli opcache redis sqlite3 zip
 
 RUN groupadd --gid 100000 app \
     && useradd --uid 100000 --gid 100000 --create-home --shell /bin/bash app \
     && chown -R app:app /config /data \
     && apt update \
-    && apt install -y curl default-mysql-client less
+    && apt install -y curl default-mysql-client git less
 
 COPY docker/fairpm-wordpress/Caddyfile /etc/caddy/Caddyfile
 COPY docker/fairpm-wordpress/php.local.ini /usr/local/etc/php/conf.d/php.local.ini
