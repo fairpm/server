@@ -1,0 +1,8 @@
+/*/
+/*.php
+!.gitignore
+!airplane-mode/
+!f-api/
+!f-gd-cron/
+!f-gu-filter/
+!f-translate/

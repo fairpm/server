@@ -1,0 +1,37 @@
+#!/bin/bash
+# shellcheck disable=SC2086
+
+set -euxo pipefail
+
+here=$(dirname "$0")
+cd "$here/.."
+
+image=${IMAGE_NAME?required argument missing}
+dockerfile=${DOCKERFILE:-Dockerfile}
+tag=${TAG:-$(git describe --tags --abbrev=0)}
+platform=${PLATFORM:-linux/amd64,linux/arm64}
+target=${TARGET:-prod}
+
+registry=${REGISTRY:-ghcr.io}
+username=${REGISTRY_USERNAME:-required-but-ignored-on-ghcr}
+password=${REGISTRY_PASSWORD:-${GITHUB_TOKEN:-}}
+
+main () {
+    push_arg=''
+
+    if [[ -n ${password:-} ]]; then
+        echo "$password" | docker login "$registry" -u "$username" --password-stdin
+        push_arg='--push'
+    fi
+
+    docker buildx build \
+        --file "$dockerfile" \
+        --target "$target" \
+        --platform "$platform" \
+        --tag "ghcr.io/$image:$tag" \
+        --tag "ghcr.io/$image:latest" \
+        $push_arg \
+        .
+}
+
+main "$@"

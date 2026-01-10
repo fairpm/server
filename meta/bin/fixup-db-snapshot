@@ -1,0 +1,86 @@
+#!/bin/bash
+
+here=$(dirname "$0")
+source "$here"/prelude.bash
+
+wp db check
+
+#### URLs
+
+# Global replacements
+wp search-replace '//fair.pm' '//local.fair.pm'
+wp search-replace '//api.fair.pm' '//api.local.fair.pm'
+wp search-replace '//translate.fair.pm' '//translate.local.fair.pm'
+wp search-replace '//chat.fair.pm' '//chat.local.fair.pm'
+wp search-replace '//beacon.fair.pm' '//beacon.local.fair.pm'
+
+wp db query "update wp_site set domain = 'local.fair.pm'"
+wp db query "update wp_blogs set domain = 'local.fair.pm'"
+
+# Fix Site URLS
+wp db query "update wp_options set option_value = 'https://local.fair.pm' where option_name = 'home'"
+wp db query "update wp_options set option_value = 'https://local.fair.pm/wp' where option_name = 'siteurl'"
+
+wp db query "update wp_blogs set domain = 'api.local.fair.pm' where blog_id = 2"
+wp db query "update wp_2_options set option_value = 'https://api.local.fair.pm' where option_name = 'home'"
+wp db query "update wp_2_options set option_value = 'https://api.local.fair.pm/wp' where option_name = 'siteurl'"
+
+wp db query "update wp_blogs set domain = 'translate.local.fair.pm' where blog_id = 3"
+wp db query "update wp_3_options set option_value = 'https://translate.local.fair.pm' where option_name = 'home'"
+wp db query "update wp_3_options set option_value = 'https://translate.local.fair.pm/wp' where option_name = 'siteurl'"
+
+wp db query "update wp_blogs set domain = 'chat.local.fair.pm' where blog_id = 4"
+wp db query "update wp_4_options set option_value = 'https://chat.local.fair.pm' where option_name = 'home'"
+wp db query "update wp_4_options set option_value = 'https://chat.local.fair.pm/wp' where option_name = 'siteurl'"
+
+wp db query "update wp_blogs set domain = 'beacon.local.fair.pm' where blog_id = 5"
+wp db query "update wp_5_options set option_value = 'https://beacon.local.fair.pm' where option_name = 'home'"
+wp db query "update wp_5_options set option_value = 'https://beacon.local.fair.pm/wp' where option_name = 'siteurl'"
+
+#### Users
+
+# Set all user passwords to 'password'
+wp user update 1 --user_pass=password --skip-email
+wp db query "update wp_users set user_pass = (select user_pass from wp_users where id = 1)"
+
+# Redact user data.  Any personal information in posts or comments will remain in place
+wp db query "update wp_users set user_login = md5(user_login), user_nicename = md5(user_login), user_email = concat(md5(user_login), '@redacted.example.com'), display_name = md5(user_login), user_url = '', user_activation_key = ''"
+wp db query "update wp_usermeta set meta_value = md5(meta_value) where meta_key in ('nickname', 'first_name', 'last_name')"
+wp db query "update wp_usermeta set meta_value = 'local.fair.pm' where meta_key = 'source_domain'"
+wp db query "update wp_signups set user_login = md5(user_login), user_email = concat(md5(user_login), '@redacted.example.com')"
+
+# Rename user 1 to admin
+wp db query "update wp_users set user_login = 'admin', user_nicename = 'admin', display_name = 'admin', user_email = 'admin@example.com' where id = 1"
+wp db query "update wp_usermeta set meta_value = 'admin' where meta_key = 'nickname' and user_id = 1"
+wp db query "update wp_usermeta set meta_value = 'admin' where meta_key = 'first_name' and user_id = 1"
+wp db query "update wp_usermeta set meta_value = 'user' where meta_key = 'last_name' and user_id = 1"
+
+# Misc
+wp db query "update wp_sitemeta set meta_value = 'admin@example.com' where meta_key = 'admin_email'"
+wp db query "update wp_sitemeta set meta_value = 'a:1:{i:0;s:5:\"admin\";}' where meta_key = 'site_admins'"
+wp db query "update wp_options set option_value = 'admin@example.com' where option_name = 'admin_email'"
+wp db query "update wp_2_options set option_value = 'admin@example.com' where option_name = 'admin_email'"
+wp db query "update wp_3_options set option_value = 'admin@example.com' where option_name = 'admin_email'"
+wp db query "update wp_4_options set option_value = 'admin@example.com' where option_name = 'admin_email'"
+wp db query "update wp_5_options set option_value = 'admin@example.com' where option_name = 'admin_email'"
+wp db query "truncate wp_registration_log"
+
+
+#### Plugins
+
+wp plugin activate  aspireexplorer --url=local.fair.pm
+wp plugin activate fair-beacon --url=beacon.local.fair.pm
+wp plugin activate fair-plugin --network
+wp plugin activate f-api --url=api.local.fair.pm
+wp plugin activate f-translate --url=translate.local.fair.pm
+wp plugin activate fastly --url=local.fair.pm
+wp plugin activate git-updater --network
+# wp plugin activate glotpress-wp --url=translate.fair.pm  # not activated in prod either
+wp plugin activate public-post-preview --url=local.fair.pm
+wp plugin activate query-monitor --network
+# wp plugin activate s3-uploads --url=local.fair.pm
+wp plugin activate wp-redis --url=local.fair.pm
+
+wp plugin deactivate aws-ses-wp-mail --network
+wp plugin deactivate f-gd-cron --url=local.fair.pm
+wp plugin deactivate wordpress-seo --url=local.fair.pm

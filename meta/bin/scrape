@@ -1,0 +1,26 @@
+#!/bin/bash
+
+here=$(dirname "$0")
+source "$here"/prelude.bash
+
+[[ ${DANGEROUSLY_ALLOW_SCRAPE:-} = fair-site ]] || die "DANGEROUSLY_ALLOW_SCRAPE not set or not equal to 'fair-site' -- aborted"
+
+SLEEP=${SLEEP:-10}
+
+function dcexec() { docker compose exec fairpm-wordpress "$@"; }
+
+function main() {
+    database=${1:-}
+    [[ -n $database ]] || die "Usage: $0 path/to/database.sql"
+
+    docker compose down --remove-orphans --volumes
+    docker compose up --build -d
+
+    echo "Sleeping for $SLEEP seconds..."
+    sleep "$SLEEP"
+
+    dcexec wp db import "$database"
+    dcexec meta/bin/fixup-db-snapshot
+}
+
+main "$@"

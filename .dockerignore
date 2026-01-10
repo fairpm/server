@@ -1,0 +1,13 @@
+# ignore everything by default
+*
+
+# copy these directories
+!bin/
+!docker/fairpm-wordpress
+
+# copy these files
+!.env
+!README.md
+!composer.json
+!composer.lock
+

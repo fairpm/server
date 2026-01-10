@@ -1,21 +1,26 @@
-.env.production
-gp-data/
+#### ignore all dotfiles and dot-dirs, with exceptions
+.*
+!.config/
+!.distignore
+!.dockerignore
+!.editorconfig
+!.env.example
+!.gitattributes
+!.gitignore
 
-# Installed via Composer
-content/mu-plugins/php-basic-auth/
-content/plugins/aws-ses-wp-mail/
-content/plugins/fair-plugin/
-content/plugins/git-updater/
-content/plugins/query-monitor/
-content/plugins/wp-redis/
-content/plugins/mini-fair-repo/
-content/plugins/aspireexplorer/
-content/plugins/public-post-preview/
-content/plugins/wordpress-seo/
-content/plugins/wordpress-seo-premium/
-content/themes/fair-parent-theme/
-content/plugins/fair-beacon/
-content/plugins/glotpress-wp/
-content/plugins/s3-uploads/
-vendor/
-wordpress/
+#### ignore these patterns
+*.bak
+*.log
+*.tmp
+*.local
+*.local.*
+*.secret
+*.secret.*
+
+#### ignore these specific directories
+/gp-data/
+/vendor/
+
+#### ignore these specific files
+auth.json
+docker-compose.override.yml
