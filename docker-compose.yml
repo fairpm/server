@@ -86,7 +86,5 @@ volumes:
 
 networks:
     app-net: ~
-    aspire-net:
-        external: true
     traefik:
         external: true
