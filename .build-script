@@ -1,4 +1,21 @@
 #!/bin/bash -e
 
 # Install composer dependencies
-composer install --no-dev --prefer-dist --optimize-autoloader --apcu-autoloader
+composer install --no-dev --prefer-dist --optimize-autoloader --apcu-autoloader --ignore-platform-req=ext-gmp
+
+# Verify critical directories exist
+echo "Verifying installation..."
+if [ ! -d "vendor" ]; then
+	echo "ERROR: vendor/ directory not created!" >&2
+	exit 1
+fi
+
+if [ ! -d "wordpress" ]; then
+	echo "ERROR: wordpress/ directory not created!" >&2
+	exit 1
+fi
+
+echo "✓ vendor/ exists"
+echo "✓ wordpress/ exists"
+echo "Directory contents:"
+ls -lh wordpress/ vendor/ | head -20
