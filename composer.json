@@ -1,70 +1,122 @@
 {
-	"minimum-stability": "dev",
-	"prefer-stable": true,
-	"name": "fairpm/server",
-	"type": "project",
-	"repositories": {
-		"0": {
-			"type": "vcs",
-			"url": "https://github.com/GlotPress/GlotPress"
-		},
-		"1": {
-			"type": "vcs",
-			"url": "https://github.com/fairpm/fair-beacon"
-		},
-		"2": {
-			"type": "vcs",
-			"url": "https://github.com/aspirepress/AspireExplorer"
-		},
-		"3": {
-			"type": "vcs",
-			"url": "https://github.com/fairpm/fair-plugin"
-		},
-		"4": {
-			"type": "vcs",
-			"url": "https://github.com/ocean90/public-post-preview"
-		}
-	},
-	"require": {
-		"composer/installers": "~2",
-		"humanmade/php-basic-auth": "^1.1",
-		"glotpress/glotpress-wp": "^4.0.1",
-		"johnbillion/query-monitor": "^3.17",
-		"johnpbloch/wordpress": "^6.8",
-		"pantheon-systems/wp-redis": "^1.4",
-		"humanmade/wp-redis-predis-client": "^0.1.2",
-		"afragen/git-updater": "^12.21",
-		"fairpm/fair-parent-theme": "~1.0.1",
-		"fairpm/fair-beacon": "dev-main",
-		"humanmade/aws-ses-wp-mail": "dev-master",
-		"mcaskill/composer-exclude-files": "^4.0",
-		"yoast/wordpress-seo": "^26.6",
-		"aspirepress/aspireexplorer": "^0.2",
-		"fairpm/fair-plugin": "dev-main",
-		"ocean90/public-post-preview": "^3.0",
-		"humanmade/s3-uploads": "^3.0"
-	},
-	"extra": {
-		"installer-paths": {
-			"content/plugins/{$name}/": [
-				"type:wordpress-plugin"
-			],
-			"content/mu-plugins/{$name}/": [
-				"type:wordpress-muplugin"
-			],
-			"content/themes/{$name}/": [
-				"type:wordpress-theme"
-			]
-		},
-		"exclude-from-files": [
-			"freemius/wordpress-sdk/start.php"
-		]
-	},
-	"config": {
-		"allow-plugins": {
-			"composer/installers": true,
-			"johnpbloch/wordpress-core-installer": true,
-			"mcaskill/composer-exclude-files": true
-		}
-	}
+    "name": "fairpm/server",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/GlotPress/GlotPress",
+            "only": [
+                "glotpress/glotpress-wp"
+            ]
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/aspirepress/AspireExplorer",
+            "only": [
+                "aspirepress/aspireexplorer"
+            ]
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/fairpm/fair-plugin",
+            "only": [
+                "fairpm/fair-plugin"
+            ]
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/fairpm/fair-beacon",
+            "only": [
+                "fairpm/fair-beacon"
+            ]
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ocean90/public-post-preview",
+            "only": [
+                "ocean90/public-post-preview"
+            ]
+        },
+        {
+            "type": "composer",
+            "url": "https://my.yoast.com/packages/",
+            "only": [
+                "yoast/*"
+            ]
+        }
+    ],
+    "require": {
+        "php": ">=8.4",
+        "ext-apcu": "*",
+        "ext-sqlite3": "*",
+        "afragen/git-updater": "^12.21.0",
+        "aspirepress/aspireexplorer": "^0.2",
+        "composer/installers": "~2",
+        "fairpm/fair-beacon": "dev-main",
+        "fairpm/fair-parent-theme": "~1.0.5",
+        "fairpm/fair-plugin": "dev-main",
+        "glotpress/glotpress-wp": "^4.0.3",
+        "humanmade/aws-ses-wp-mail": "dev-master",
+        "humanmade/php-basic-auth": "^1.1.1",
+        "humanmade/s3-uploads": "^3.0.11",
+        "humanmade/wp-redis-predis-client": "^0.1.2",
+        "johnbillion/query-monitor": "^3.20.2",
+        "mcaskill/composer-exclude-files": "^4.0.1",
+        "ocean90/public-post-preview": "^3.0.1",
+        "oscarotero/env": "^2.1.1",
+        "pantheon-systems/wp-redis": "^1.4.7",
+        "roots/bedrock-autoloader": "^1.0.4",
+        "roots/wordpress": "^6.9.0",
+        "roots/wp-config": "^1.0",
+        "vlucas/phpdotenv": "^5.6.3",
+        "wpackagist-plugin/fastly": "^1.2.29",
+        "wpackagist-theme/twentytwentyfive": "^1.4",
+        "yoast/wordpress-seo": ">=26.4"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "suggest": {
+        "yoast/wordpress-seo-premium": "^26.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "installer-paths": {
+            "web/app/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "web/app/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "web/app/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        },
+        "wordpress-install-dir": "web/wp",
+        "exclude-from-files": [
+            "freemius/wordpress-sdk/start.php"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "mcaskill/composer-exclude-files": true,
+            "roots/wordpress-core-installer": true
+        },
+        "bump-after-update": true,
+        "notify-on-install": false,
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
 }

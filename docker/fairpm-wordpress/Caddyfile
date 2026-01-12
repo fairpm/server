@@ -1,0 +1,62 @@
+{
+	# Global options
+	auto_https off
+	admin off
+	frankenphp
+}
+
+:80 {
+	root * /app/web
+
+	# Enable PHP processing
+	php_server {
+		resolve_root_symlink
+	}
+
+	# Handle WordPress pretty permalinks
+	try_files {path} {path}/ /index.php?{query}
+
+	# Roots Bedrock uses a /wp/ prefix that many things do not respect, so rewrite /wp-admin and /wp-includes
+	rewrite /wp-admin/* /wp{uri}
+	rewrite /wp-includes/* /wp{uri}
+	rewrite /wp-*.php /wp{uri}
+	rewrite /xmlrpc.php /wp{uri}
+
+	# Serve static files directly
+	file_server
+
+	# Enable compression
+	encode zstd br gzip
+
+	# Enable logging
+	log {
+		output stderr
+		format json
+	}
+
+    # Global headers on all responses
+    header {
+        Permissions-Policy attribution-reporting=(), interest-cohort=()
+        X-Content-Type-Options nosniff
+        X-Frame-Options SAMEORIGIN
+
+        # HSTS in dev means if Traefik cert config isn't right, you can't click through the self-signed cert warning
+        # Strict-Transport-Security max-age=31536000; includeSubDomains
+
+        # https://github.com/fairpm/server/issues/57#issuecomment-3572057011
+        # Still in flux: img-src will probably have to be relaxed for one
+        # Content-Security-Policy "default-src 'self';  script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https://github.com https://raw.githubusercontent.com data:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';"
+    }
+
+	# Add cache headers for static assets
+	@static {
+		path *.css *.js *.ico *.gif *.jpg *.jpeg *.png *.svg *.woff *.woff2
+	}
+	header @static Cache-Control "public, max-age=31536000"
+
+	# Disable WordPress admin-ajax.php caching
+	@adminAjax {
+		path /wp-admin/admin-ajax.php
+	}
+	header @adminAjax Cache-Control "no-cache, no-store, must-revalidate"
+}
