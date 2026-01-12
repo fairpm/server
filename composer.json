@@ -1,24 +1,30 @@
 {
-	"name": "openwebff/server",
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"name": "fairpm/server",
 	"type": "project",
-	"repositories": [
-		{
+	"repositories": {
+		"0": {
 			"type": "vcs",
 			"url": "https://github.com/GlotPress/GlotPress"
 		},
-		{
+		"1": {
+			"type": "vcs",
+			"url": "https://github.com/fairpm/fair-beacon"
+		},
+		"2": {
 			"type": "vcs",
 			"url": "https://github.com/aspirepress/AspireExplorer"
 		},
-		{
+		"3": {
 			"type": "vcs",
 			"url": "https://github.com/fairpm/fair-plugin"
 		},
-		{
+		"4": {
 			"type": "vcs",
 			"url": "https://github.com/ocean90/public-post-preview"
 		}
-	],
+	},
 	"require": {
 		"composer/installers": "~2",
 		"humanmade/php-basic-auth": "^1.1",
@@ -27,11 +33,12 @@
 		"johnpbloch/wordpress": "^6.8",
 		"pantheon-systems/wp-redis": "^1.4",
 		"humanmade/wp-redis-predis-client": "^0.1.2",
-		"afragen/git-updater": "^12.18",
+		"afragen/git-updater": "^12.21",
 		"fairpm/fair-parent-theme": "~1.0.1",
+		"fairpm/fair-beacon": "dev-main",
 		"humanmade/aws-ses-wp-mail": "dev-master",
 		"mcaskill/composer-exclude-files": "^4.0",
-		"yoast/wordpress-seo": "*",
+		"yoast/wordpress-seo": "^26.6",
 		"aspirepress/aspireexplorer": "^0.2",
 		"fairpm/fair-plugin": "dev-main",
 		"ocean90/public-post-preview": "^3.0",
@@ -39,9 +46,15 @@
 	},
 	"extra": {
 		"installer-paths": {
-			"content/plugins/{$name}/": ["type:wordpress-plugin"],
-			"content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-			"content/themes/{$name}/": ["type:wordpress-theme"]
+			"content/plugins/{$name}/": [
+				"type:wordpress-plugin"
+			],
+			"content/mu-plugins/{$name}/": [
+				"type:wordpress-muplugin"
+			],
+			"content/themes/{$name}/": [
+				"type:wordpress-theme"
+			]
 		},
 		"exclude-from-files": [
 			"freemius/wordpress-sdk/start.php"

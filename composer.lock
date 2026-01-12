@@ -4,33 +4,40 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e664bd6cf8c40dd14e1ce87849b0b238",
+    "content-hash": "a03706c4e4200d36a3a1031c7a59c9aa",
     "packages": [
         {
             "name": "afragen/git-updater",
-            "version": "12.18.1",
+            "version": "12.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/git-updater.git",
-                "reference": "4fad507562869a80a6486883b87bae83922a6d41"
+                "reference": "f1386a77bb93cec3e8f5a135bd4a7e35ca89dede"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/git-updater/zipball/4fad507562869a80a6486883b87bae83922a6d41",
-                "reference": "4fad507562869a80a6486883b87bae83922a6d41",
+                "url": "https://api.github.com/repos/afragen/git-updater/zipball/f1386a77bb93cec3e8f5a135bd4a7e35ca89dede",
+                "reference": "f1386a77bb93cec3e8f5a135bd4a7e35ca89dede",
                 "shasum": ""
             },
             "require": {
                 "afragen/singleton": "^1.0",
                 "afragen/wordpress-plugin-readme-parser": "^1",
                 "afragen/wp-dismiss-notice": "*",
+                "erusev/parsedown": "dev-master#0b274ac959624e6c6d647e9c9b6c2d20da242004",
                 "freemius/wordpress-sdk": "^2.12",
                 "php": ">=8.0"
             },
             "require-dev": {
+                "mcaskill/composer-exclude-files": "^4.0",
                 "wp-coding-standards/wpcs": "^3.0.0"
             },
             "type": "wordpress-plugin",
+            "extra": {
+                "exclude-from-files": [
+                    "freemius/wordpress-sdk/start.php"
+                ]
+            },
             "autoload": {
                 "psr-4": {
                     "Fragen\\Git_Updater\\": "src/Git_Updater/"
@@ -38,7 +45,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "GPL-3.0-or-later"
             ],
             "authors": [
                 {
@@ -65,7 +72,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-06T23:27:09+00:00"
+            "time": "2025-12-31T20:02:11+00:00"
         },
         {
             "name": "afragen/singleton",
@@ -115,20 +122,20 @@
         },
         {
             "name": "afragen/wordpress-plugin-readme-parser",
-            "version": "1.2024.12.10",
+            "version": "1.2025.12.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/wordpress-plugin-readme-parser.git",
-                "reference": "803ccfc442d956aa04d69f4b234eda5d7f03afc4"
+                "reference": "1fbb311ef5f31f0e1e2d8978f187c81c22b351c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/wordpress-plugin-readme-parser/zipball/803ccfc442d956aa04d69f4b234eda5d7f03afc4",
-                "reference": "803ccfc442d956aa04d69f4b234eda5d7f03afc4",
+                "url": "https://api.github.com/repos/afragen/wordpress-plugin-readme-parser/zipball/1fbb311ef5f31f0e1e2d8978f187c81c22b351c5",
+                "reference": "1fbb311ef5f31f0e1e2d8978f187c81c22b351c5",
                 "shasum": ""
             },
             "require": {
-                "erusev/parsedown": "^1.7",
+                "erusev/parsedown": "dev-master#0b274ac959624e6c6d647e9c9b6c2d20da242004",
                 "php": ">=5.4"
             },
             "type": "library",
@@ -155,9 +162,9 @@
             ],
             "support": {
                 "issues": "https://github.com/afragen/wordpress-plugin-readme-parser/issues",
-                "source": "https://github.com/afragen/wordpress-plugin-readme-parser/tree/1.2024.12.10"
+                "source": "https://github.com/afragen/wordpress-plugin-readme-parser/tree/1.2025.12.6"
             },
-            "time": "2024-12-10T23:43:17+00:00"
+            "time": "2025-12-06T17:41:45+00:00"
         },
         {
             "name": "afragen/wp-dismiss-notice",
@@ -305,16 +312,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.369.10",
+            "version": "3.369.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "e179090bf2d658be7be37afc146111966ba6f41b"
+                "reference": "7cb482768899d510e8bcb3e9ef685d2ed0afcbfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e179090bf2d658be7be37afc146111966ba6f41b",
-                "reference": "e179090bf2d658be7be37afc146111966ba6f41b",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7cb482768899d510e8bcb3e9ef685d2ed0afcbfe",
+                "reference": "7cb482768899d510e8bcb3e9ef685d2ed0afcbfe",
                 "shasum": ""
             },
             "require": {
@@ -396,9 +403,69 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.369.10"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.369.5"
             },
-            "time": "2026-01-09T19:08:12+00:00"
+            "time": "2025-12-30T19:07:16+00:00"
+        },
+        {
+            "name": "brick/math",
+            "version": "0.14.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brick/math.git",
+                "reference": "f05858549e5f9d7bb45875a75583240a38a281d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brick/math/zipball/f05858549e5f9d7bb45875a75583240a38a281d0",
+                "reference": "f05858549e5f9d7bb45875a75583240a38a281d0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.2",
+                "phpstan/phpstan": "2.1.22",
+                "phpunit/phpunit": "^11.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Brick\\Math\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Arbitrary-precision arithmetic library",
+            "keywords": [
+                "Arbitrary-precision",
+                "BigInteger",
+                "BigRational",
+                "arithmetic",
+                "bigdecimal",
+                "bignum",
+                "bignumber",
+                "brick",
+                "decimal",
+                "integer",
+                "math",
+                "mathematics",
+                "rational"
+            ],
+            "support": {
+                "issues": "https://github.com/brick/math/issues",
+                "source": "https://github.com/brick/math/tree/0.14.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/BenMorel",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-11-24T14:40:29+00:00"
         },
         {
             "name": "composer/installers",
@@ -548,25 +615,26 @@
         },
         {
             "name": "erusev/parsedown",
-            "version": "1.7.4",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "cb17b6477dfff935958ba01325f2e8a2bfa6dab3"
+                "reference": "0b274ac959624e6c6d647e9c9b6c2d20da242004"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/cb17b6477dfff935958ba01325f2e8a2bfa6dab3",
-                "reference": "cb17b6477dfff935958ba01325f2e8a2bfa6dab3",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/0b274ac959624e6c6d647e9c9b6c2d20da242004",
+                "reference": "0b274ac959624e6c6d647e9c9b6c2d20da242004",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": ">=5.3.0"
+                "php": ">=7.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35"
+                "phpunit/phpunit": "^7.5|^8.5|^9.6"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-0": {
@@ -592,9 +660,63 @@
             ],
             "support": {
                 "issues": "https://github.com/erusev/parsedown/issues",
-                "source": "https://github.com/erusev/parsedown/tree/1.7.x"
+                "source": "https://github.com/erusev/parsedown/tree/master"
             },
-            "time": "2019-12-30T22:54:17+00:00"
+            "time": "2025-08-31T07:57:44+00:00"
+        },
+        {
+            "name": "fairpm/fair-beacon",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fairpm/fair-beacon.git",
+                "reference": "76d97b5dda5648055d07ef3b3de4f0cf069a1f07"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fairpm/fair-beacon/zipball/76d97b5dda5648055d07ef3b3de4f0cf069a1f07",
+                "reference": "76d97b5dda5648055d07ef3b3de4f0cf069a1f07",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3",
+                "simplito/elliptic-php": "^1.0",
+                "spomky-labs/cbor-php": "^3.1",
+                "yocto/yoclib-multibase": "^1.2"
+            },
+            "require-dev": {
+                "humanmade/coding-standards": "^1.2"
+            },
+            "default-branch": true,
+            "type": "wordpress-plugin",
+            "autoload": {
+                "classmap": [
+                    "inc/"
+                ]
+            },
+            "scripts": {
+                "lint": [
+                    "@php ./vendor/bin/phpcs ."
+                ],
+                "format": [
+                    "@php ./vendor/bin/phpcbf ."
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "FAIR Contributors"
+                }
+            ],
+            "description": "Transform your WP site into a FAIR Package Management Repository",
+            "homepage": "https://github.com/fairpm/fair-beacon",
+            "support": {
+                "issues": "https://github.com/fairpm/fair-beacon/issues",
+                "source": "https://github.com/fairpm/fair-beacon"
+            },
+            "time": "2026-01-07T17:45:36+00:00"
         },
         {
             "name": "fairpm/fair-parent-theme",
@@ -725,16 +847,16 @@
         },
         {
             "name": "freemius/wordpress-sdk",
-            "version": "2.12.2",
+            "version": "2.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Freemius/wordpress-sdk.git",
-                "reference": "241fbfc91151f85d8ebeb75343caf29bda1d3208"
+                "reference": "3cbe98b5bd0b0fb5ca4df97b8088592737ea4375"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Freemius/wordpress-sdk/zipball/241fbfc91151f85d8ebeb75343caf29bda1d3208",
-                "reference": "241fbfc91151f85d8ebeb75343caf29bda1d3208",
+                "url": "https://api.github.com/repos/Freemius/wordpress-sdk/zipball/3cbe98b5bd0b0fb5ca4df97b8088592737ea4375",
+                "reference": "3cbe98b5bd0b0fb5ca4df97b8088592737ea4375",
                 "shasum": ""
             },
             "require": {
@@ -772,22 +894,22 @@
             ],
             "support": {
                 "issues": "https://github.com/Freemius/wordpress-sdk/issues",
-                "source": "https://github.com/Freemius/wordpress-sdk/tree/2.12.2"
+                "source": "https://github.com/Freemius/wordpress-sdk/tree/2.13.0"
             },
-            "time": "2025-09-15T14:36:55+00:00"
+            "time": "2025-11-11T07:52:08+00:00"
         },
         {
             "name": "glotpress/glotpress-wp",
-            "version": "4.0.1",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GlotPress/GlotPress.git",
-                "reference": "84cfcee8fec4de400469c901185fe1d65f7af797"
+                "reference": "b080352aad54b6680024bb0ef9a96ff351c17e6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GlotPress/GlotPress/zipball/84cfcee8fec4de400469c901185fe1d65f7af797",
-                "reference": "84cfcee8fec4de400469c901185fe1d65f7af797",
+                "url": "https://api.github.com/repos/GlotPress/GlotPress/zipball/b080352aad54b6680024bb0ef9a96ff351c17e6e",
+                "reference": "b080352aad54b6680024bb0ef9a96ff351c17e6e",
                 "shasum": ""
             },
             "require": {
@@ -799,7 +921,7 @@
                 "phpcompatibility/phpcompatibility-wp": "^2.1",
                 "phpunit/phpunit": "^9.6.15",
                 "wp-coding-standards/wpcs": "^2.2",
-                "yoast/phpunit-polyfills": "^2.0"
+                "yoast/phpunit-polyfills": "^4.0"
             },
             "type": "wordpress-plugin",
             "scripts": {
@@ -832,7 +954,7 @@
                 "source": "https://github.com/GlotPress/GlotPress",
                 "docs": "https://glotpress.blog/the-manual/"
             },
-            "time": "2024-04-03T14:29:59+00:00"
+            "time": "2025-10-17T15:39:16+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1325,16 +1447,16 @@
         },
         {
             "name": "johnbillion/query-monitor",
-            "version": "3.20.0",
+            "version": "3.20.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnbillion/query-monitor.git",
-                "reference": "ec24102fa79ca7f02b3e5d2643284c5a71588c62"
+                "reference": "40b9ba0d72a4d938a24aa6367b7715e8ae02e8d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/ec24102fa79ca7f02b3e5d2643284c5a71588c62",
-                "reference": "ec24102fa79ca7f02b3e5d2643284c5a71588c62",
+                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/40b9ba0d72a4d938a24aa6367b7715e8ae02e8d4",
+                "reference": "40b9ba0d72a4d938a24aa6367b7715e8ae02e8d4",
                 "shasum": ""
             },
             "require": {
@@ -1388,7 +1510,7 @@
             "support": {
                 "forum": "https://wordpress.org/support/plugin/query-monitor",
                 "issues": "https://github.com/johnbillion/query-monitor/issues",
-                "security": "https://patchstack.com/database/vdp/query-monitor",
+                "security": "https://querymonitor.com/security/",
                 "source": "https://github.com/johnbillion/query-monitor"
             },
             "funding": [
@@ -1397,24 +1519,24 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-07T22:02:10+00:00"
+            "time": "2025-12-11T22:08:53+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "6.8.2",
+            "version": "6.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "f224d9b28c88048312f3fe635cb65ba66a936950"
+                "reference": "fbc8bf2209d0ab8d579d937b3df89003a3b86b8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/f224d9b28c88048312f3fe635cb65ba66a936950",
-                "reference": "f224d9b28c88048312f3fe635cb65ba66a936950",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/fbc8bf2209d0ab8d579d937b3df89003a3b86b8e",
+                "reference": "fbc8bf2209d0ab8d579d937b3df89003a3b86b8e",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "6.8.2",
+                "johnpbloch/wordpress-core": "6.9.0",
                 "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
                 "php": ">=7.0.0"
             },
@@ -1443,20 +1565,20 @@
                 "issues": "https://core.trac.wordpress.org/",
                 "source": "https://core.trac.wordpress.org/browser"
             },
-            "time": "2025-07-15T15:33:05+00:00"
+            "time": "2025-12-02T19:11:04+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "6.8.2",
+            "version": "6.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "316a8fe38b6dde4e4f399946809f040462038403"
+                "reference": "4626d4e896c36ab77a69ce58627bc76243b5dd07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/316a8fe38b6dde4e4f399946809f040462038403",
-                "reference": "316a8fe38b6dde4e4f399946809f040462038403",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/4626d4e896c36ab77a69ce58627bc76243b5dd07",
+                "reference": "4626d4e896c36ab77a69ce58627bc76243b5dd07",
                 "shasum": ""
             },
             "require": {
@@ -1464,7 +1586,7 @@
                 "php": ">=7.2.24"
             },
             "provide": {
-                "wordpress/core-implementation": "6.8.2"
+                "wordpress/core-implementation": "6.9.0"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -1491,7 +1613,7 @@
                 "source": "https://core.trac.wordpress.org/browser",
                 "wiki": "https://codex.wordpress.org/"
             },
-            "time": "2025-07-15T15:32:59+00:00"
+            "time": "2025-12-02T19:10:58+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -1709,16 +1831,16 @@
         },
         {
             "name": "pantheon-systems/wp-redis",
-            "version": "1.4.6",
+            "version": "1.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pantheon-systems/wp-redis.git",
-                "reference": "bf76694482b2ef45f92bf4df136bf649ec3a5715"
+                "reference": "cb76681a17de4ca67f801b8ad1e2de5be8a0c1cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pantheon-systems/wp-redis/zipball/bf76694482b2ef45f92bf4df136bf649ec3a5715",
-                "reference": "bf76694482b2ef45f92bf4df136bf649ec3a5715",
+                "url": "https://api.github.com/repos/pantheon-systems/wp-redis/zipball/cb76681a17de4ca67f801b8ad1e2de5be8a0c1cd",
+                "reference": "cb76681a17de4ca67f801b8ad1e2de5be8a0c1cd",
                 "shasum": ""
             },
             "require-dev": {
@@ -1726,7 +1848,7 @@
                 "behat/mink-extension": "^2.2",
                 "behat/mink-goutte-driver": "^1.2",
                 "pantheon-systems/pantheon-wordpress-upstream-tests": "dev-master",
-                "pantheon-systems/pantheon-wp-coding-standards": "^2.0",
+                "pantheon-systems/pantheon-wp-coding-standards": "^3.0",
                 "pantheon-systems/wpunit-helpers": "^2.0",
                 "phpunit/phpunit": "^9",
                 "yoast/phpunit-polyfills": "^4.0"
@@ -1749,9 +1871,9 @@
             ],
             "support": {
                 "issues": "https://github.com/pantheon-systems/wp-redis/issues",
-                "source": "https://github.com/pantheon-systems/wp-redis/tree/1.4.6"
+                "source": "https://github.com/pantheon-systems/wp-redis/tree/1.4.7"
             },
-            "time": "2025-06-17T23:17:31+00:00"
+            "time": "2025-12-11T19:32:53+00:00"
         },
         {
             "name": "predis/predis",
@@ -2022,6 +2144,224 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "simplito/bigint-wrapper-php",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/simplito/bigint-wrapper-php.git",
+                "reference": "cf21ec76d33f103add487b3eadbd9f5033a25930"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/simplito/bigint-wrapper-php/zipball/cf21ec76d33f103add487b3eadbd9f5033a25930",
+                "reference": "cf21ec76d33f103add487b3eadbd9f5033a25930",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "BI\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simplito Team",
+                    "email": "s.smyczynski@simplito.com",
+                    "homepage": "https://simplito.com"
+                }
+            ],
+            "description": "Common interface for php_gmp and php_bcmath modules",
+            "support": {
+                "issues": "https://github.com/simplito/bigint-wrapper-php/issues",
+                "source": "https://github.com/simplito/bigint-wrapper-php/tree/1.0.0"
+            },
+            "time": "2018-02-27T12:38:08+00:00"
+        },
+        {
+            "name": "simplito/bn-php",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/simplito/bn-php.git",
+                "reference": "83446756a81720eacc2ffb87ff97958431451fd6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/simplito/bn-php/zipball/83446756a81720eacc2ffb87ff97958431451fd6",
+                "reference": "83446756a81720eacc2ffb87ff97958431451fd6",
+                "shasum": ""
+            },
+            "require": {
+                "simplito/bigint-wrapper-php": "~1.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "BN\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simplito Team",
+                    "email": "s.smyczynski@simplito.com",
+                    "homepage": "https://simplito.com"
+                }
+            ],
+            "description": "Big number implementation compatible with bn.js",
+            "support": {
+                "issues": "https://github.com/simplito/bn-php/issues",
+                "source": "https://github.com/simplito/bn-php/tree/1.1.4"
+            },
+            "time": "2024-01-10T16:16:59+00:00"
+        },
+        {
+            "name": "simplito/elliptic-php",
+            "version": "1.0.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/simplito/elliptic-php.git",
+                "reference": "be321666781be2be2c89c79c43ffcac834bc8868"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/simplito/elliptic-php/zipball/be321666781be2be2c89c79c43ffcac834bc8868",
+                "reference": "be321666781be2be2c89c79c43ffcac834bc8868",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gmp": "*",
+                "simplito/bn-php": "~1.1.0"
+            },
+            "require-dev": {
+                "phpbench/phpbench": "@dev",
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Elliptic\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simplito Team",
+                    "email": "s.smyczynski@simplito.com",
+                    "homepage": "https://simplito.com"
+                }
+            ],
+            "description": "Fast elliptic curve cryptography",
+            "homepage": "https://github.com/simplito/elliptic-php",
+            "keywords": [
+                "Curve25519",
+                "ECDSA",
+                "Ed25519",
+                "EdDSA",
+                "cryptography",
+                "curve",
+                "curve25519-weier",
+                "ecc",
+                "ecdh",
+                "elliptic",
+                "nistp192",
+                "nistp224",
+                "nistp256",
+                "nistp384",
+                "nistp521",
+                "secp256k1"
+            ],
+            "support": {
+                "issues": "https://github.com/simplito/elliptic-php/issues",
+                "source": "https://github.com/simplito/elliptic-php/tree/1.0.12"
+            },
+            "time": "2024-01-09T14:57:04+00:00"
+        },
+        {
+            "name": "spomky-labs/cbor-php",
+            "version": "3.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Spomky-Labs/cbor-php.git",
+                "reference": "2a5fb86aacfe1004611370ead6caa2bfc88435d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Spomky-Labs/cbor-php/zipball/2a5fb86aacfe1004611370ead6caa2bfc88435d0",
+                "reference": "2a5fb86aacfe1004611370ead6caa2bfc88435d0",
+                "shasum": ""
+            },
+            "require": {
+                "brick/math": "^0.9|^0.10|^0.11|^0.12|^0.13|^0.14",
+                "ext-mbstring": "*",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "ext-json": "*",
+                "roave/security-advisories": "dev-latest",
+                "symfony/error-handler": "^6.4|^7.1|^8.0",
+                "symfony/var-dumper": "^6.4|^7.1|^8.0"
+            },
+            "suggest": {
+                "ext-bcmath": "GMP or BCMath extensions will drastically improve the library performance. BCMath extension needed to handle the Big Float and Decimal Fraction Tags",
+                "ext-gmp": "GMP or BCMath extensions will drastically improve the library performance"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CBOR\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Florent Morselli",
+                    "homepage": "https://github.com/Spomky"
+                },
+                {
+                    "name": "All contributors",
+                    "homepage": "https://github.com/Spomky-Labs/cbor-php/contributors"
+                }
+            ],
+            "description": "CBOR Encoder/Decoder for PHP",
+            "keywords": [
+                "Concise Binary Object Representation",
+                "RFC7049",
+                "cbor"
+            ],
+            "support": {
+                "issues": "https://github.com/Spomky-Labs/cbor-php/issues",
+                "source": "https://github.com/Spomky-Labs/cbor-php/tree/3.2.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Spomky",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/FlorentMorselli",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2025-11-13T13:00:34+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -2330,16 +2670,16 @@
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "26.0",
+            "version": "26.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast-dist/wordpress-seo.git",
-                "reference": "d0f74cc5f7010e65b14d3807dbab9ac9eab59a7d"
+                "reference": "5cfcfa4cbb6deae5c6715eebaf984ca78bde25c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/d0f74cc5f7010e65b14d3807dbab9ac9eab59a7d",
-                "reference": "d0f74cc5f7010e65b14d3807dbab9ac9eab59a7d",
+                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/5cfcfa4cbb6deae5c6715eebaf984ca78bde25c3",
+                "reference": "5cfcfa4cbb6deae5c6715eebaf984ca78bde25c3",
                 "shasum": ""
             },
             "require": {
@@ -2348,13 +2688,13 @@
                 "php": "^7.4| ^8.0"
             },
             "require-dev": {
-                "guzzlehttp/guzzle": "7.8.1",
+                "guzzlehttp/guzzle": "7.10.0",
                 "humbug/php-scoper": "^0.13.4",
-                "league/oauth2-client": "2.7.0",
-                "psr/container": "1.0.0",
+                "league/oauth2-client": "2.8.1",
+                "psr/container": "1.1.1",
                 "psr/log": "^1.0",
-                "symfony/config": "^3.4",
-                "symfony/dependency-injection": "^3.4",
+                "symfony/config": "^5.4.46",
+                "symfony/dependency-injection": "^5.4.48",
                 "wpackagist-plugin/google-site-kit": "dev-trunk",
                 "yoast/wp-test-utils": "^1.2",
                 "yoast/yoastcs": "^3.2.0"
@@ -2406,17 +2746,64 @@
                 "source": "https://github.com/Yoast/wordpress-seo",
                 "wiki": "https://github.com/Yoast/wordpress-seo/wiki"
             },
-            "time": "2025-09-23T08:31:37+00:00"
+            "time": "2025-12-15T10:25:20+00:00"
+        },
+        {
+            "name": "yocto/yoclib-multibase",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yocto/yoclib-multibase-php.git",
+                "reference": "c7171897bf61dbc4a4cc6bb3f2fd5c3e62298e13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yocto/yoclib-multibase-php/zipball/c7171897bf61dbc4a4cc6bb3f2fd5c3e62298e13",
+                "reference": "c7171897bf61dbc4a4cc6bb3f2fd5c3e62298e13",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^7.4||^8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7||^8||^9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "YOCLIB\\Multiformats\\Multibase\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "description": "This yocLibrary enables your project to encode and decode Multibases in PHP.",
+            "keywords": [
+                "composer",
+                "multibase",
+                "multiformats",
+                "php",
+                "yoclib",
+                "yocto"
+            ],
+            "support": {
+                "issues": "https://github.com/yocto/yoclib-multibase-php/issues",
+                "source": "https://github.com/yocto/yoclib-multibase-php/tree/v1.2.0"
+            },
+            "time": "2024-06-05T13:42:01+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
+        "fairpm/fair-beacon": 20,
         "fairpm/fair-plugin": 20,
         "humanmade/aws-ses-wp-mail": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},

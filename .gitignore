@@ -8,9 +8,14 @@ content/plugins/fair-plugin/
 content/plugins/git-updater/
 content/plugins/query-monitor/
 content/plugins/wp-redis/
+content/plugins/mini-fair-repo/
 content/plugins/aspireexplorer/
 content/plugins/public-post-preview/
 content/plugins/wordpress-seo/
+content/plugins/wordpress-seo-premium/
 content/themes/fair-parent-theme/
+content/plugins/fair-beacon/
+content/plugins/glotpress-wp/
+content/plugins/s3-uploads/
 vendor/
 wordpress/
