@@ -11,9 +11,13 @@ add_filter('rest_pre_echo_response', __NAMESPACE__ . '\\rewrite_gu_response');
 
 function rewrite_gu_response($response)
 {
+    if (!is_array($response)) {
+        return $response;
+    }
+
     $download_link = $response['download_link'] ?? null;
 
-    if (!$download_link || !str_contains($download_link, 'fairpm/fair-plugin')) {
+    if (!$download_link || !is_string($download_link) || !str_contains($download_link, 'fairpm/fair-plugin')) {
         return $response;
     }
 
