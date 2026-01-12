@@ -33,7 +33,7 @@
 		"mcaskill/composer-exclude-files": "^4.0",
 		"yoast/wordpress-seo": "*",
 		"aspirepress/aspireexplorer": "^0.2",
-		"fair/fair-plugin": "dev-main",
+		"fairpm/fair-plugin": "dev-main",
 		"ocean90/public-post-preview": "^3.0",
 		"humanmade/s3-uploads": "^3.0"
 	},

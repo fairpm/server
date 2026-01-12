@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d594a69208261c0558253b19cb445ad",
+    "content-hash": "e664bd6cf8c40dd14e1ce87849b0b238",
     "packages": [
         {
             "name": "afragen/git-updater",
@@ -305,16 +305,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.23",
+            "version": "3.369.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "e9253cf6073f06080a7458af54e18fc474f0c864"
+                "reference": "e179090bf2d658be7be37afc146111966ba6f41b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e9253cf6073f06080a7458af54e18fc474f0c864",
-                "reference": "e9253cf6073f06080a7458af54e18fc474f0c864",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e179090bf2d658be7be37afc146111966ba6f41b",
+                "reference": "e179090bf2d658be7be37afc146111966ba6f41b",
                 "shasum": ""
             },
             "require": {
@@ -327,7 +327,8 @@
                 "guzzlehttp/psr7": "^2.4.5",
                 "mtdowling/jmespath.php": "^2.8.0",
                 "php": ">=8.1",
-                "psr/http-message": "^1.0 || ^2.0"
+                "psr/http-message": "^1.0 || ^2.0",
+                "symfony/filesystem": "^v5.4.45 || ^v6.4.3 || ^v7.1.0 || ^v8.0.0"
             },
             "require-dev": {
                 "andrewsville/php-token-reflection": "^1.4",
@@ -338,13 +339,11 @@
                 "doctrine/cache": "~1.4",
                 "ext-dom": "*",
                 "ext-openssl": "*",
-                "ext-pcntl": "*",
                 "ext-sockets": "*",
-                "phpunit/phpunit": "^5.6.3 || ^8.5 || ^9.5",
+                "phpunit/phpunit": "^9.6",
                 "psr/cache": "^2.0 || ^3.0",
                 "psr/simple-cache": "^2.0 || ^3.0",
                 "sebastian/comparator": "^1.2.3 || ^4.0 || ^5.0",
-                "symfony/filesystem": "^v6.4.0 || ^v7.1.0",
                 "yoast/phpunit-polyfills": "^2.0"
             },
             "suggest": {
@@ -352,6 +351,7 @@
                 "doctrine/cache": "To use the DoctrineCacheAdapter",
                 "ext-curl": "To send requests using cURL",
                 "ext-openssl": "Allows working with CloudFront private distributions and verifying received SNS messages",
+                "ext-pcntl": "To use client-side monitoring",
                 "ext-sockets": "To use client-side monitoring"
             },
             "type": "library",
@@ -396,9 +396,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.23"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.369.10"
             },
-            "time": "2025-09-22T18:10:31+00:00"
+            "time": "2026-01-09T19:08:12+00:00"
         },
         {
             "name": "composer/installers",
@@ -597,17 +597,57 @@
             "time": "2019-12-30T22:54:17+00:00"
         },
         {
-            "name": "fair/fair-plugin",
+            "name": "fairpm/fair-parent-theme",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fairpm/fair-parent-theme.git",
+                "reference": "ea4d1b82583e68c9a4f498056fe2a750b375bd48"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fairpm/fair-parent-theme/zipball/ea4d1b82583e68c9a4f498056fe2a750b375bd48",
+                "reference": "ea4d1b82583e68c9a4f498056fe2a750b375bd48",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "type": "wordpress-theme",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/fairpm/fair-parent-theme/graphs/contributors"
+                }
+            ],
+            "description": "FAIR Package Manager network theme.",
+            "homepage": "https://github.com/fairpm/fair-parent-theme/",
+            "keywords": [
+                "fairpm",
+                "theme"
+            ],
+            "support": {
+                "issues": "https://github.com/fairpm/fair-parent-theme/issues",
+                "source": "https://github.com/fairpm/fair-parent-theme/tree/1.0.5"
+            },
+            "time": "2025-10-21T18:55:12+00:00"
+        },
+        {
+            "name": "fairpm/fair-plugin",
             "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fairpm/fair-plugin.git",
-                "reference": "2246a7b6e9c10a2c0c1739509a6f42a409d7ec9b"
+                "reference": "8f3ab3c0b18a166771db10d1f58f466dfd5b2f33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fairpm/fair-plugin/zipball/2246a7b6e9c10a2c0c1739509a6f42a409d7ec9b",
-                "reference": "2246a7b6e9c10a2c0c1739509a6f42a409d7ec9b",
+                "url": "https://api.github.com/repos/fairpm/fair-plugin/zipball/8f3ab3c0b18a166771db10d1f58f466dfd5b2f33",
+                "reference": "8f3ab3c0b18a166771db10d1f58f466dfd5b2f33",
                 "shasum": ""
             },
             "require": {
@@ -670,55 +710,18 @@
             ],
             "authors": [
                 {
-                    "name": "FAIR Contributors"
+                    "name": "FAIR Contributors",
+                    "email": "operations@fair.pm",
+                    "homepage": "https://fair.pm"
                 }
             ],
             "description": "Make your site more FAIR.",
             "support": {
-                "source": "https://github.com/fairpm/fair-plugin/tree/main",
-                "issues": "https://github.com/fairpm/fair-plugin/issues"
+                "issues": "https://github.com/fairpm/fair-plugin/issues",
+                "source": "https://github.com/fairpm/fair-plugin",
+                "docs": "https://github.com/fairpm/fair-plugin/blob/main/README.md"
             },
-            "time": "2025-09-23T02:45:27+00:00"
-        },
-        {
-            "name": "fairpm/fair-parent-theme",
-            "version": "1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fairpm/fair-parent-theme.git",
-                "reference": "ea4d1b82583e68c9a4f498056fe2a750b375bd48"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fairpm/fair-parent-theme/zipball/ea4d1b82583e68c9a4f498056fe2a750b375bd48",
-                "reference": "ea4d1b82583e68c9a4f498056fe2a750b375bd48",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.4"
-            },
-            "type": "wordpress-theme",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Contributors",
-                    "homepage": "https://github.com/fairpm/fair-parent-theme/graphs/contributors"
-                }
-            ],
-            "description": "FAIR Package Manager network theme.",
-            "homepage": "https://github.com/fairpm/fair-parent-theme/",
-            "keywords": [
-                "fairpm",
-                "theme"
-            ],
-            "support": {
-                "issues": "https://github.com/fairpm/fair-parent-theme/issues",
-                "source": "https://github.com/fairpm/fair-parent-theme/tree/1.0.5"
-            },
-            "time": "2025-10-21T18:55:12+00:00"
+            "time": "2026-01-07T22:20:08+00:00"
         },
         {
             "name": "freemius/wordpress-sdk",
@@ -1162,12 +1165,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/humanmade/aws-ses-wp-mail.git",
-                "reference": "4021bab5c881011fcdf626c91b2295cb422fbaed"
+                "reference": "91320c3bd270dcc8247cbe4cc607e0a2b64142ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/humanmade/aws-ses-wp-mail/zipball/4021bab5c881011fcdf626c91b2295cb422fbaed",
-                "reference": "4021bab5c881011fcdf626c91b2295cb422fbaed",
+                "url": "https://api.github.com/repos/humanmade/aws-ses-wp-mail/zipball/91320c3bd270dcc8247cbe4cc607e0a2b64142ba",
+                "reference": "91320c3bd270dcc8247cbe4cc607e0a2b64142ba",
                 "shasum": ""
             },
             "require": {
@@ -1197,7 +1200,7 @@
                 "issues": "https://github.com/humanmade/aws-ses-wp-mail/issues",
                 "source": "https://github.com/humanmade/aws-ses-wp-mail"
             },
-            "time": "2025-09-10T10:48:58+00:00"
+            "time": "2025-10-08T09:48:26+00:00"
         },
         {
             "name": "humanmade/php-basic-auth",
@@ -2088,6 +2091,159 @@
             "time": "2024-09-25T14:21:43+00:00"
         },
         {
+            "name": "symfony/filesystem",
+            "version": "v8.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/filesystem.git",
+                "reference": "d937d400b980523dc9ee946bb69972b5e619058d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/d937d400b980523dc9ee946bb69972b5e619058d",
+                "reference": "d937d400b980523dc9ee946bb69972b5e619058d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.4",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-mbstring": "~1.8"
+            },
+            "require-dev": {
+                "symfony/process": "^7.4|^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides basic utilities for the filesystem",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/filesystem/tree/v8.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-12-01T09:13:36+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.33.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "a3cc8b044a6ea513310cbd48ef7333b384945638"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/a3cc8b044a6ea513310cbd48ef7333b384945638",
+                "reference": "a3cc8b044a6ea513310cbd48ef7333b384945638",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "provide": {
+                "ext-ctype": "*"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/polyfill",
+                    "name": "symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.33.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-09-09T11:45:10+00:00"
+        },
+        {
             "name": "symfony/polyfill-mbstring",
             "version": "v1.33.0",
             "source": {
@@ -2257,12 +2413,12 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fair/fair-plugin": 20,
+        "fairpm/fair-plugin": 20,
         "humanmade/aws-ses-wp-mail": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
