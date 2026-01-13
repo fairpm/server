@@ -27,7 +27,7 @@ To ignore files from deployment, specify them in `.distignore`.
 **Notes for the infrastructure team:**
 
 ```
-# In this repo (fairpm/site)
+# In this repo (fairpm/server)
 git checkout main
 git tag -f production
 git push --tags
