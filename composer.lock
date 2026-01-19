@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "afragen/git-updater",
-            "version": "12.21.0",
+            "version": "12.22.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/git-updater.git",
-                "reference": "f1386a77bb93cec3e8f5a135bd4a7e35ca89dede"
+                "reference": "637b624db7559ec3f3a688d9416de8ba01c16232"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/git-updater/zipball/f1386a77bb93cec3e8f5a135bd4a7e35ca89dede",
-                "reference": "f1386a77bb93cec3e8f5a135bd4a7e35ca89dede",
+                "url": "https://api.github.com/repos/afragen/git-updater/zipball/637b624db7559ec3f3a688d9416de8ba01c16232",
+                "reference": "637b624db7559ec3f3a688d9416de8ba01c16232",
                 "shasum": ""
             },
             "require": {
@@ -72,7 +72,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-12-31T20:02:11+00:00"
+            "time": "2026-01-14T01:07:52+00:00"
         },
         {
             "name": "afragen/singleton",
@@ -2807,5 +2807,5 @@
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.6.0"
 }
