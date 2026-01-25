@@ -23,6 +23,14 @@
 		"4": {
 			"type": "vcs",
 			"url": "https://github.com/ocean90/public-post-preview"
+		},
+		"5": {
+			"type": "vcs",
+			"url": "https://github.com/ProgressPlanner/pp-glossary"
+		},
+		"6": {
+			"type": "vcs",
+			"url": "https://github.com/fastly/WordPress-Plugin/"
 		}
 	},
 	"require": {
@@ -42,7 +50,9 @@
 		"aspirepress/aspireexplorer": "^0.2",
 		"fairpm/fair-plugin": "dev-main",
 		"ocean90/public-post-preview": "^3.0",
-		"humanmade/s3-uploads": "^3.0"
+		"humanmade/s3-uploads": "^3.0",
+		"fastly/WordPress-Plugin": "^1.2.29",
+		"ProgressPlanner/pp-glossary": "^1.2.0"
 	},
 	"extra": {
 		"installer-paths": {
