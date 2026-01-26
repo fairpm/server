@@ -30,7 +30,7 @@
 		},
 		"6": {
 			"type": "vcs",
-			"url": "https://github.com/fastly/WordPress-Plugin/"
+			"url": "https://github.com/fastly/wordPress-plugin/"
 		}
 	},
 	"require": {
