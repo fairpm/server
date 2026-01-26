@@ -29,8 +29,8 @@
 			"url": "https://github.com/progressplanner/pp-glossary"
 		},
 		"6": {
-			"type": "vcs",
-			"url": "https://github.com/fastly/wordpress-plugin/"
+			"type": "composer",
+			"url": "https://wpackagist.org"
 		}
 	},
 	"require": {
@@ -51,8 +51,9 @@
 		"fairpm/fair-plugin": "dev-main",
 		"ocean90/public-post-preview": "^3.0",
 		"humanmade/s3-uploads": "^3.0",
-		"fastly/wordpress-plugin": "^1.2.29",
-		"progressplanner/pp-glossary": "^1.2.0"
+		"wpackagist-plugin/fastly": "^1.2.29",
+		"progress-planner/glossary": "^1.2.0",
+		"wpackagist-plugin/unconfirmed": "^1.3.7"
 	},
 	"extra": {
 		"installer-paths": {
