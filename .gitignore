@@ -19,5 +19,6 @@ content/plugins/glotpress-wp/
 content/plugins/s3-uploads/
 content/plugins/fastly/
 content/plugins/glossary/
+content/plugins/unconfirmed/
 vendor/
 wordpress/
