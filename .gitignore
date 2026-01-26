@@ -17,5 +17,7 @@ content/themes/fair-parent-theme/
 content/plugins/fair-beacon/
 content/plugins/glotpress-wp/
 content/plugins/s3-uploads/
+content/plugins/fastly/
+content/plugins/glossary/
 vendor/
 wordpress/
