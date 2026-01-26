@@ -30,7 +30,7 @@
 		},
 		"6": {
 			"type": "vcs",
-			"url": "https://github.com/fastly/wordPress-plugin/"
+			"url": "https://github.com/fastly/wordpress-plugin/"
 		}
 	},
 	"require": {
@@ -51,7 +51,7 @@
 		"fairpm/fair-plugin": "dev-main",
 		"ocean90/public-post-preview": "^3.0",
 		"humanmade/s3-uploads": "^3.0",
-		"fastly/WordPress-Plugin": "^1.2.29",
+		"fastly/wordpress-plugin": "^1.2.29",
 		"ProgressPlanner/pp-glossary": "^1.2.0"
 	},
 	"extra": {
