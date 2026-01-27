@@ -312,16 +312,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.369.20",
+            "version": "3.369.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "f53d8fc6cdbc1e64e7d14e72d1e315d05003b2b4"
+                "reference": "7076af00534135cbbf6cc19eb2521124a3549f0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f53d8fc6cdbc1e64e7d14e72d1e315d05003b2b4",
-                "reference": "f53d8fc6cdbc1e64e7d14e72d1e315d05003b2b4",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7076af00534135cbbf6cc19eb2521124a3549f0d",
+                "reference": "7076af00534135cbbf6cc19eb2521124a3549f0d",
                 "shasum": ""
             },
             "require": {
@@ -403,9 +403,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.369.20"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.369.21"
             },
-            "time": "2026-01-26T19:14:05+00:00"
+            "time": "2026-01-27T19:14:48+00:00"
         },
         {
             "name": "brick/math",
@@ -720,16 +720,16 @@
         },
         {
             "name": "fairpm/fair-parent-theme",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fairpm/fair-parent-theme.git",
-                "reference": "ea4d1b82583e68c9a4f498056fe2a750b375bd48"
+                "reference": "40cde259ffbb64e6b0468c358f79b56b0753bbde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fairpm/fair-parent-theme/zipball/ea4d1b82583e68c9a4f498056fe2a750b375bd48",
-                "reference": "ea4d1b82583e68c9a4f498056fe2a750b375bd48",
+                "url": "https://api.github.com/repos/fairpm/fair-parent-theme/zipball/40cde259ffbb64e6b0468c358f79b56b0753bbde",
+                "reference": "40cde259ffbb64e6b0468c358f79b56b0753bbde",
                 "shasum": ""
             },
             "require": {
@@ -754,9 +754,9 @@
             ],
             "support": {
                 "issues": "https://github.com/fairpm/fair-parent-theme/issues",
-                "source": "https://github.com/fairpm/fair-parent-theme/tree/1.0.5"
+                "source": "https://github.com/fairpm/fair-parent-theme/tree/1.0.6"
             },
-            "time": "2025-10-21T18:55:12+00:00"
+            "time": "2026-01-27T20:54:27+00:00"
         },
         {
             "name": "fairpm/fair-plugin",
