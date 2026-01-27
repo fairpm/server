@@ -40,9 +40,15 @@ if [ $? -ne 0 ]; then
 	exit 1
 fi
 
+extra_tag=''
+[[ -n ${TAG:-} ]] && extra_tag="--tag ghcr.io/fairpm/server:${TAG}"
+
 echo "Building image…" >&2
+
+# shellcheck disable=SC2086
 docker build \
 	--tag ghcr.io/fairpm/server:latest \
+	$extra_tag \
 	--build-context src="$BUILD_DIR" \
 	"$SCRIPT_DIR/container"
 
