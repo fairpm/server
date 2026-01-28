@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2117b3442151a5b76f01713fbf14fda1",
+    "content-hash": "00365bf2d761092842ae3e78cc10a264",
     "packages": [
         {
             "name": "afragen/git-updater",
@@ -207,54 +207,6 @@
                 "source": "https://github.com/afragen/wp-dismiss-notice"
             },
             "time": "2023-05-30T21:45:15+00:00"
-        },
-        {
-            "name": "aspirepress/aspireexplorer",
-            "version": "0.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aspirepress/AspireExplorer.git",
-                "reference": "a0879d7ceb3bbb7bdccea5e26d15853de6c10240"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/aspirepress/AspireExplorer/zipball/a0879d7ceb3bbb7bdccea5e26d15853de6c10240",
-                "reference": "a0879d7ceb3bbb7bdccea5e26d15853de6c10240",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.4.0"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "3.10.3",
-                "wp-coding-standards/wpcs": "~3.1.0"
-            },
-            "type": "wordpress-plugin",
-            "scripts": {
-                "format": [
-                    "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf --report=summary,source"
-                ],
-                "lint": [
-                    "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs --report=summary,source"
-                ],
-                "scss-watch": [
-                    "sass --watch assets/css/aspire-explorer.scss:assets/css/aspire-explorer.css"
-                ]
-            },
-            "license": [
-                "GPLv2"
-            ],
-            "authors": [
-                {
-                    "name": "AspirePress"
-                }
-            ],
-            "description": "AspirePress Repository browser.",
-            "support": {
-                "source": "https://github.com/aspirepress/AspireExplorer/tree/0.2.0",
-                "issues": "https://github.com/aspirepress/AspireExplorer/issues"
-            },
-            "time": "2025-10-10T09:01:17+00:00"
         },
         {
             "name": "aws/aws-crt-php",
@@ -717,6 +669,54 @@
                 "source": "https://github.com/fairpm/fair-beacon"
             },
             "time": "2026-01-07T17:45:36+00:00"
+        },
+        {
+            "name": "fairpm/fair-explorer",
+            "version": "0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fairpm/fair-explorer.git",
+                "reference": "449837cf67c354deabafed3ebba67df9fc7eec56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fairpm/fair-explorer/zipball/449837cf67c354deabafed3ebba67df9fc7eec56",
+                "reference": "449837cf67c354deabafed3ebba67df9fc7eec56",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "3.10.3",
+                "wp-coding-standards/wpcs": "~3.1.0"
+            },
+            "type": "wordpress-plugin",
+            "scripts": {
+                "format": [
+                    "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf --report=summary,source"
+                ],
+                "lint": [
+                    "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs --report=summary,source"
+                ],
+                "scss-watch": [
+                    "sass --watch assets/css/fair-explorer.scss:assets/css/fair-explorer.css"
+                ]
+            },
+            "license": [
+                "GPLv2"
+            ],
+            "authors": [
+                {
+                    "name": "FairPM"
+                }
+            ],
+            "description": "Fair Explorer Repository browser.",
+            "support": {
+                "source": "https://github.com/fairpm/fair-explorer/tree/0.3.0",
+                "issues": "https://github.com/fairpm/fair-explorer/issues"
+            },
+            "time": "2026-01-27T12:36:52+00:00"
         },
         {
             "name": "fairpm/fair-parent-theme",

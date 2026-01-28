@@ -14,7 +14,7 @@
 		},
 		"2": {
 			"type": "vcs",
-			"url": "https://github.com/aspirepress/AspireExplorer"
+			"url": "https://github.com/fairpm/fair-explorer"
 		},
 		"3": {
 			"type": "vcs",
@@ -47,7 +47,7 @@
 		"humanmade/aws-ses-wp-mail": "dev-master",
 		"mcaskill/composer-exclude-files": "^4.0",
 		"yoast/wordpress-seo": "^26.6",
-		"aspirepress/aspireexplorer": "^0.2",
+		"fairpm/fair-explorer": "^0.3",
 		"fairpm/fair-plugin": "dev-main",
 		"ocean90/public-post-preview": "^3.0",
 		"humanmade/s3-uploads": "^3.0",
