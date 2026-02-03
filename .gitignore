@@ -22,5 +22,12 @@
 /vendor/
 
 #### ignore these specific files
+
 auth.json
 docker-compose.override.yml
+
+# one of the composer.*.json files (composer.start-here.json by default) are copied over to composer.json
+composer.json
+
+# dependencies in composer.json in start-here-site are volatile, so the lockfile is meaningless
+composer.lock

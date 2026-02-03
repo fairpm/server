@@ -1,0 +1,98 @@
+{
+  "name": "fairpm/start-here-site",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
+    },
+    {
+      "type": "path",
+      "url": "../fair-plugin",
+      "options": {
+        "symlink": true
+      },
+      "only": [
+        "fairpm/fair-plugin"
+      ]
+    },
+    {
+      "type": "path",
+      "url": "../fair-beacon",
+      "options": {
+        "symlink": true
+      },
+      "only": [
+        "fairpm/fair-beacon"
+      ]
+    },
+    {
+      "type": "path",
+      "url": "../fair-explorer",
+      "options": {
+        "symlink": true
+      },
+      "only": [
+        "fairpm/fair-explorer"
+      ]
+    }
+  ],
+  "require": {
+    "php": ">=8.4",
+    "ext-apcu": "*",
+    "ext-sqlite3": "*",
+    "afragen/git-updater": "dev-master",
+    "composer/installers": "~2",
+    "fairpm/fair-beacon": "dev-main",
+    "fairpm/fair-explorer": "dev-main",
+    "fairpm/fair-plugin": "dev-main",
+    "johnbillion/query-monitor": "^3.20.2",
+    "mcaskill/composer-exclude-files": "^4.0.1",
+    "oscarotero/env": "^2.1.1",
+    "roots/bedrock-autoloader": "^1.0.4",
+    "roots/wordpress": "^6.9.0",
+    "roots/wp-config": "^1.0",
+    "vlucas/phpdotenv": "^5.6.3",
+    "wpackagist-theme/twentytwentyfive": "^1.4"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  },
+  "suggest": {},
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "web/app/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "web/app/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    },
+    "wordpress-install-dir": "web/wp",
+    "exclude-from-files": [
+      "freemius/wordpress-sdk/start.php"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "mcaskill/composer-exclude-files": true,
+      "roots/wordpress-core-installer": true
+    },
+    "bump-after-update": true,
+    "notify-on-install": false,
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  }
+}
