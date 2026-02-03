@@ -1,5 +1,5 @@
 {
-    "name": "fairpm/server",
+    "name": "fairpm/start-here-site",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "repositories": [
@@ -9,20 +9,6 @@
             "only": [
                 "wpackagist-plugin/*",
                 "wpackagist-theme/*"
-            ]
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/GlotPress/GlotPress",
-            "only": [
-                "glotpress/glotpress-wp"
-            ]
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/aspirepress/AspireExplorer",
-            "only": [
-                "aspirepress/aspireexplorer"
             ]
         },
         {
@@ -41,16 +27,9 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/ocean90/public-post-preview",
+            "url": "https://github.com/fairpm/fair-explorer",
             "only": [
-                "ocean90/public-post-preview"
-            ]
-        },
-        {
-            "type": "composer",
-            "url": "https://my.yoast.com/packages/",
-            "only": [
-                "yoast/*"
+                "fairpm/fair-explorer"
             ]
         }
     ],
@@ -58,36 +37,24 @@
         "php": ">=8.4",
         "ext-apcu": "*",
         "ext-sqlite3": "*",
-        "afragen/git-updater": "^12.21.0",
-        "aspirepress/aspireexplorer": "^0.2",
+        "afragen/git-updater": "dev-master",
         "composer/installers": "~2",
         "fairpm/fair-beacon": "dev-main",
-        "fairpm/fair-parent-theme": "~1.0.5",
+        "fairpm/fair-explorer": "dev-main",
         "fairpm/fair-plugin": "dev-main",
-        "glotpress/glotpress-wp": "^4.0.3",
-        "humanmade/aws-ses-wp-mail": "dev-master",
-        "humanmade/php-basic-auth": "^1.1.1",
-        "humanmade/s3-uploads": "^3.0.11",
-        "humanmade/wp-redis-predis-client": "^0.1.2",
         "johnbillion/query-monitor": "^3.20.2",
         "mcaskill/composer-exclude-files": "^4.0.1",
-        "ocean90/public-post-preview": "^3.0.1",
         "oscarotero/env": "^2.1.1",
-        "pantheon-systems/wp-redis": "^1.4.7",
         "roots/bedrock-autoloader": "^1.0.4",
         "roots/wordpress": "^6.9.0",
         "roots/wp-config": "^1.0",
         "vlucas/phpdotenv": "^5.6.3",
-        "wpackagist-plugin/fastly": "^1.2.29",
-        "wpackagist-theme/twentytwentyfive": "^1.4",
-        "yoast/wordpress-seo": ">=26.4"
+        "wpackagist-theme/twentytwentyfive": "^1.4"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
     },
-    "suggest": {
-        "yoast/wordpress-seo-premium": "^26.0"
-    },
+    "suggest": {},
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
