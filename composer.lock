@@ -2767,16 +2767,16 @@
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "26.8",
+            "version": "26.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast-dist/wordpress-seo.git",
-                "reference": "ae95f2ce47b3dcc67feaf47527791ec60ca71757"
+                "reference": "ed942b5b283ed470d3c87ef046f96f42820c0e9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/ae95f2ce47b3dcc67feaf47527791ec60ca71757",
-                "reference": "ae95f2ce47b3dcc67feaf47527791ec60ca71757",
+                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/ed942b5b283ed470d3c87ef046f96f42820c0e9b",
+                "reference": "ed942b5b283ed470d3c87ef046f96f42820c0e9b",
                 "shasum": ""
             },
             "require": {
@@ -2787,7 +2787,7 @@
             "require-dev": {
                 "guzzlehttp/guzzle": "7.10.0",
                 "humbug/php-scoper": "^0.13.4",
-                "league/oauth2-client": "2.8.1",
+                "league/oauth2-client": "2.9.0",
                 "psr/container": "1.1.1",
                 "psr/log": "^1.0",
                 "symfony/config": "^5.4.46",
@@ -2843,7 +2843,7 @@
                 "source": "https://github.com/Yoast/wordpress-seo",
                 "wiki": "https://github.com/Yoast/wordpress-seo/wiki"
             },
-            "time": "2026-01-20T09:20:02+00:00"
+            "time": "2026-02-03T09:41:36+00:00"
         },
         {
             "name": "yocto/yoclib-multibase",
