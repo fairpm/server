@@ -4,8 +4,16 @@
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 2
+registries:
+  yoast:
+    type: composer-repository
+    url: https://my.yoast.com/packages/
+    username: token
+    password: ${{secrets.YOAST_SEO_PRO_TOKEN}}
 updates:
-  - package-ecosystem: "composer" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "composer"
+    directory: "/"
+    registries:
+      - yoast
     schedule:
       interval: "weekly"

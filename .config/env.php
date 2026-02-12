@@ -16,9 +16,12 @@ if ( ! defined( 'AWS_XRAY_DAEMON_IP_ADDRESS' ) ) {
 }
 
 define( 'REDIS_HOST', getenv( 'REDIS_HOST' ) );
-define( 'REDIS_PORT', getenv( 'REDIS_PORT' ) );
+define( 'REDIS_PORT', getenv( 'REDIS_PORT' ) ?: 6379 );
 define( 'REDIS_SECURE', false );
 define( 'REDIS_AUTH', '' );
+
+define( 'WP_REDIS_BACKEND_HOST', REDIS_HOST );
+define( 'WP_REDIS_PORT', REDIS_PORT );
 
 global $redis_server;
 $redis_server = [
