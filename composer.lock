@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "00365bf2d761092842ae3e78cc10a264",
+    "content-hash": "c86f1d00084651d71c41054aa63acee5",
     "packages": [
         {
             "name": "afragen/git-updater",
@@ -1414,23 +1414,24 @@
         },
         {
             "name": "humanmade/wp-redis-predis-client",
-            "version": "0.1.2",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/humanmade/wp-redis-predis-client.git",
-                "reference": "4fef0721054a756f3f2300c2227f565acea391bd"
+                "reference": "f1f39a7204af2e313ac51743821b6a79eaaed0f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/humanmade/wp-redis-predis-client/zipball/4fef0721054a756f3f2300c2227f565acea391bd",
-                "reference": "4fef0721054a756f3f2300c2227f565acea391bd",
+                "url": "https://api.github.com/repos/humanmade/wp-redis-predis-client/zipball/f1f39a7204af2e313ac51743821b6a79eaaed0f6",
+                "reference": "f1f39a7204af2e313ac51743821b6a79eaaed0f6",
                 "shasum": ""
             },
             "require": {
-                "predis/predis": "~1.1"
+                "php": "^8.2",
+                "predis/predis": "^3.2.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.1.4"
+                "phpunit/phpunit": "^11.0"
             },
             "type": "library",
             "autoload": {
@@ -1441,9 +1442,9 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/humanmade/wp-redis-predis-client/issues",
-                "source": "https://github.com/humanmade/wp-redis-predis-client/tree/0.1.2"
+                "source": "https://github.com/humanmade/wp-redis-predis-client/tree/0.2.0"
             },
-            "time": "2025-01-24T17:01:53+00:00"
+            "time": "2025-10-28T11:26:36+00:00"
         },
         {
             "name": "johnbillion/query-monitor",
@@ -1523,20 +1524,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "6.9.0",
+            "version": "6.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "fbc8bf2209d0ab8d579d937b3df89003a3b86b8e"
+                "reference": "46b4f217817e43cf49f4dbb824f0b755fcff11ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/fbc8bf2209d0ab8d579d937b3df89003a3b86b8e",
-                "reference": "fbc8bf2209d0ab8d579d937b3df89003a3b86b8e",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/46b4f217817e43cf49f4dbb824f0b755fcff11ee",
+                "reference": "46b4f217817e43cf49f4dbb824f0b755fcff11ee",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "6.9.0",
+                "johnpbloch/wordpress-core": "6.9.1",
                 "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
                 "php": ">=7.0.0"
             },
@@ -1565,20 +1566,20 @@
                 "issues": "https://core.trac.wordpress.org/",
                 "source": "https://core.trac.wordpress.org/browser"
             },
-            "time": "2025-12-02T19:11:04+00:00"
+            "time": "2026-02-03T18:03:53+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "6.9.0",
+            "version": "6.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "4626d4e896c36ab77a69ce58627bc76243b5dd07"
+                "reference": "840ffab74cb3d19cc0076363358f783041b5f3cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/4626d4e896c36ab77a69ce58627bc76243b5dd07",
-                "reference": "4626d4e896c36ab77a69ce58627bc76243b5dd07",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/840ffab74cb3d19cc0076363358f783041b5f3cf",
+                "reference": "840ffab74cb3d19cc0076363358f783041b5f3cf",
                 "shasum": ""
             },
             "require": {
@@ -1586,7 +1587,7 @@
                 "php": ">=7.2.24"
             },
             "provide": {
-                "wordpress/core-implementation": "6.9.0"
+                "wordpress/core-implementation": "6.9.1"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -1613,7 +1614,7 @@
                 "source": "https://core.trac.wordpress.org/browser",
                 "wiki": "https://codex.wordpress.org/"
             },
-            "time": "2025-12-02T19:10:58+00:00"
+            "time": "2026-02-03T18:03:48+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -1877,27 +1878,30 @@
         },
         {
             "name": "predis/predis",
-            "version": "v1.1.10",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/predis/predis.git",
-                "reference": "a2fb02d738bedadcffdbb07efa3a5e7bd57f8d6e"
+                "reference": "9e9deec4dfd3ebf65d32eb368f498c646ba2ecd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/predis/predis/zipball/a2fb02d738bedadcffdbb07efa3a5e7bd57f8d6e",
-                "reference": "a2fb02d738bedadcffdbb07efa3a5e7bd57f8d6e",
+                "url": "https://api.github.com/repos/predis/predis/zipball/9e9deec4dfd3ebf65d32eb368f498c646ba2ecd8",
+                "reference": "9e9deec4dfd3ebf65d32eb368f498c646ba2ecd8",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": "^7.2 || ^8.0",
+                "psr/http-message": "^1.0|^2.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.8"
+                "friendsofphp/php-cs-fixer": "^3.3",
+                "phpstan/phpstan": "^1.9",
+                "phpunit/phpcov": "^6.0 || ^8.0",
+                "phpunit/phpunit": "^8.0 || ~9.4.4"
             },
             "suggest": {
-                "ext-curl": "Allows access to Webdis when paired with phpiredis",
-                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+                "ext-relay": "Faster connection with in-memory caching (>=0.6.2)"
             },
             "type": "library",
             "autoload": {
@@ -1911,18 +1915,12 @@
             ],
             "authors": [
                 {
-                    "name": "Daniele Alessandri",
-                    "email": "suppakilla@gmail.com",
-                    "homepage": "http://clorophilla.net",
-                    "role": "Creator & Maintainer"
-                },
-                {
                     "name": "Till Krüss",
                     "homepage": "https://till.im",
                     "role": "Maintainer"
                 }
             ],
-            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "description": "A flexible and feature-complete Redis/Valkey client for PHP.",
             "homepage": "http://github.com/predis/predis",
             "keywords": [
                 "nosql",
@@ -1931,7 +1929,7 @@
             ],
             "support": {
                 "issues": "https://github.com/predis/predis/issues",
-                "source": "https://github.com/predis/predis/tree/v1.1.10"
+                "source": "https://github.com/predis/predis/tree/v3.2.0"
             },
             "funding": [
                 {
@@ -1939,20 +1937,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-01-05T17:46:08+00:00"
+            "time": "2025-08-06T06:41:24+00:00"
         },
         {
             "name": "progress-planner/glossary",
-            "version": "v1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ProgressPlanner/pp-glossary.git",
-                "reference": "030fdb51f0a56ddd1a69afea308e7582ff98c844"
+                "reference": "221f67c616f345727a1d96802bb1aa13a97aebe2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ProgressPlanner/pp-glossary/zipball/030fdb51f0a56ddd1a69afea308e7582ff98c844",
-                "reference": "030fdb51f0a56ddd1a69afea308e7582ff98c844",
+                "url": "https://api.github.com/repos/ProgressPlanner/pp-glossary/zipball/221f67c616f345727a1d96802bb1aa13a97aebe2",
+                "reference": "221f67c616f345727a1d96802bb1aa13a97aebe2",
                 "shasum": ""
             },
             "require": {
@@ -1997,10 +1995,10 @@
             ],
             "description": "A semantic, accessible glossary plugin for WordPress using ACF",
             "support": {
-                "source": "https://github.com/ProgressPlanner/pp-glossary/tree/v1.2.0",
+                "source": "https://github.com/ProgressPlanner/pp-glossary/tree/1.3.0",
                 "issues": "https://github.com/ProgressPlanner/pp-glossary/issues"
             },
-            "time": "2025-12-14T19:02:26+00:00"
+            "time": "2026-02-05T10:56:16+00:00"
         },
         {
             "name": "psr/http-client",
@@ -2767,16 +2765,16 @@
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "26.8",
+            "version": "26.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast-dist/wordpress-seo.git",
-                "reference": "ae95f2ce47b3dcc67feaf47527791ec60ca71757"
+                "reference": "ed942b5b283ed470d3c87ef046f96f42820c0e9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/ae95f2ce47b3dcc67feaf47527791ec60ca71757",
-                "reference": "ae95f2ce47b3dcc67feaf47527791ec60ca71757",
+                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/ed942b5b283ed470d3c87ef046f96f42820c0e9b",
+                "reference": "ed942b5b283ed470d3c87ef046f96f42820c0e9b",
                 "shasum": ""
             },
             "require": {
@@ -2787,7 +2785,7 @@
             "require-dev": {
                 "guzzlehttp/guzzle": "7.10.0",
                 "humbug/php-scoper": "^0.13.4",
-                "league/oauth2-client": "2.8.1",
+                "league/oauth2-client": "2.9.0",
                 "psr/container": "1.1.1",
                 "psr/log": "^1.0",
                 "symfony/config": "^5.4.46",
@@ -2843,7 +2841,7 @@
                 "source": "https://github.com/Yoast/wordpress-seo",
                 "wiki": "https://github.com/Yoast/wordpress-seo/wiki"
             },
-            "time": "2026-01-20T09:20:02+00:00"
+            "time": "2026-02-03T09:41:36+00:00"
         },
         {
             "name": "yocto/yoclib-multibase",
