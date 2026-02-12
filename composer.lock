@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c86f1d00084651d71c41054aa63acee5",
+    "content-hash": "70567396d962a40db510bedf32a251a0",
     "packages": [
         {
             "name": "afragen/git-updater",
-            "version": "12.22.0",
+            "version": "12.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/git-updater.git",
-                "reference": "637b624db7559ec3f3a688d9416de8ba01c16232"
+                "reference": "830d728119a418a026e62067100de07518300512"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/git-updater/zipball/637b624db7559ec3f3a688d9416de8ba01c16232",
-                "reference": "637b624db7559ec3f3a688d9416de8ba01c16232",
+                "url": "https://api.github.com/repos/afragen/git-updater/zipball/830d728119a418a026e62067100de07518300512",
+                "reference": "830d728119a418a026e62067100de07518300512",
                 "shasum": ""
             },
             "require": {
@@ -72,7 +72,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-01-14T01:07:52+00:00"
+            "time": "2026-02-12T21:50:51+00:00"
         },
         {
             "name": "afragen/singleton",
@@ -2902,5 +2902,5 @@
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
