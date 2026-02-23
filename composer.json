@@ -46,7 +46,7 @@
 		"fairpm/fair-beacon": "dev-main",
 		"humanmade/aws-ses-wp-mail": "dev-master",
 		"mcaskill/composer-exclude-files": "^4.0",
-		"yoast/wordpress-seo": "^26.6",
+		"yoast/wordpress-seo": "^27.0",
 		"fairpm/fair-explorer": "^0.3",
 		"fairpm/fair-plugin": "dev-main",
 		"ocean90/public-post-preview": "^3.0",
