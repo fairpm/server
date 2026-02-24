@@ -20,5 +20,6 @@ content/plugins/s3-uploads/
 content/plugins/fastly/
 content/plugins/glossary/
 content/plugins/unconfirmed/
+content/plugins/wp-sweep/
 vendor/
 wordpress/
