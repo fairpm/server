@@ -1790,16 +1790,16 @@
         },
         {
             "name": "ocean90/public-post-preview",
-            "version": "3.0.1",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ocean90/public-post-preview.git",
-                "reference": "0330bcf750d9c2635b15a10b25c73c4ea7125c4e"
+                "reference": "62726ce9f89643c4948b7c3984dfeb2d9bb53cb8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ocean90/public-post-preview/zipball/0330bcf750d9c2635b15a10b25c73c4ea7125c4e",
-                "reference": "0330bcf750d9c2635b15a10b25c73c4ea7125c4e",
+                "url": "https://api.github.com/repos/ocean90/public-post-preview/zipball/62726ce9f89643c4948b7c3984dfeb2d9bb53cb8",
+                "reference": "62726ce9f89643c4948b7c3984dfeb2d9bb53cb8",
                 "shasum": ""
             },
             "require": {
@@ -1828,7 +1828,7 @@
                     "url": "https://github.com/ocean90"
                 }
             ],
-            "time": "2024-12-23T09:49:09+00:00"
+            "time": "2026-03-01T16:10:50+00:00"
         },
         {
             "name": "pantheon-systems/wp-redis",
@@ -2902,5 +2902,5 @@
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
