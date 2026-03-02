@@ -24,6 +24,19 @@ Deployment will eventually be automatic, but in the meantime, the infrastructure
 
 To ignore files from deployment, specify them in `.distignore`.
 
+**Notes for the infrastructure team:**
+
+```
+# In this repo (fairpm/server)
+git checkout main
+git tag -f production
+git push --tags
+
+# Then in the fairpm/infrastructure-private repo
+./jazz
+cd helm/projects/site
+bin/deploy production
+```
 
 ## License
 
