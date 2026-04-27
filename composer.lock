@@ -2767,16 +2767,16 @@
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "27.1.1",
+            "version": "27.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast-dist/wordpress-seo.git",
-                "reference": "71b23b6338451d59de8600431e09e4640cf36b26"
+                "reference": "1350a9a40bccf2b9453c73e99acc64f49f6c8a19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/71b23b6338451d59de8600431e09e4640cf36b26",
-                "reference": "71b23b6338451d59de8600431e09e4640cf36b26",
+                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/1350a9a40bccf2b9453c73e99acc64f49f6c8a19",
+                "reference": "1350a9a40bccf2b9453c73e99acc64f49f6c8a19",
                 "shasum": ""
             },
             "require": {
@@ -2796,7 +2796,7 @@
                 "wpackagist-plugin/google-site-kit": "dev-trunk",
                 "wpackagist-plugin/woocommerce": "dev-trunk",
                 "yoast/wp-test-utils": "^1.2.1",
-                "yoast/yoastcs": "^3.3.0"
+                "yoast/yoastcs": "^3.4.0"
             },
             "suggest": {
                 "ext-bcmath": "For more accurate calculations",
@@ -2847,7 +2847,7 @@
                 "source": "https://github.com/Yoast/wordpress-seo",
                 "wiki": "https://github.com/Yoast/wordpress-seo/wiki"
             },
-            "time": "2026-03-03T14:06:55+00:00"
+            "time": "2026-04-14T08:27:03+00:00"
         },
         {
             "name": "yocto/yoclib-multibase",
