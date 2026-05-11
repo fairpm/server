@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3fdf649aabc1041050d730130cbef21c",
+    "content-hash": "d698cce561d1d6a9d0a4b8f0c21ee28f",
     "packages": [
         {
             "name": "afragen/git-updater",
@@ -1331,21 +1331,25 @@
         },
         {
             "name": "humanmade/php-basic-auth",
-            "version": "1.1.1",
+            "version": "1.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/humanmade/PHPBasicAuth.git",
-                "reference": "83e598d79df68054dc7b90cb171faaf95b601883"
+                "reference": "007b02965f643e115a13bae75010af7d00418f74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/humanmade/PHPBasicAuth/zipball/83e598d79df68054dc7b90cb171faaf95b601883",
-                "reference": "83e598d79df68054dc7b90cb171faaf95b601883",
+                "url": "https://api.github.com/repos/humanmade/PHPBasicAuth/zipball/007b02965f643e115a13bae75010af7d00418f74",
+                "reference": "007b02965f643e115a13bae75010af7d00418f74",
                 "shasum": ""
             },
+            "require": {
+                "composer/installers": "^1.7.0 || ^2.0"
+            },
             "require-dev": {
-                "humanmade/coding-standards": "^0.7.0",
-                "phpunit/phpunit": "^7.5"
+                "humanmade/coding-standards": "^2.0",
+                "phpunit/phpunit": "~9.0",
+                "yoast/phpunit-polyfills": "^1.0"
             },
             "type": "wordpress-muplugin",
             "notification-url": "https://packagist.org/downloads/",
@@ -1362,9 +1366,9 @@
             "homepage": "https://github.com/humanmade/PHPBasicAuth",
             "support": {
                 "issues": "https://github.com/humanmade/PHPBasicAuth/issues",
-                "source": "https://github.com/humanmade/PHPBasicAuth/tree/1.1.1"
+                "source": "https://github.com/humanmade/PHPBasicAuth/tree/1.1.8"
             },
-            "time": "2020-01-10T21:55:59+00:00"
+            "time": "2026-05-05T08:56:40+00:00"
         },
         {
             "name": "humanmade/s3-uploads",
