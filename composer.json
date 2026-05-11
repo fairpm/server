@@ -37,7 +37,7 @@
 		"composer/installers": "~2",
 		"humanmade/php-basic-auth": "^1.1",
 		"glotpress/glotpress-wp": "^4.0.1",
-		"johnbillion/query-monitor": "^3.17",
+		"johnbillion/query-monitor": "^4.0",
 		"johnpbloch/wordpress": "^6.8",
 		"pantheon-systems/wp-redis": "^1.4",
 		"humanmade/wp-redis-predis-client": "^0.2.0",

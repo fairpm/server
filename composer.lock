@@ -4,27 +4,27 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "41dd6d704115b9ede6611ef9cc53cef6",
+    "content-hash": "3fdf649aabc1041050d730130cbef21c",
     "packages": [
         {
             "name": "afragen/git-updater",
-            "version": "12.23.1",
+            "version": "12.24.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/git-updater.git",
-                "reference": "830d728119a418a026e62067100de07518300512"
+                "reference": "3ee1393efa331e24fa6483e09f4135af51c3bc4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/git-updater/zipball/830d728119a418a026e62067100de07518300512",
-                "reference": "830d728119a418a026e62067100de07518300512",
+                "url": "https://api.github.com/repos/afragen/git-updater/zipball/3ee1393efa331e24fa6483e09f4135af51c3bc4b",
+                "reference": "3ee1393efa331e24fa6483e09f4135af51c3bc4b",
                 "shasum": ""
             },
             "require": {
                 "afragen/singleton": "^1.0",
                 "afragen/wordpress-plugin-readme-parser": "^1",
                 "afragen/wp-dismiss-notice": "*",
-                "erusev/parsedown": "dev-master#0b274ac959624e6c6d647e9c9b6c2d20da242004",
+                "erusev/parsedown": "^1.8",
                 "freemius/wordpress-sdk": "^2.12",
                 "php": ">=8.0"
             },
@@ -72,7 +72,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-02-12T21:50:51+00:00"
+            "time": "2026-03-25T20:51:20+00:00"
         },
         {
             "name": "afragen/singleton",
@@ -122,21 +122,21 @@
         },
         {
             "name": "afragen/wordpress-plugin-readme-parser",
-            "version": "1.2025.12.6",
+            "version": "1.2026.02.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/wordpress-plugin-readme-parser.git",
-                "reference": "1fbb311ef5f31f0e1e2d8978f187c81c22b351c5"
+                "reference": "3aa1130df558eb5f7c61eca77ceb141b2e9573c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/wordpress-plugin-readme-parser/zipball/1fbb311ef5f31f0e1e2d8978f187c81c22b351c5",
-                "reference": "1fbb311ef5f31f0e1e2d8978f187c81c22b351c5",
+                "url": "https://api.github.com/repos/afragen/wordpress-plugin-readme-parser/zipball/3aa1130df558eb5f7c61eca77ceb141b2e9573c7",
+                "reference": "3aa1130df558eb5f7c61eca77ceb141b2e9573c7",
                 "shasum": ""
             },
             "require": {
-                "erusev/parsedown": "dev-master#0b274ac959624e6c6d647e9c9b6c2d20da242004",
-                "php": ">=5.4"
+                "erusev/parsedown": "^1.8",
+                "php": ">=7.1"
             },
             "type": "library",
             "autoload": {
@@ -162,9 +162,9 @@
             ],
             "support": {
                 "issues": "https://github.com/afragen/wordpress-plugin-readme-parser/issues",
-                "source": "https://github.com/afragen/wordpress-plugin-readme-parser/tree/1.2025.12.6"
+                "source": "https://github.com/afragen/wordpress-plugin-readme-parser/tree/1.2026.02.16"
             },
-            "time": "2025-12-06T17:41:45+00:00"
+            "time": "2026-02-16T18:45:01+00:00"
         },
         {
             "name": "afragen/wp-dismiss-notice",
@@ -567,16 +567,16 @@
         },
         {
             "name": "erusev/parsedown",
-            "version": "dev-master",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "4e433a8d57078645b55d21fd12c887d3ba6ca01e"
+                "reference": "96baaad00f71ba04d76e45b4620f54d3beabd6f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/4e433a8d57078645b55d21fd12c887d3ba6ca01e",
-                "reference": "4e433a8d57078645b55d21fd12c887d3ba6ca01e",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/96baaad00f71ba04d76e45b4620f54d3beabd6f7",
+                "reference": "96baaad00f71ba04d76e45b4620f54d3beabd6f7",
                 "shasum": ""
             },
             "require": {
@@ -586,7 +586,6 @@
             "require-dev": {
                 "phpunit/phpunit": "^8.5.52|^9.6.33"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-0": {
@@ -612,7 +611,7 @@
             ],
             "support": {
                 "issues": "https://github.com/erusev/parsedown/issues",
-                "source": "https://github.com/erusev/parsedown/tree/master"
+                "source": "https://github.com/erusev/parsedown/tree/1.8.0"
             },
             "funding": [
                 {
@@ -620,7 +619,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-02-18T15:50:20+00:00"
+            "time": "2026-02-16T11:41:01+00:00"
         },
         {
             "name": "fairpm/fair-beacon",
@@ -853,16 +852,16 @@
         },
         {
             "name": "freemius/wordpress-sdk",
-            "version": "2.13.0",
+            "version": "2.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Freemius/wordpress-sdk.git",
-                "reference": "3cbe98b5bd0b0fb5ca4df97b8088592737ea4375"
+                "reference": "7376c0eca1ae7f92aaba9d3b550bd10affe797ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Freemius/wordpress-sdk/zipball/3cbe98b5bd0b0fb5ca4df97b8088592737ea4375",
-                "reference": "3cbe98b5bd0b0fb5ca4df97b8088592737ea4375",
+                "url": "https://api.github.com/repos/Freemius/wordpress-sdk/zipball/7376c0eca1ae7f92aaba9d3b550bd10affe797ff",
+                "reference": "7376c0eca1ae7f92aaba9d3b550bd10affe797ff",
                 "shasum": ""
             },
             "require": {
@@ -900,9 +899,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Freemius/wordpress-sdk/issues",
-                "source": "https://github.com/Freemius/wordpress-sdk/tree/2.13.0"
+                "source": "https://github.com/Freemius/wordpress-sdk/tree/2.13.1"
             },
-            "time": "2025-11-11T07:52:08+00:00"
+            "time": "2026-03-25T15:26:13+00:00"
         },
         {
             "name": "glotpress/glotpress-wp",
@@ -1456,16 +1455,16 @@
         },
         {
             "name": "johnbillion/query-monitor",
-            "version": "3.20.2",
+            "version": "4.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnbillion/query-monitor.git",
-                "reference": "40b9ba0d72a4d938a24aa6367b7715e8ae02e8d4"
+                "reference": "eaa67a8f5e6ca24cceb4d4daf9cc27c32cc8f501"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/40b9ba0d72a4d938a24aa6367b7715e8ae02e8d4",
-                "reference": "40b9ba0d72a4d938a24aa6367b7715e8ae02e8d4",
+                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/eaa67a8f5e6ca24cceb4d4daf9cc27c32cc8f501",
+                "reference": "eaa67a8f5e6ca24cceb4d4daf9cc27c32cc8f501",
                 "shasum": ""
             },
             "require": {
@@ -1473,24 +1472,18 @@
                 "php": ">=7.4.0"
             },
             "require-dev": {
-                "behat/gherkin": "< 4.13.0",
-                "codeception/module-asserts": "^1.0",
-                "codeception/module-db": "^1.0",
-                "codeception/module-webdriver": "^1.0",
-                "codeception/util-universalframework": "^1.0",
                 "dealerdirect/phpcodesniffer-composer-installer": "0.7.2",
                 "guzzlehttp/guzzle": "^7.0",
-                "johnbillion/plugin-infrastructure": "1.2.1",
-                "johnbillion/wp-compat": "0.3.1",
-                "lucatume/wp-browser": "3.2.3",
+                "johnbillion/plugin-infrastructure": "2.9.0",
+                "johnbillion/wp-compat": "1.4.0",
+                "php-stubs/wordpress-stubs": "6.9.0",
+                "php-stubs/wp-cli-stubs": "2.12.0",
                 "phpcompatibility/phpcompatibility-wp": "2.1.5",
-                "phpstan/phpstan": "1.12.11",
-                "phpstan/phpstan-deprecation-rules": "1.2.1",
-                "phpstan/phpstan-phpunit": "1.4.1",
-                "roots/wordpress-core-installer": "1.100.0",
-                "roots/wordpress-full": "*",
+                "phpstan/phpstan": "2.1.46",
+                "phpstan/phpstan-deprecation-rules": "2.0.4",
+                "phpstan/phpstan-phpunit": "2.0.16",
                 "squizlabs/php_codesniffer": "3.11.1",
-                "szepeviktor/phpstan-wordpress": "1.3.5",
+                "szepeviktor/phpstan-wordpress": "2.0.3",
                 "wp-coding-standards/wpcs": "2.3.0"
             },
             "type": "wordpress-plugin",
@@ -1528,7 +1521,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-12-11T22:08:53+00:00"
+            "time": "2026-04-11T11:49:51+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -2791,16 +2784,16 @@
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "27.1.1",
+            "version": "27.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast-dist/wordpress-seo.git",
-                "reference": "71b23b6338451d59de8600431e09e4640cf36b26"
+                "reference": "1350a9a40bccf2b9453c73e99acc64f49f6c8a19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/71b23b6338451d59de8600431e09e4640cf36b26",
-                "reference": "71b23b6338451d59de8600431e09e4640cf36b26",
+                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/1350a9a40bccf2b9453c73e99acc64f49f6c8a19",
+                "reference": "1350a9a40bccf2b9453c73e99acc64f49f6c8a19",
                 "shasum": ""
             },
             "require": {
@@ -2820,7 +2813,7 @@
                 "wpackagist-plugin/google-site-kit": "dev-trunk",
                 "wpackagist-plugin/woocommerce": "dev-trunk",
                 "yoast/wp-test-utils": "^1.2.1",
-                "yoast/yoastcs": "^3.3.0"
+                "yoast/yoastcs": "^3.4.0"
             },
             "suggest": {
                 "ext-bcmath": "For more accurate calculations",
@@ -2871,7 +2864,7 @@
                 "source": "https://github.com/Yoast/wordpress-seo",
                 "wiki": "https://github.com/Yoast/wordpress-seo/wiki"
             },
-            "time": "2026-03-03T14:06:55+00:00"
+            "time": "2026-04-14T08:27:03+00:00"
         },
         {
             "name": "yocto/yoclib-multibase",
