@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3fdf649aabc1041050d730130cbef21c",
+    "content-hash": "7bbc0f185f7158c297a02915aa47b3f6",
     "packages": [
         {
             "name": "afragen/git-updater",
@@ -580,10 +580,10 @@
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": ">=7.2"
+                "php": ">=7.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.5.52|^9.6.33"
+                "phpunit/phpunit": "^7.5|^8.5|^9.6"
             },
             "type": "library",
             "autoload": {
