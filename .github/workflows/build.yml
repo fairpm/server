@@ -3,6 +3,7 @@ name: Build and push container
 on:
   push:
     branches: [ main ]
+    tags: [ '*' ]
 
 env:
   REGISTRY: ghcr.io
@@ -28,6 +29,8 @@ jobs:
 
     - name: Build and push
       run: bin/build.sh
+      env:
+        TAG: ${{ github.ref_name }}
 
     - name: Build Summary
       if: always()
