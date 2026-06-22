@@ -1459,16 +1459,16 @@
         },
         {
             "name": "johnbillion/query-monitor",
-            "version": "4.0.6",
+            "version": "4.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnbillion/query-monitor.git",
-                "reference": "eaa67a8f5e6ca24cceb4d4daf9cc27c32cc8f501"
+                "reference": "50c3cad9f710b3edcb00f266687d351d9f2c3ac6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/eaa67a8f5e6ca24cceb4d4daf9cc27c32cc8f501",
-                "reference": "eaa67a8f5e6ca24cceb4d4daf9cc27c32cc8f501",
+                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/50c3cad9f710b3edcb00f266687d351d9f2c3ac6",
+                "reference": "50c3cad9f710b3edcb00f266687d351d9f2c3ac6",
                 "shasum": ""
             },
             "require": {
@@ -1478,9 +1478,9 @@
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "0.7.2",
                 "guzzlehttp/guzzle": "^7.0",
-                "johnbillion/plugin-infrastructure": "2.9.0",
-                "johnbillion/wp-compat": "1.4.0",
-                "php-stubs/wordpress-stubs": "6.9.0",
+                "johnbillion/plugin-infrastructure": "2.9.4",
+                "johnbillion/wp-compat": "1.5.0",
+                "php-stubs/wordpress-stubs": "7.0.0 as 6.9.4",
                 "php-stubs/wp-cli-stubs": "2.12.0",
                 "phpcompatibility/phpcompatibility-wp": "2.1.5",
                 "phpstan/phpstan": "2.1.46",
@@ -1511,7 +1511,7 @@
                     "homepage": "https://johnblackbourn.com/"
                 }
             ],
-            "description": "The Developer Tools panel for WordPress.",
+            "description": "Query Monitor is the developer tools panel for WordPress and WooCommerce.",
             "homepage": "https://querymonitor.com/",
             "support": {
                 "forum": "https://wordpress.org/support/plugin/query-monitor",
@@ -1525,7 +1525,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-11T11:49:51+00:00"
+            "time": "2026-06-20T20:10:50+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -2933,5 +2933,5 @@
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
