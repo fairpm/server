@@ -2792,16 +2792,16 @@
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "27.6",
+            "version": "27.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast-dist/wordpress-seo.git",
-                "reference": "ae6b0fbdb12126559d7b1745d40d4aa7a45ec728"
+                "reference": "4124bfda6e10b586882028c3634a89461953e95d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/ae6b0fbdb12126559d7b1745d40d4aa7a45ec728",
-                "reference": "ae6b0fbdb12126559d7b1745d40d4aa7a45ec728",
+                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/4124bfda6e10b586882028c3634a89461953e95d",
+                "reference": "4124bfda6e10b586882028c3634a89461953e95d",
                 "shasum": ""
             },
             "require": {
@@ -2872,7 +2872,7 @@
                 "source": "https://github.com/Yoast/wordpress-seo",
                 "wiki": "https://github.com/Yoast/wordpress-seo/wiki"
             },
-            "time": "2026-05-12T08:55:54+00:00"
+            "time": "2026-06-22T09:24:53+00:00"
         },
         {
             "name": "yocto/yoclib-multibase",
@@ -2933,5 +2933,5 @@
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
