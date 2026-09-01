@@ -38,15 +38,15 @@
 		"humanmade/php-basic-auth": "^1.1",
 		"glotpress/glotpress-wp": "^4.0.1",
 		"johnbillion/query-monitor": "^4.0",
-		"johnpbloch/wordpress": "^6.8",
+		"johnpbloch/wordpress": "^7.1",
 		"pantheon-systems/wp-redis": "^1.4",
 		"humanmade/wp-redis-predis-client": "^0.2.0",
-		"afragen/git-updater": "^12.24",
+		"afragen/git-updater": "^14.4",
 		"fairpm/fair-parent-theme": "~1.0.1",
 		"fairpm/fair-beacon": "dev-main",
 		"humanmade/aws-ses-wp-mail": "dev-master",
 		"mcaskill/composer-exclude-files": "^4.0",
-		"yoast/wordpress-seo": "^27.0",
+		"yoast/wordpress-seo": "^28.0",
 		"fairpm/fair-explorer": "^0.3",
 		"fairpm/fair-plugin": "dev-main",
 		"ocean90/public-post-preview": "^3.0",
@@ -54,7 +54,7 @@
 		"wpackagist-plugin/fastly": "^1.2.29",
 		"progress-planner/glossary": "^1.2.0",
 		"wpackagist-plugin/unconfirmed": "^1.3.7",
-		"wpackagist-plugin/wp-sweep": "^1.1.8"
+		"wpackagist-plugin/wp-sweep": "^2.0.1"
 	},
 	"extra": {
 		"installer-paths": {
