@@ -1331,16 +1331,16 @@
         },
         {
             "name": "humanmade/php-basic-auth",
-            "version": "1.1.8",
+            "version": "1.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/humanmade/PHPBasicAuth.git",
-                "reference": "007b02965f643e115a13bae75010af7d00418f74"
+                "reference": "39b67448a1919af431f3a951aba7e4357ecaeb38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/humanmade/PHPBasicAuth/zipball/007b02965f643e115a13bae75010af7d00418f74",
-                "reference": "007b02965f643e115a13bae75010af7d00418f74",
+                "url": "https://api.github.com/repos/humanmade/PHPBasicAuth/zipball/39b67448a1919af431f3a951aba7e4357ecaeb38",
+                "reference": "39b67448a1919af431f3a951aba7e4357ecaeb38",
                 "shasum": ""
             },
             "require": {
@@ -1366,9 +1366,9 @@
             "homepage": "https://github.com/humanmade/PHPBasicAuth",
             "support": {
                 "issues": "https://github.com/humanmade/PHPBasicAuth/issues",
-                "source": "https://github.com/humanmade/PHPBasicAuth/tree/1.1.8"
+                "source": "https://github.com/humanmade/PHPBasicAuth/tree/1.1.9"
             },
-            "time": "2026-05-05T08:56:40+00:00"
+            "time": "2026-08-12T10:47:24+00:00"
         },
         {
             "name": "humanmade/s3-uploads",
@@ -2933,5 +2933,5 @@
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
