@@ -54,7 +54,7 @@
 		"wpackagist-plugin/fastly": "^1.2.29",
 		"progress-planner/glossary": "^1.2.0",
 		"wpackagist-plugin/unconfirmed": "^1.3.7",
-		"wpackagist-plugin/wp-sweep": "^1.1.8"
+		"wpackagist-plugin/wp-sweep": "^2.0.1"
 	},
 	"extra": {
 		"installer-paths": {
