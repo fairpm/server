@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7bbc0f185f7158c297a02915aa47b3f6",
+    "content-hash": "906f5a27f814e1dd1a6b08bc18a6df34",
     "packages": [
         {
             "name": "afragen/git-updater",
@@ -2774,15 +2774,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-sweep",
-            "version": "1.1.8",
+            "version": "2.0.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-sweep/",
-                "reference": "tags/1.1.8"
+                "reference": "tags/2.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-sweep.1.1.8.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-sweep.2.0.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2933,5 +2933,5 @@
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
